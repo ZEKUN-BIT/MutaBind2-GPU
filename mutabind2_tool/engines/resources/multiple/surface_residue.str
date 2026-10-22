@@ -1,0 +1,37 @@
+set rsol     1.4         ! solvent probe radius
+
+! molecular surface (MS) of M,mutchain
+coor surface rprobe @rsol select m end
+set MSm  = ?area
+
+! molecular surface (MS) of R,resid
+coor surf rprobe @rsol select r end
+set MSr ?area
+
+coor surf rprobe @rsol select c end
+! ASA per atom is now in WMAIN array, sum up over selected atoms
+scalar wmain statistics select r end
+set ASAC ?STOT
+
+! m : mutchain
+coor surf rprobe @rsol select m end
+! ASA per atom is now in WMAIN array, sum up over selected atoms
+scalar wmain statistics select r end
+set ASAM ?STOT
+
+! mp : partner of mutchain
+coor surf rprobe @rsol select mp end
+! ASA per atom is now in WMAIN array, sum up over selected atoms
+scalar wmain statistics select r end
+set ASAMP ?STOT
+
+! m 
+calc rASAc = @ASAC/@MSr
+calc rASAm = @ASAM/@MSr
+calc drASA = @rASAm - @rASAc
+! mp
+calc rASAmp = @ASAMP/@MSr
+calc drASAp = @rASAmp - @rASAc
+
+
+

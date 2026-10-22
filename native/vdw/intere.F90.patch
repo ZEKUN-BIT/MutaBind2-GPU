@@ -1,0 +1,201 @@
+--- original/intere.F90
++++ intere.F90
+@@ -137,6 +137,9 @@
+ #endif
+      QKEEP)
+   use genborn, only: qgenborn, fillalpgb, gbsolv
++#if KEY_PERT==1
++  use pert,only: mb_qpert=>QPERT
++#endif
+   use ecnstr_mod, only: ecnstr
+ #if KEY_BLOCK==1
+   use genborn, only: fillalpgb1, fillalpgb2, gbsolv1, gbsolv2
+@@ -217,9 +220,30 @@
+ #endif 
+ 
+   INTEGER I,J,ITEMP,ISTRT,IEND,ITRANS
++  integer,parameter :: mb_int64=selected_int_kind(18)
++  integer(kind=mb_int64) :: mb_capacity
++  integer :: mb_env_status,mb_env_length
++  logical :: mb_compact
++  character(len=16) :: mb_env
+   real(chm_real) EXX, ENBX, EELX, EST2X
+   LOGICAL ERR
+   type(nonbondDataStructure) BDUMMY
++#ifdef MUTABIND2_VDW_AUDIT
++  interface
++     subroutine MB_AUDIT_INTS(label,n,values)
++       use iso_c_binding
++       character(len=*),intent(in) :: label
++       integer,intent(in) :: n
++       integer(c_int),target,intent(in) :: values(*)
++     end subroutine MB_AUDIT_INTS
++     subroutine MB_AUDIT_REALS(label,n,values)
++       use iso_c_binding
++       character(len=*),intent(in) :: label
++       integer,intent(in) :: n
++       real(c_double),target,intent(in) :: values(*)
++     end subroutine MB_AUDIT_REALS
++  end interface
++#endif
+   !
+ #if KEY_PARALLEL==1
+   INTEGER,PARAMETER :: NALLWK=LENENT+1
+@@ -460,8 +484,62 @@
+      !     Make sure counters, flags and cuttoffs, etc are correct.
+      CALL GETBND(BNBND,.TRUE.)
+ 
++#ifdef MUTABIND2_VDW_AUDIT
++     call MB_AUDIT_INTS('source_inblo',NATOM,bnbnd%inblo)
++     call MB_AUDIT_INTS('source_jnb',bnbnd%inblo(NATOM),bnbnd%jnb)
++     call MB_AUDIT_INTS('source_inb14',size(bnbnd%inb14),bnbnd%inb14)
++     call MB_AUDIT_INTS('source_iblo14',size(bnbnd%iblo14),bnbnd%iblo14)
++#endif
++     ! Opt-in, primary, ordinary atom lists and a disjoint complete partition.
++     ! Retain the original NBONDA, INTER3, and ENBOND implementations verbatim.
++     call get_environment_variable('MUTABIND2_VDW_COMPACT',mb_env, &
++          length=mb_env_length,status=mb_env_status)
++     mb_compact=mb_env_status==0 .and. mb_env_length==1 .and. mb_env=='1'
++     if(mb_compact) then
++        mb_compact=.not.QKEEP .and. .not.LGROUP .and. NTRANS==0
++        mb_compact=mb_compact .and. LCONS .and. LVATOM .and. &
++             .not.LSHFT .and. .not.LVSHFT .and. .not.LFSWT .and. .not.LVFSWT
++        mb_compact=mb_compact .and. .not.LBYCU .and. .not.LBYCC .and. .not.LFMA
++        mb_compact=mb_compact .and. .not.QDRUDE .and. .not.QTHOLE
++#if KEY_PERT==1
++        mb_compact=mb_compact .and. .not.mb_qpert
++#endif
++#if KEY_PBOUND==1
++        mb_compact=mb_compact .and. .not.QBOUN
++#endif
++#if KEY_IMCUBES==1
++        mb_compact=mb_compact .and. .not.lbycbim
++#endif
++#if KEY_PARALLEL==1
++        mb_compact=mb_compact .and. NUMNOD==1
++#endif
++#if KEY_DOMDEC==1
++        mb_compact=mb_compact .and. .not.q_domdec
++#endif
++#if KEY_FACTS==1
++        mb_compact=mb_compact .and. .not.FCTRUN
++#endif
++        mb_compact=mb_compact .and. associated(bnbnd%JNB)
++        mb_compact=mb_compact .and. &
++             all((ISLCT(1:NATOM)==0).or.(ISLCT(1:NATOM)==1)) .and. &
++             all((JSLCT(1:NATOM)==0).or.(JSLCT(1:NATOM)==1)) .and. &
++             all(ISLCT(1:NATOM)+JSLCT(1:NATOM)==1)
++        mb_capacity=int(count(ISLCT(1:NATOM)==1),mb_int64) * &
++             int(count(JSLCT(1:NATOM)==1),mb_int64)
++        mb_compact=mb_compact .and. mb_capacity>0 .and. &
++             mb_capacity<=int(huge(1),mb_int64)
++     endif
+      CALL FREEDT_nbond(BNBNDC)
+-     CALL DUPLDT_nbond(BNBNDC,BNBND)
++     if(mb_compact) then
++        mb_capacity=min(mb_capacity,int(size(bnbnd%JNB),mb_int64))
++        call DUPLDT_nbond_compact(BNBNDC,BNBND,int(mb_capacity))
++        write(OUTU,'(A,I0,A,I0)') ' MUTABIND2_VDW_COMPACT capacity=', &
++             mb_capacity,' original_capacity=',size(bnbnd%JNB)
++     else
++        CALL DUPLDT_nbond(BNBNDC,BNBND)
++        if(mb_env_status==0.and.mb_env=='1') &
++             write(OUTU,'(A)') ' MUTABIND2_VDW_COMPACT original-copy fallback'
++     endif
+ 
+      ! Inter3g added by Lazaridis, Apr 99
+      ! MULTE addition, June 2008 bt
+@@ -500,6 +578,14 @@
+   EndIf   
+ #endif
+   !
++#ifdef MUTABIND2_VDW_AUDIT
++  if (.not.LGROUP .and. .not.QKEEP) then
++     call MB_AUDIT_INTS('selected_inblo',NATOM,bnbndc%inblo)
++     call MB_AUDIT_INTS('selected_jnb',bnbndc%inblo(NATOM),bnbndc%jnb)
++     write(OUTU,'(A,I0)') ' MBVDW_NEGATIVE_PAIRS ', &
++          count(bnbndc%jnb(1:bnbndc%inblo(NATOM))<0)
++  endif
++#endif
+   ! EEF1EN added by Lazaridis, Apr 99.  May2004: Moved before ENBOND
+ #if KEY_ASPENER==1
+   IF (DOEEF1.AND.QETERM(ASP)) THEN
+@@ -1083,6 +1169,16 @@
+      ENDIF
+   ENDDO
+ 
++#ifdef MUTABIND2_VDW_AUDIT
++  call MB_AUDIT_REALS('eterm',LENENT,ETERM)
++  call MB_AUDIT_REALS('dx',NATOM,DX)
++  call MB_AUDIT_REALS('dy',NATOM,DY)
++  call MB_AUDIT_REALS('dz',NATOM,DZ)
++  do I=1,LENENT
++     write(OUTU,'(A,1X,I0,1X,Z16.16)') ' MBVDW_ENERGY_BITS',I, &
++          transfer(ETERM(I),0_mb_int64)
++  enddo
++#endif
+   RETURN
+ END SUBROUTINE INTER2
+ 
+@@ -1265,3 +1361,61 @@
+   RETURN
+ END SUBROUTINE INTER3G
+ 
++
++#ifdef MUTABIND2_VDW_AUDIT
++subroutine MB_AUDIT_INTS(label,n,values)
++  use iso_c_binding
++  use stream,only:OUTU
++  implicit none
++  character(len=*),intent(in) :: label
++  integer,intent(in) :: n
++  integer(c_int),target,intent(in) :: values(*)
++  integer(c_int8_t),target :: md(32)
++  type(c_ptr) :: result,data
++  integer :: i
++  interface
++     function sha256(data,nbytes,md) bind(c,name='SHA256') result(p)
++       import c_ptr,c_size_t
++       type(c_ptr),value :: data,md
++       integer(c_size_t),value :: nbytes
++       type(c_ptr) :: p
++     end function sha256
++  end interface
++  if(n<0) error stop 'negative audit size'
++  data=c_null_ptr
++  if(n>0) data=c_loc(values(1))
++  result=sha256(data,int(n,c_size_t)*c_sizeof(values(1)),c_loc(md(1)))
++  if(.not.c_associated(result)) error stop 'SHA256 failed'
++  write(OUTU,'(A,1X,A,1X,I0,1X,32(Z2.2))') ' MBVDW_SHA256',trim(label),n, &
++       (iand(int(md(i)),255),i=1,32)
++end subroutine MB_AUDIT_INTS
++#endif
++
++#ifdef MUTABIND2_VDW_AUDIT
++subroutine MB_AUDIT_REALS(label,n,values)
++  use iso_c_binding
++  use stream,only:OUTU
++  implicit none
++  character(len=*),intent(in) :: label
++  integer,intent(in) :: n
++  real(c_double),target,intent(in) :: values(*)
++  integer(c_int8_t),target :: md(32)
++  type(c_ptr) :: result,data
++  integer :: i
++  interface
++     function sha256(data,nbytes,md) bind(c,name='SHA256') result(p)
++       import c_ptr,c_size_t
++       type(c_ptr),value :: data,md
++       integer(c_size_t),value :: nbytes
++       type(c_ptr) :: p
++     end function sha256
++  end interface
++  if(n<0) error stop 'negative audit size'
++  data=c_null_ptr
++  if(n>0) data=c_loc(values(1))
++  result=sha256(data,int(n,c_size_t)*c_sizeof(values(1)),c_loc(md(1)))
++  if(.not.c_associated(result)) error stop 'SHA256 failed'
++  write(OUTU,'(A,1X,A,1X,I0,1X,32(Z2.2))') ' MBVDW_SHA256',trim(label),n, &
++       (iand(int(md(i)),255),i=1,32)
++end subroutine MB_AUDIT_REALS
++#endif

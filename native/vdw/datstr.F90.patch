@@ -1,0 +1,41 @@
+--- original/datstr.F90
++++ datstr.F90
+@@ -139,6 +139,38 @@
+ 
+     RETURN
+   END SUBROUTINE DUPLDT_nbond
++
++  SUBROUTINE DUPLDT_nbond_compact(NEWBAS,BASE,JNB_CAPACITY)
++    !
++    ! Copy metadata; INTER3 immediately fills the separately sized JNB array.
++    ! The caller has proved that JNB_CAPACITY bounds the selected pair count.
++    !
++    type(nonbondDataStructure),intent(inout) :: NEWBAS
++    type(nonbondDataStructure),intent(in) :: BASE
++    integer,intent(in) :: JNB_CAPACITY
++
++    newbas%IS_ALIAS = .false.
++
++    ! fixed-size arrays
++    newbas%LNBOPT=base%LNBOPT
++    newbas%NBDIST=base%NBDIST
++    newbas%NBINTS=base%NBINTS
++
++    call copy_ints_pp(newbas%INBLO, base%INBLO)
++    call copy_ints_pp(newbas%INBLOG, base%INBLOG)
++    call copy_ints_pp(newbas%INB14, base%INB14)
++    call copy_ints_pp(newbas%IBLO14, base%IBLO14)
++    call copy_ints_pp(newbas%ING14, base%ING14)
++    call copy_ints_pp(newbas%IGLO14, base%IGLO14)
++    call copy_reals_pp(newbas%LASTX, base%LASTX)
++    call copy_reals_pp(newbas%LASTY, base%LASTY)
++    call copy_reals_pp(newbas%LASTZ, base%LASTZ)
++    call copy_ints_pp(newbas%JNBG, base%JNBG)
++    if (associated(newbas%JNB)) deallocate(newbas%JNB)
++    allocate(newbas%JNB(JNB_CAPACITY))
++
++    RETURN
++  END SUBROUTINE DUPLDT_nbond_compact
+ 
+   SUBROUTINE ALIASDT_nbond(NEWBAS,BASE)
+     !-----------------------------------------------------------------------

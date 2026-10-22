@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+root=$(CDPATH= cd -- "$(dirname -- "$(readlink -f -- "$0")")" && pwd)
+if [ -x "$root/.env/bin/python" ]; then
+    python="$root/.env/bin/python"
+else
+    python="${MUTABIND2_PYTHON:-python3}"
+fi
+export PYTHONPATH="$root${PYTHONPATH:+:$PYTHONPATH}"
+export PYTHONNOUSERSITE=1
+export RGL_USE_NULL=TRUE
+exec "$python" -m mutabind2_tool.cli "$@"

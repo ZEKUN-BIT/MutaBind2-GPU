@@ -1,0 +1,22 @@
+set pathpara @pathinput
+
+! Read in Topology and  Parameter files
+read rtf card name @pathpara/top_all36_prot.rtf
+read param card name @pathpara/par_all36_prot.prm
+!stream @pathpara/toppar_water_ions.str
+
+read psf card name @path/@protname_charmm.psf
+read coor card name @path/@protname_charmm.crd
+
+define a select segid p1 end
+define b select segid p2 end
+
+! m:mutchain, mp:partner of mutchain
+define c select a .or. b end
+define r select segid @chainm .and. resid @resnumber end
+define m select segid @chainm end
+define mp select @partner end
+
+stream @pathpara/surface_residue.str
+
+

@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-22",
+  "python": "3.12",
+  "clean_environment_tests_passed": 29,
+  "python_wheel": "built; inspected for two original model files and absence of native binaries",
+  "provean_source_build": "passed",
+  "native_source_reconstruction": [
+    "pbeq.F90",
+    "datstr.F90",
+    "intere.F90"
+  ],
+  "compact_vdw_build_and_loader_check": "passed",
+  "citation_schema": "valid",
+  "tracked_file_count_before_this_report": 140,
+  "runtime_dependency_audit": "No known vulnerabilities in the clean installed runtime dependency set",
+  "native_numeric_measurements": "Historical 2026-10-21 results; see 1cse_energy_comparison.json"
+}

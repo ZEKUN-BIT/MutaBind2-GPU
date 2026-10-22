@@ -1,0 +1,13 @@
+{
+  "scope": "compact INTER3 destination allocation; original pair generation, filtering, energy kernels unchanged",
+  "files": {
+    "datstr.F90": {
+      "original_sha256": "9b651865453da774d266dc606979d6ab1eb6e3a13b51cd1a866ead18655b10fb",
+      "candidate_sha256": "6fa248368cf663d1491038f995961d74cb545402d9bef486191573cfc035dcab"
+    },
+    "intere.F90": {
+      "original_sha256": "6e3be53c4450103340caca21df72f07543b1a4c9712791ca8cee4d98e94ebdd2",
+      "candidate_sha256": "7f9c65296d053e86b2379f4a6a1decbf00a55be79a8cc41005ae2e666bab27b9"
+    }
+  }
+}

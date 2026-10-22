@@ -1,0 +1,13 @@
+{
+  "base_sha256": "9a1bed8f6743564d91834e1a34d7d48fb79c86dce7d14c4813166d1005557c4a",
+  "candidate_sha256": "3f0675f60b41b65a4e75c51a7fcf4fc28140a18c40ed3aedbb7be4ef3ac3da2d",
+  "abi": "charmm_pb_reen_cuda",
+  "neighbor_stride": 512,
+  "source_indices": "Original one-based selected atom IDs; NATOM=max(selected); neighbors Fortran(512,nselected), sorted by original QCKSRT",
+  "buried_atom": "nl=-1,ml=0",
+  "axis_guard": "Identical independently validated finite-range/factor-two rejection, GPU preparation only",
+  "rng": "Original GENPOINT executed once; fallback reuses existing POX/POY/POZ and original atom/probe loop",
+  "fallback": "Whole original CPU atom/probe loop on unsupported data or neighbor-slot overflow; CUDA runtime errors abort",
+  "cleanup": "Original final CPU full-grid negative-to-EPSP/zero loop unchanged",
+  "sor": "Original validated v2 CUDA, not uint32 experimental variant"
+}

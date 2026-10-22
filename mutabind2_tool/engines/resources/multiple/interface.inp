@@ -1,0 +1,20 @@
+* This example calculates the the binding energy.
+*
+bomlev -2
+
+set pathpara @pathpara
+
+! Read in Topology and  Parameter files
+read rtf card name @pathpara/top_all36_prot.rtf
+read param card name @pathpara/par_all36_prot.prm
+
+read psf card name @path/@protname_charmm.psf
+read coor card name @path/@protname_charmm.crd 
+
+define a select segid p1 end
+define b select segid p2 end
+
+stream @pathpara/sasa.str
+
+
+

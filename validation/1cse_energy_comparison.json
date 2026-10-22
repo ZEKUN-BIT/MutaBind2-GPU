@@ -1,0 +1,166 @@
+[
+  {
+    "case": "wt",
+    "reference_gpu": {
+      "vdw": {
+        "VDWENER": -92.000598
+      },
+      "pb": {
+        "GAB": 117172.07,
+        "GA": 24725.877,
+        "GB": 92443.4312,
+        "DELTAGELEC": 2.7618,
+        "iterations": [
+          891,
+          843,
+          884
+        ],
+        "energies": [
+          117172.07038,
+          24725.87695,
+          92443.4312
+        ],
+        "grids": [
+          [
+            211,
+            225,
+            243
+          ],
+          [
+            211,
+            225,
+            243
+          ],
+          [
+            211,
+            225,
+            243
+          ]
+        ],
+        "final_residuals": [
+          1.999e-06,
+          1.998e-06,
+          1.976e-06
+        ]
+      }
+    },
+    "reference_gpu_seconds": {
+      "vdw": 0.5040687469881959,
+      "pb": 4.005196443002205
+    },
+    "cpu": {
+      "delta_vs_gpu": {
+        "GAB": 0.0,
+        "GA": 0.0,
+        "GB": 0.0,
+        "DELTAGELEC": 0.0,
+        "VDWENER": 0.0,
+        "solve_energies": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "within_1e_4_kcal_mol": true
+    },
+    "cpu_run_seconds": 50.188,
+    "rebuilt_gpu": {
+      "delta_vs_gpu": {
+        "GAB": 0.0,
+        "GA": 0.0,
+        "GB": 0.0,
+        "DELTAGELEC": 0.0,
+        "VDWENER": 0.0,
+        "solve_energies": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "within_1e_4_kcal_mol": true
+    },
+    "rebuilt_gpu_run_seconds": 4.605
+  },
+  {
+    "case": "mutant",
+    "reference_gpu": {
+      "vdw": {
+        "VDWENER": -82.4082319
+      },
+      "pb": {
+        "GAB": 116839.956,
+        "GA": 24548.1244,
+        "GB": 92283.4607,
+        "DELTAGELEC": 8.3709,
+        "iterations": [
+          891,
+          843,
+          883
+        ],
+        "energies": [
+          116839.95558,
+          24548.12439,
+          92283.46068
+        ],
+        "grids": [
+          [
+            211,
+            225,
+            243
+          ],
+          [
+            211,
+            225,
+            243
+          ],
+          [
+            211,
+            225,
+            243
+          ]
+        ],
+        "final_residuals": [
+          1.996e-06,
+          1.993e-06,
+          1.999e-06
+        ]
+      }
+    },
+    "reference_gpu_seconds": {
+      "vdw": 0.5036223670031177,
+      "pb": 4.005113965002238
+    },
+    "cpu": {
+      "delta_vs_gpu": {
+        "GAB": 0.0,
+        "GA": 0.0,
+        "GB": 0.0,
+        "DELTAGELEC": 0.0,
+        "VDWENER": 0.0,
+        "solve_energies": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "within_1e_4_kcal_mol": true
+    },
+    "cpu_run_seconds": 46.577,
+    "rebuilt_gpu": {
+      "delta_vs_gpu": {
+        "GAB": 0.0,
+        "GA": 0.0,
+        "GB": 0.0,
+        "DELTAGELEC": 0.0,
+        "VDWENER": 0.0,
+        "solve_energies": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "within_1e_4_kcal_mol": true
+    },
+    "rebuilt_gpu_run_seconds": 4.032
+  }
+]

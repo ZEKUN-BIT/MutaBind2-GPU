@@ -1,0 +1,20 @@
+{
+  "base_v1_sha256": "88823b6ad92212c8686712270df0b28f9aaffa63812fb6261349fbfa6abf0a8e",
+  "original_sha256": "da84649d486504868f2dd46953d2339457d622517e204d125dcc3c206c216dd8",
+  "candidate_sha256": "9a1bed8f6743564d91834e1a34d7d48fb79c86dce7d14c4813166d1005557c4a",
+  "cuda_abi": [
+    "charmm_pbeq1_cuda v1",
+    "charmm_pb_boundary_cuda v2",
+    "charmm_pbeq1_cuda_trace v2"
+  ],
+  "boundary_conditions": "KAPPA2=0,TMEMB=0,NIMGB=0,!QNPBC,!QA,!QB,odd grids>=5",
+  "cpu_interpolation": "unchanged original bilinear interpolation",
+  "additional_timers": [
+    "MAYER_BP_INT",
+    "BOUNDARY_SUM",
+    "BOUNDARY_INTERPOLATE",
+    "MAYER_REEN",
+    "MAYER_CD_TRIL",
+    "MAYER_MSTEP"
+  ]
+}

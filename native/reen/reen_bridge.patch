@@ -1,0 +1,192 @@
+--- v2/pbeq_cuda_bridge.F90
++++ reen/pbeq_reen_bridge.F90
+@@ -4265,6 +4265,9 @@
+     !
+     use clcg_mod,only:clcginit
+     use chm_kinds
++    USE STREAM, ONLY: OUTU,PRNLEV
++    use, intrinsic :: iso_c_binding, only: c_int,c_float,c_double,c_char,c_null_char
++    use, intrinsic :: ieee_arithmetic, only: ieee_is_finite
+     use memory
+     use number
+     use consta
+@@ -4272,6 +4275,31 @@
+     use rndnum
+     implicit none
+     REAL(KIND=8) :: PB_DETAIL_START
++    INTEGER,PARAMETER :: CUDA_NEIGHBOR_STRIDE=512
++    INTEGER(C_INT),ALLOCATABLE :: CUDA_ML(:),CUDA_NL(:),CUDA_NEIGHBORS(:,:)
++    INTEGER(C_INT) :: CUDA_STATUS,CUDA_NATOM
++    INTEGER :: CUDA_ALLOC_STATUS,CUDA_ENV_STATUS,CUDA_I
++    CHARACTER(LEN=32) :: CUDA_BACKEND
++    CHARACTER(LEN=1024) :: CUDA_MESSAGE
++    CHARACTER(KIND=C_CHAR) :: CUDA_ERROR(1024)
++    LOGICAL :: QCUDA_REEN,QAXIS_SAFE
++    REAL(CHM_REAL) :: AXIS_CUTOFF
++    REAL(KIND=8) :: CUDA_PREP_START,CUDA_REEN_START
++    INTERFACE
++       FUNCTION CHARMM_PB_REEN_CUDA(NX,NY,NZ,NA,NS,NP,STRIDE,QK, &
++            H,RW,EP,RS,TX,TY,TZ,BX,BY,BZ,SEL,MLIST,NLIST,NEIGH, &
++            XS,YS,ZS,RAD,PXS,PYS,PZS,G,GX,GY,GZ,ERR,ERRLEN) &
++            BIND(C,NAME='charmm_pb_reen_cuda') RESULT(STATUS)
++          IMPORT C_INT,C_FLOAT,C_DOUBLE,C_CHAR
++          INTEGER(C_INT),VALUE :: NX,NY,NZ,NA,NS,NP,STRIDE,QK,ERRLEN
++          REAL(C_DOUBLE),VALUE :: H,RW,EP,RS,TX,TY,TZ,BX,BY,BZ
++          INTEGER(C_INT),INTENT(IN) :: SEL(*),MLIST(*),NLIST(*),NEIGH(*)
++          REAL(C_DOUBLE),INTENT(IN) :: XS(*),YS(*),ZS(*),RAD(*),PXS(*),PYS(*),PZS(*)
++          REAL(C_FLOAT) :: G(*),GX(*),GY(*),GZ(*)
++          CHARACTER(KIND=C_CHAR),INTENT(OUT) :: ERR(*)
++          INTEGER(C_INT) :: STATUS
++       END FUNCTION CHARMM_PB_REEN_CUDA
++    END INTERFACE
+     INTEGER  NTPRP,LSTPRP(*)
+     INTEGER  NCLX,NCLY,NCLZ,MAPT
+     REAL(CHM_REAL4)   RMAY(*),RMAYX(*),RMAYY(*),RMAYZ(*)
+@@ -4289,6 +4317,12 @@
+ 
+     ! 
+     PB_DETAIL_START=PB_WALLTIME()
++    IF(CHM_REAL4.NE.C_FLOAT .OR. CHM_REAL.NE.C_DOUBLE .OR. KIND(NTPRP).NE.C_INT) ERROR STOP 101
++    CUDA_BACKEND='cuda'
++    CALL GET_ENVIRONMENT_VARIABLE('MUTABIND2_PB_BACKEND',CUDA_BACKEND,STATUS=CUDA_ENV_STATUS)
++    IF(CUDA_ENV_STATUS.EQ.1) CUDA_BACKEND='cuda'
++    IF(CUDA_ENV_STATUS.NE.0 .AND. CUDA_ENV_STATUS.NE.1) ERROR STOP 102
++    IF(TRIM(CUDA_BACKEND).NE.'cuda' .AND. TRIM(CUDA_BACKEND).NE.'cpu') ERROR STOP 103
+     call chmalloc('pbeq.src','MAYER_REEN','LISTR',NTPRP,intg=LISTR)
+     call chmalloc('pbeq.src','MAYER_REEN','FISTR',NTPRP,crl=FISTR)
+ 
+@@ -4300,10 +4334,18 @@
+     endif
+     !
+     ! generate points on the sphere surface and adjust parameter
++    ! Same conservative axis guard independently validated on original REEN.
++    QAXIS_SAFE=.TRUE.
+     wrsf=0.
+     do il=1,ntprp
+        i=lstprp(il)
+        raneti=pbrad(i)+radw
++       IF(.NOT.IEEE_IS_FINITE(X(I)).OR..NOT.IEEE_IS_FINITE(Y(I)).OR. &
++            .NOT.IEEE_IS_FINITE(Z(I)).OR..NOT.IEEE_IS_FINITE(RANETI)) &
++            QAXIS_SAFE=.FALSE.
++       IF(ABS(X(I)).GT.1.0D6.OR.ABS(Y(I)).GT.1.0D6.OR. &
++            ABS(Z(I)).GT.1.0D6.OR.RANETI.LT.1.0D-4.OR. &
++            RANETI.GT.1.0D4) QAXIS_SAFE=.FALSE.
+        if(wrsf.lt.raneti)wrsf=raneti
+     enddo
+     wrsf=MAPT/wrsf**2 + 0.000001
+@@ -4311,6 +4353,98 @@
+        call genpoint(pox(i),poy(i),poz(i),iseed)
+     enddo
+ 
++    QCUDA_REEN=TRIM(CUDA_BACKEND).EQ.'cuda' .AND. QAXIS_SAFE .AND. NTPRP.GT.0 &
++         .AND. NTPRP.LE.HUGE(CUDA_NATOM)/CUDA_NEIGHBOR_STRIDE &
++         .AND. MAPT.GT.0 .AND. NCLX.GE.3 .AND. NCLY.GE.3 .AND. NCLZ.GE.3 &
++         .AND. IEEE_IS_FINITE(DCEL) .AND. DCEL.GT.ZERO &
++         .AND. IEEE_IS_FINITE(RADW) .AND. RADW.GE.ZERO &
++         .AND. IEEE_IS_FINITE(EPSP) .AND. EPSP.GT.ZERO
++    IF(QCUDA_REEN) THEN
++       CUDA_PREP_START=PB_WALLTIME()
++       CUDA_NATOM=MAXVAL(LSTPRP(1:NTPRP))
++       ALLOCATE(CUDA_ML(NTPRP),CUDA_NL(NTPRP),CUDA_NEIGHBORS(CUDA_NEIGHBOR_STRIDE,NTPRP), &
++            STAT=CUDA_ALLOC_STATUS)
++       IF(CUDA_ALLOC_STATUS.NE.0) THEN
++          QCUDA_REEN=.FALSE.
++          IF(PRNLEV.GE.2) WRITE(OUTU,*) 'MAYER_REEN CUDA preparation allocation unavailable; original CPU fallback'
++       ELSE
++          CUDA_ML=0
++          CUDA_NL=0
++          CUDA_NEIGHBORS=0
++          CUDA_PREP_ATOMS: DO IL=1,NTPRP
++             NL=0
++             I=LSTPRP(IL)
++             XI=X(I)
++             YI=Y(I)
++             ZI=Z(I)
++             RANETI=PBRAD(I)+RADW
++             DO JL=1,NTPRP
++                IF(IL.EQ.JL) CYCLE
++                J=LSTPRP(JL)
++                XJ=X(J)
++                YJ=Y(J)
++                ZJ=Z(J)
++                RANETJ=PBRAD(J)+RADW
++                ! Validated factor-two bound only discards distant spheres.
++                AXIS_CUTOFF=2.0D0*(RANETI+RANETJ)
++                IF(ABS(XI-XJ).GT.AXIS_CUTOFF) CYCLE
++                IF(ABS(YI-YJ).GT.AXIS_CUTOFF) CYCLE
++                IF(ABS(ZI-ZJ).GT.AXIS_CUTOFF) CYCLE
++                AIJ=SQRT((XI-XJ)*(XI-XJ)+(YI-YJ)*(YI-YJ)+(ZI-ZJ)*(ZI-ZJ))
++                FISTR0=SEGPAR(RANETI,RANETJ,AIJ)
++                IF(FISTR0.EQ.0.) CYCLE
++                IF(FISTR0.EQ.1.) THEN
++                   CUDA_NL(IL)=-1
++                   CUDA_ML(IL)=0
++                   CYCLE CUDA_PREP_ATOMS
++                ENDIF
++                IF(NL.GE.CUDA_NEIGHBOR_STRIDE) THEN
++                   QCUDA_REEN=.FALSE.
++                   IF(PRNLEV.GE.2) WRITE(OUTU,*) 'MAYER_REEN CUDA neighbor slots exceeded; original CPU fallback'
++                   EXIT CUDA_PREP_ATOMS
++                ENDIF
++                NL=NL+1
++                FISTR(NL)=FISTR0
++                LISTR(NL)=J
++             ENDDO
++             IF(NL.GT.0) CALL QCKSRT(NL,FISTR,LISTR)
++             ML=INT(WRSF*RANETI**2)
++             IF(ML.GT.MAPT) ML=MAPT
++             CUDA_ML(IL)=ML
++             CUDA_NL(IL)=NL
++             CUDA_NEIGHBORS(1:NL,IL)=LISTR(1:NL)
++          ENDDO CUDA_PREP_ATOMS
++       ENDIF
++       CALL PB_STAGE_TIME('REEN_CUDA_NEIGHBOR_PREP',CUDA_PREP_START)
++    ENDIF
++    IF(QCUDA_REEN) THEN
++       CUDA_REEN_START=PB_WALLTIME()
++       CUDA_ERROR=C_NULL_CHAR
++       FLUSH(OUTU)
++       CUDA_STATUS=CHARMM_PB_REEN_CUDA(NCLX,NCLY,NCLZ,CUDA_NATOM,NTPRP,MAPT, &
++            CUDA_NEIGHBOR_STRIDE,MERGE(1_C_INT,0_C_INT,QFKAP),DCEL,RADW,EPSP,RSMALL, &
++            TRANX,TRANY,TRANZ,XBCEN,YBCEN,ZBCEN,LSTPRP,CUDA_ML,CUDA_NL,CUDA_NEIGHBORS, &
++            X,Y,Z,PBRAD,POX,POY,POZ,RMAY,RMAYX,RMAYY,RMAYZ,CUDA_ERROR,INT(SIZE(CUDA_ERROR),C_INT))
++       IF(CUDA_STATUS.NE.0) THEN
++          CUDA_MESSAGE=' '
++          DO CUDA_I=1,SIZE(CUDA_ERROR)
++             IF(CUDA_ERROR(CUDA_I).EQ.C_NULL_CHAR) EXIT
++             CUDA_MESSAGE(CUDA_I:CUDA_I)=CUDA_ERROR(CUDA_I)
++          ENDDO
++          WRITE(OUTU,*) 'PB REEN CUDA failed: ',CUDA_STATUS,TRIM(CUDA_MESSAGE)
++          FLUSH(OUTU)
++          ERROR STOP 104
++       ENDIF
++       CALL PB_STAGE_TIME('REEN_CUDA_PROBE_GRID',CUDA_REEN_START)
++       IF(PRNLEV.GE.2) WRITE(OUTU,'(A,I10)') 'PBEQ_REEN_CUDA_SUCCESS selected=',NTPRP
++    ELSE
++       IF(PRNLEV.GE.2) WRITE(OUTU,*) 'MAYER_REEN: original serial CPU probe/grid path'
++    ENDIF
++    IF(ALLOCATED(CUDA_ML)) DEALLOCATE(CUDA_ML)
++    IF(ALLOCATED(CUDA_NL)) DEALLOCATE(CUDA_NL)
++    IF(ALLOCATED(CUDA_NEIGHBORS)) DEALLOCATE(CUDA_NEIGHBORS)
++
++    IF(.NOT.QCUDA_REEN) THEN
+     ! main loop by atoms
+     do il=1,ntprp
+        nl=0
+@@ -4446,6 +4580,8 @@
+ 60     continue
+     enddo
+     !
++    ENDIF
++    CUDA_REEN_START=PB_WALLTIME()
+     do k=1,nclx
+        ipx=(k-1)*ncyz
+        do l=1,ncly
+@@ -4460,6 +4596,7 @@
+        enddo
+     enddo
+     !
++    CALL PB_STAGE_TIME('REEN_CPU_FINAL_GRID',CUDA_REEN_START)
+     call chmdealloc('pbeq.src','MAYER_REEN','LISTR',NTPRP,intg=LISTR)
+     call chmdealloc('pbeq.src','MAYER_REEN','FISTR',NTPRP,crl=FISTR)
+     !

@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "Please cite the original MutaBind2 paper and identify the commit of this unofficial GPU-accelerated implementation."
+title: "MutaBind2-GPU: an unofficial GPU-accelerated improvement of MutaBind2"
+type: software
+authors:
+  - name: ZEKUN-BIT
+repository-code: "https://github.com/ZEKUN-BIT/MutaBind2-GPU"
+url: "https://github.com/ZEKUN-BIT/MutaBind2-GPU"
+version: 2.0.0
+date-released: "2026-10-22"
+references:
+  - type: article
+    title: "MutaBind2: Predicting the Impacts of Single and Multiple Mutations on Protein–Protein Interactions"
+    doi: "10.1016/j.isci.2020.100939"
+    year: 2020
+    authors:
+      - family-names: Zhang
+        given-names: Ning
+      - family-names: Chen
+        given-names: Yuting
+      - family-names: Lu
+        given-names: Haoyu
+      - family-names: Zhao
+        given-names: Feiyang
+      - family-names: Alvarez
+        given-names: Roberto Vera
+      - family-names: Goncearenco
+        given-names: Alexander
+      - family-names: Panchenko
+        given-names: Anna R.
+      - family-names: Li
+        given-names: Minghui

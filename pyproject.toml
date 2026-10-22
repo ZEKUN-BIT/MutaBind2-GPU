@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mutabind2-gpu-local"
+version = "2.0.0"
+description = "Unofficial GPU-accelerated MutaBind2 with CUDA PB, mutation scans and checkpoints"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "pandas>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.urls]
+Homepage = "https://github.com/ZEKUN-BIT/MutaBind2-GPU"
+Upstream = "https://github.com/minghuilab/MutaBind2"
+Issues = "https://github.com/ZEKUN-BIT/MutaBind2-GPU/issues"
+
+[project.scripts]
+mutabind2-gpu = "mutabind2_tool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mutabind2_tool*"]
+
+[tool.setuptools.package-data]
+mutabind2_tool = ["core/*.R", "engines/resources/single/*", "engines/resources/multiple/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

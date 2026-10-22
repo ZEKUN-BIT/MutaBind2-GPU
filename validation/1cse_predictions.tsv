@@ -1,0 +1,2 @@
+Result_Id	Chain	Mutation	Status	DeltaDeltaG_kcal_mol	Predicted_binding_effect	Model_Interface	Model_Confidence	PROVEAN	PROVEAN_mode	Truncated_terminus	Near_truncated_terminus_10A	Partner_min_heavy_distance_A	Structure_note
+1	I	L45P	complete	4.83	weaker	yes	High	-2.191	fragment	0	0	2.7199	auto_fragments_charged_termini

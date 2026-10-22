@@ -1,0 +1,107 @@
+! This stream calculates elec using PB and vdw interaction for a complex
+
+set gammaP   0.00542     ! for Gasa (non-polar dGsolv)
+set betaP    0.92        ! for Gasa
+set rsol     1.4         ! solvent probe radius
+
+set EpsG    = 1.0
+
+update cutnb 999 switch vswitch eps @EpsG 
+
+! calculate the vdw energy between A and B
+
+interaction sele A end sele B end 
+set vdwENER   = ?vdw
+set elecENER  = ?elec
+
+! Inititalzation of parameters used in the PBEQ module for PB calculations.
+ 
+set Ionr    = 2.0        ! ion exclusion radius (Stern layer)
+set temp    = 300        ! you can set up temp in PBEQ calculation
+set maxi    = 10000      ! number of iterations
+set EpsP    = 2.0        ! dielectric constant for the protein interior
+set EpsG    = 1.0        ! Vacuum dielectric constant
+set EpsW    = 80.0       ! solvent dielectric constant
+set Conc    = 0.0        ! salt concentration
+set Dcel_c  = 0.4        ! the grid spacing in the finite-difference (centered on Xcen,Ycen,Zcen)
+set Dcel_f  = 0.4        ! the grid spacing in the finite-difference (centered on Xcen,Ycen,Zcen)
+set LEdge   = 10.0       ! distance between a protein atom and a grid
+                         ! LEdge*2 for coarse-gird calculations and LEdge/2 for fine-grid calculations (see below)
+set Options =  watr 1.4 reentrant ! Let's use the molecular surface
+
+coor stat
+coor orient norotate
+coor stat
+set Xcen = ?xave
+set Ycen = ?yave
+set Zcen = ?zave
+
+calc Nclx_c = int ( ( @LEdge * 4.0 + ?Xmax - ?Xmin ) / @{Dcel_c} )
+calc Ncly_c = int ( ( @LEdge * 4.0 + ?Ymax - ?Ymin ) / @{Dcel_c} )
+calc Nclz_c = int ( ( @LEdge * 4.0 + ?Zmax - ?Zmin ) / @{Dcel_c} )
+
+
+!*********************************************************************
+!enter the PBEQ module
+
+PBEQ
+
+! read in the radii used in the PB calculations
+prnlev 0
+stream @pathpara/radii_prot_na_.str  
+prnlev 5
+scalar wmain statistics select .not. type H* end
+define check select (.not type H* ) .and. ( property wmain .eq. 0.0 ) show end
+if ?nsel ne 0  stop  !some heavy atom have a zero radius
+   
+! Solv the PB equation for the complex
+
+SOLVE Nclx @{nclx_c} Ncly @{ncly_c} Nclz @{nclz_c} Dcel @{Dcel_c} EpsP @EpsP EpsW @EpsW CONC @CONC Ionr @Ionr INTBP @Options -
+      XBcen @Xcen YBcen @Ycen ZBcen @Zcen Select A .or. B end
+
+SET Gab = ?enpb        !Gelec for the complex
+
+! Solv the PB equation for A
+
+SOLVE Nclx @{nclx_c} Ncly @{ncly_c} Nclz @{nclz_c} Dcel @{Dcel_c} EpsP @EpsP EpsW @EpsW CONC @CONC Ionr @Ionr INTBP @Options -
+      XBcen @Xcen YBcen @Ycen ZBcen @Zcen Select A end
+
+SET Ga = ?enpb        !Gelec for A
+
+! Solv the PB equation for B
+
+SOLVE Nclx @{nclx_c} Ncly @{ncly_c} Nclz @{nclz_c} Dcel @{Dcel_c} EpsP @EpsP EpsW @EpsW CONC @CONC Ionr @Ionr INTBP @Options -
+      XBcen @Xcen YBcen @Ycen ZBcen @Zcen Select B end
+
+SET Gb = ?enpb        !Gelec for B
+
+
+! this difference gives the electrostatic contribution to the 
+! binding free energy (deltaGelec)
+
+calc DeltaGelec =  @Gab - @Ga - @Gb
+
+END
+
+! molecular surface (MS) of the complex
+coor surface rprobe @rsol select A .or. B end
+set MSac = ?area
+
+! molecular surface (MS) of A
+coor surface rprobe @rsol select A end
+set MSa  = ?area
+
+! molecular surface (MS) of B
+coor surface rprobe @rsol select B end
+set MSc  = ?area
+
+! The difference in MS between the complex and the free proteins, is the
+! surface buried upon complex formation, and is stored of deltaMS.
+
+calc DeltaMS =  @MSac - @MSa - @MSc
+calc Gasa = @gammaP * @DeltaMS + @betaP
+
+calc DeltaG_mmpbsa = @DeltaGelec + @Gasa +  @vdwENER
+stop
+
+

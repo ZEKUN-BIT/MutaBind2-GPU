@@ -1,0 +1,37 @@
+# Local environments, configuration and credentials
+.env
+.env.*
+.venv/
+env/
+venv/
+config/tools.json
+tools.json
+*.pem
+*.key
+
+# Generated predictions, databases and native builds
+projects/
+workspaces/
+runtime/
+databases/
+native_build/
+backups/
+toolchain/databases/
+toolchain/.env/
+toolchain/external/
+*.so
+*.so.*
+*.o
+*.mod
+*.sif
+*.exe
+
+# Python packaging and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/

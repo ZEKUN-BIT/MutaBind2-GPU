@@ -1,0 +1,17 @@
+{
+  "vmd": "/opt/vmd/bin/vmd",
+  "charmm": "/opt/charmm/bin/charmm",
+  "namd": "/opt/namd/namd3",
+  "dssp": "/usr/bin/mkdssp",
+  "provean": null,
+  "provean_binary": "../toolchain/external/provean-1.1.5-modern/bin/provean",
+  "psiblast": "/opt/ncbi-blast/bin/psiblast",
+  "blastdbcmd": "/opt/ncbi-blast/bin/blastdbcmd",
+  "cdhit": "/usr/bin/cd-hit",
+  "foldx": "/opt/foldx/foldx",
+  "rscript": "/usr/bin/Rscript",
+  "blast_db": "/data/blast/nr",
+  "pb_executable": "../native_build/pb/bin/charmm",
+  "vdw_executable": "../native_build/vdw/bin/charmm",
+  "toolchain_root": "../toolchain"
+}

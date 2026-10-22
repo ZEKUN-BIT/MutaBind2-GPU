@@ -1,0 +1,23 @@
+! interface
+set rsol     1.4         ! solvent probe radius
+
+! molecular surface (MS) of the complex
+coor surface rprobe @rsol select A .or. B end
+set MSac = ?area
+
+! molecular surface (MS) of A
+coor surface rprobe @rsol select A end
+set MSa  = ?area
+
+! molecular surface (MS) of B
+coor surface rprobe @rsol select B end
+set MSc  = ?area
+
+! The difference in MS between the complex and the free proteins, is the
+! surface buried upon complex formation, and is stored of deltaMS.
+
+calc DeltaMS =  @MSac - @MSa - @MSc
+
+stop
+
+

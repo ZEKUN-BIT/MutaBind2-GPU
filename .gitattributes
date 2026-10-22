@@ -1,0 +1,6 @@
+# Preserve model bytes and fixed-format upstream scientific inputs.
+*.RData binary
+examples/*.pdb -text -whitespace
+mutabind2_tool/engines/resources/** -text -whitespace
+native/**/*.patch -text -whitespace
+toolchain/vendor/provean-1.1.5/** -whitespace

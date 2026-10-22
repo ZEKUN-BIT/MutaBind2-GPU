@@ -1,0 +1,505 @@
+--- original/pbeq.F90
++++ cuda_v2/pbeq_cuda_bridge.F90
+@@ -142,6 +142,23 @@
+     return
+   end SUBROUTINE PBEQ0
+ #else /* (pbeq_main)*/
++
++  REAL(KIND=8) FUNCTION PB_WALLTIME() RESULT(SECONDS)
++    INTEGER(KIND=8) :: TICKS,TICK_RATE
++    CALL SYSTEM_CLOCK(TICKS,TICK_RATE)
++    SECONDS=REAL(TICKS,KIND=8)/REAL(TICK_RATE,KIND=8)
++  END FUNCTION PB_WALLTIME
++
++  SUBROUTINE PB_STAGE_TIME(STAGE,STARTED)
++    USE STREAM, ONLY: OUTU,PRNLEV
++    CHARACTER(LEN=*),INTENT(IN) :: STAGE
++    REAL(KIND=8),INTENT(IN) :: STARTED
++    IF(PRNLEV.GE.2) THEN
++       WRITE(OUTU,'(A,A,A,F14.6)') 'PBEQ_STAGE ',STAGE,' seconds=',PB_WALLTIME()-STARTED
++       FLUSH(OUTU)
++    ENDIF
++  END SUBROUTINE PB_STAGE_TIME
++
+ 
+   subroutine pbeq_iniall()
+     qpbeq=.false.
+@@ -2094,6 +2111,7 @@
+ #endif
+ 
+     implicit none
++    REAL(KIND=8) :: PB_STAGE_START
+ 
+     !-----------------------------------------------------------------
+     real(chm_real),allocatable,dimension(:) :: FISTR
+@@ -2114,6 +2132,7 @@
+ #endif
+     SAVE
+     !
++    PB_STAGE_START=PB_WALLTIME()
+     call chmalloc('pbeq.src','PREP1','ISLCT',NATOM,intg=ISLCT) 
+     !
+     !     Atom Selection
+@@ -2876,6 +2895,7 @@
+     QB=.false.
+     IF(QGSBP .or. QSMBP)THEN ! JZ_UW12: Modified for SMBP
+        call chmdealloc('pbeq.src','PREP1','ISLCT',NATOM,intg=ISLCT)    
++       CALL PB_STAGE_TIME('PREP1',PB_STAGE_START)
+        RETURN
+     ENDIF
+ 
+@@ -3024,6 +3044,7 @@
+        !
+        QPBEQ  = .TRUE.
+        call chmdealloc('pbeq.src','PREP1','ISLCT',NATOM,intg=ISLCT) 
++       CALL PB_STAGE_TIME('PREP1',PB_STAGE_START)
+        RETURN
+        !
+     ENDIF
+@@ -3070,6 +3091,7 @@
+     !
+     if(qfocus) call chmdealloc('pbeq.src','PREP1','IPHIB',FNCEL3,cr4=IPHIB)
+     call chmdealloc('pbeq.src','PREP1','ISLCT',NATOM,intg=ISLCT) 
++    CALL PB_STAGE_TIME('PREP1',PB_STAGE_START)
+     RETURN
+   END SUBROUTINE PREP1
+ 
+@@ -3267,6 +3289,7 @@
+     use consta
+     use memory
+     implicit none
++    REAL(KIND=8) :: PB_STAGE_START
+     REAL(CHM_REAL4)   CHC(*),PHI(*),PHIB(*)
+     REAL(CHM_REAL4)   RMAY(*),RMAYX(*),RMAYY(*),RMAYZ(*)
+     real(chm_real)   X(*),Y(*),Z(*),CG(*),POX(*),POY(*),POZ(*)
+@@ -3310,6 +3333,7 @@
+ 
+     ! write(*,*) "QC> Arrived at Mayer "
+ 
++    PB_STAGE_START=PB_WALLTIME()
+     kappa=sqrt(kappa2/EPSW)
+     ncyz=ncly*nclz
+     nc3=nclx*ncyz
+@@ -3612,7 +3636,10 @@
+     !     M = smoothing function      : within the dielectric boundary
+     !     M = 1                       : outside solute
+ 
+-    IF((EPSW.eq.EPSP).and.(KAPPA.eq.ZERO)) RETURN 
++    IF((EPSW.eq.EPSP).and.(KAPPA.eq.ZERO)) THEN
++       CALL PB_STAGE_TIME('MAYER',PB_STAGE_START)
++       RETURN
++    ENDIF
+     !wi,bug      IF(EPSW.eq.EPSP) RETURN
+ 
+     IF(.not.QSMTH) then
+@@ -3679,6 +3706,7 @@
+       
+     ! write(*,*) "QC> Mayer: Done"
+     !
++    CALL PB_STAGE_TIME('MAYER',PB_STAGE_START)
+     RETURN
+   END SUBROUTINE MAYER
+ 
+@@ -4243,6 +4271,7 @@
+     use parallel
+     use rndnum
+     implicit none
++    REAL(KIND=8) :: PB_DETAIL_START
+     INTEGER  NTPRP,LSTPRP(*)
+     INTEGER  NCLX,NCLY,NCLZ,MAPT
+     REAL(CHM_REAL4)   RMAY(*),RMAYX(*),RMAYY(*),RMAYZ(*)
+@@ -4259,6 +4288,7 @@
+          xc1,yc1,zc1,dsq1
+ 
+     ! 
++    PB_DETAIL_START=PB_WALLTIME()
+     call chmalloc('pbeq.src','MAYER_REEN','LISTR',NTPRP,intg=LISTR)
+     call chmalloc('pbeq.src','MAYER_REEN','FISTR',NTPRP,crl=FISTR)
+ 
+@@ -4433,6 +4463,7 @@
+     call chmdealloc('pbeq.src','MAYER_REEN','LISTR',NTPRP,intg=LISTR)
+     call chmdealloc('pbeq.src','MAYER_REEN','FISTR',NTPRP,crl=FISTR)
+     !
++    CALL PB_STAGE_TIME('MAYER_REEN',PB_DETAIL_START)
+     RETURN
+   END SUBROUTINE MAYER_REEN
+ 
+@@ -5008,6 +5039,7 @@
+     use number
+     use consta
+     implicit none
++    REAL(KIND=8) :: PB_DETAIL_START
+     INTEGER  NTPRP,LSTPRP(*)
+     INTEGER  NCLX,NCLY,NCLZ,ONCLX,ONCLY,ONCLZ
+     REAL(CHM_REAL4)   OCHC(*),CHC(*)
+@@ -5026,6 +5058,7 @@
+     real(chm_real)   r2,sr2,xdiff,ydiff,zdiff
+     real(chm_real)   major2,minor2
+     !
++    PB_DETAIL_START=PB_WALLTIME()
+     ncyz =ncly*nclz
+     oncyz=oncly*onclz
+     otranx=half*(onclx-1)*odcel
+@@ -5132,6 +5165,7 @@
+        ENDDO
+     ENDIF
+     !
++    CALL PB_STAGE_TIME('MAYER_CD_TRIL',PB_DETAIL_START)
+     RETURN
+   END SUBROUTINE MAYER_CD_TRIL
+ 
+@@ -5148,6 +5182,7 @@
+     use number
+     use consta
+     implicit none
++    REAL(KIND=8) :: PB_DETAIL_START
+     INTEGER  NTPRP,LSTPRP(*)
+     INTEGER  NCLX,NCLY,NCLZ
+     REAL(CHM_REAL4)   RMAY(*),RMAYX(*),RMAYY(*),RMAYZ(*)
+@@ -5164,6 +5199,7 @@
+     real(chm_real)   sqr,sqrw,sqri
+     !
+     !wi      ncyz=nclx*ncly
++    PB_DETAIL_START=PB_WALLTIME()
+     ncyz=ncly*nclz
+     il_loop: do il=1,ntprp
+        i=lstprp(il)
+@@ -5293,6 +5329,7 @@
+        enddo
+     enddo il_loop
+     !
++    CALL PB_STAGE_TIME('MAYER_MSTEP',PB_DETAIL_START)
+     RETURN
+   END SUBROUTINE MAYER_MSTEP
+ 
+@@ -5701,9 +5738,31 @@
+     !     Half number of grid points is used for the Debye-Huckel approximation
+     !
+     use chm_kinds
++    USE STREAM, ONLY: OUTU,PRNLEV
++    use, intrinsic :: iso_c_binding, only: c_int,c_float,c_double,c_char,c_null_char
+     use number
+     use consta
+     implicit none
++    REAL(KIND=8) :: PB_BOUNDARY_START,PB_SUM_START,PB_INTERP_START
++    REAL(C_DOUBLE),ALLOCATABLE :: CUDA_X(:),CUDA_Y(:),CUDA_Z(:),CUDA_Q(:)
++    CHARACTER(LEN=32) :: CUDA_BACKEND
++    CHARACTER(LEN=1024) :: CUDA_MESSAGE
++    CHARACTER(KIND=C_CHAR) :: CUDA_ERROR(1024)
++    INTEGER :: CUDA_ENV_STATUS,CUDA_I,CUDA_ALLOC_STATUS
++    INTEGER(C_INT) :: CUDA_STATUS
++    LOGICAL :: QCUDA_BOUNDARY
++    INTERFACE
++       FUNCTION CHARMM_PB_BOUNDARY_CUDA(NX,NY,NZ,NS,H,EW,XS,YS,ZS,QS,P,ERR,ERRLEN) &
++            BIND(C,NAME='charmm_pb_boundary_cuda') RESULT(STATUS)
++          IMPORT C_INT,C_DOUBLE,C_FLOAT,C_CHAR
++          INTEGER(C_INT),VALUE :: NX,NY,NZ,NS,ERRLEN
++          REAL(C_DOUBLE),VALUE :: H,EW
++          REAL(C_DOUBLE),INTENT(IN) :: XS(*),YS(*),ZS(*),QS(*)
++          REAL(C_FLOAT) :: P(*)
++          CHARACTER(KIND=C_CHAR),INTENT(OUT) :: ERR(*)
++          INTEGER(C_INT) :: STATUS
++       END FUNCTION CHARMM_PB_BOUNDARY_CUDA
++    END INTERFACE
+     INTEGER  NTPRP,LSTPRP(*)
+     INTEGER  NCLX,NCLY,NCLZ,ONCLX,ONCLY,ONCLZ,NIMGB
+     REAL(CHM_REAL4)   PHI(*),CHC(*)
+@@ -5723,12 +5782,58 @@
+     real(chm_real)   major2,minor2
+     real(chm_real)   xbox,ybox
+     !
++    PB_BOUNDARY_START=PB_WALLTIME()
++    IF(CHM_REAL4.NE.C_FLOAT .OR. CHM_REAL.NE.C_DOUBLE .OR. KIND(NTPRP).NE.C_INT) THEN
++       WRITE(OUTU,*) 'PB boundary CUDA ABI kind mismatch'
++       ERROR STOP 91
++    ENDIF
++    CUDA_BACKEND='cuda'
++    CALL GET_ENVIRONMENT_VARIABLE('MUTABIND2_PB_BACKEND',CUDA_BACKEND,STATUS=CUDA_ENV_STATUS)
++    IF(CUDA_ENV_STATUS.EQ.1) CUDA_BACKEND='cuda'
++    IF(CUDA_ENV_STATUS.NE.0 .AND. CUDA_ENV_STATUS.NE.1) ERROR STOP 92
++    IF(TRIM(CUDA_BACKEND).NE.'cuda' .AND. TRIM(CUDA_BACKEND).NE.'cpu') ERROR STOP 93
++    QCUDA_BOUNDARY=TRIM(CUDA_BACKEND).EQ.'cuda' .AND. KAPPA2.EQ.ZERO &
++         .AND. TMEMB.EQ.ZERO .AND. NIMGB.EQ.0 .AND. .NOT.QNPBC &
++         .AND. .NOT.QA .AND. .NOT.QB .AND. NTPRP.GE.0 &
++         .AND. MOD(NCLX,2).EQ.1 .AND. MOD(NCLY,2).EQ.1 .AND. MOD(NCLZ,2).EQ.1 &
++         .AND. NCLX.GE.5 .AND. NCLY.GE.5 .AND. NCLZ.GE.5
+     kappa=sqrt(kappa2/EPSW)
+     ncyz=ncly*nclz
+     oncyz=oncly*onclz
+     otranx=half*(onclx-1)*odcel
+     otrany=half*(oncly-1)*odcel
+     otranz=half*(onclz-1)*odcel
++    PB_SUM_START=PB_WALLTIME()
++    IF(QCUDA_BOUNDARY) THEN
++       ! Gate excludes special source distributions. Preserve LSTPRP order and
++       ! original double-precision coordinate transformation exactly.
++       ALLOCATE(CUDA_X(NTPRP),CUDA_Y(NTPRP),CUDA_Z(NTPRP),CUDA_Q(NTPRP),STAT=CUDA_ALLOC_STATUS)
++       IF(CUDA_ALLOC_STATUS.NE.0) ERROR STOP 94
++       DO IL=1,NTPRP
++          I=LSTPRP(IL)
++          CUDA_X(IL)=X(I)+TRANX-XBCEN
++          CUDA_Y(IL)=Y(I)+TRANY-YBCEN
++          CUDA_Z(IL)=Z(I)+TRANZ-ZBCEN
++          CUDA_Q(IL)=CG(I)
++       ENDDO
++       CUDA_ERROR=C_NULL_CHAR
++       FLUSH(OUTU)
++       CUDA_STATUS=CHARMM_PB_BOUNDARY_CUDA(NCLX,NCLY,NCLZ,NTPRP,DCEL,EPSW, &
++            CUDA_X,CUDA_Y,CUDA_Z,CUDA_Q,PHI,CUDA_ERROR,INT(SIZE(CUDA_ERROR),C_INT))
++       IF(CUDA_STATUS.NE.0) THEN
++          CUDA_MESSAGE=' '
++          DO CUDA_I=1,SIZE(CUDA_ERROR)
++             IF(CUDA_ERROR(CUDA_I).EQ.C_NULL_CHAR) EXIT
++             CUDA_MESSAGE(CUDA_I:CUDA_I)=CUDA_ERROR(CUDA_I)
++          ENDDO
++          WRITE(OUTU,*) 'PB boundary CUDA failed: ',CUDA_STATUS,TRIM(CUDA_MESSAGE)
++          FLUSH(OUTU)
++          ERROR STOP 95
++       ENDIF
++       DEALLOCATE(CUDA_X,CUDA_Y,CUDA_Z,CUDA_Q)
++       IF(PRNLEV.GE.2) WRITE(OUTU,'(A,I10)') 'PBEQ_BOUNDARY_CUDA_SUCCESS sources=',NTPRP
++    ELSE
++       IF(PRNLEV.GE.2) WRITE(OUTU,*) 'MAYER_BP_INT boundary: original serial CPU path'
+     il_loop: do il=1,ntprp
+        IF(QA.AND.QB) THEN
+           ! to consider the boundary conditions of basis set charge distributions
+@@ -5903,6 +6008,9 @@
+           enddo
+        ENDIF
+     enddo il_loop
++    ENDIF
++    CALL PB_STAGE_TIME('BOUNDARY_SUM',PB_SUM_START)
++    PB_INTERP_START=PB_WALLTIME()
+ 
+     ! bilinear interpolation
+ 
+@@ -5978,6 +6086,8 @@
+     !    $             int(mod((ipo-1),ncyz)/nclz)+1,
+     !    $             mod(mod((ipo-1),ncyz),nclz)+1
+     !
++    CALL PB_STAGE_TIME('BOUNDARY_INTERPOLATE',PB_INTERP_START)
++    CALL PB_STAGE_TIME('MAYER_BP_INT',PB_BOUNDARY_START)
+     RETURN
+   END SUBROUTINE MAYER_BP_INT
+ 
+@@ -6674,11 +6784,13 @@
+     ! NOTE: CDEN and FKAPA already contained 4*pi/h and h*h, respectively.
+     !
+     use chm_kinds
++    use, intrinsic :: iso_c_binding, only: c_int,c_float,c_double,c_char,c_null_char
+     use memory
+     use stream
+     use consta
+     use number
+     implicit none
++    REAL(KIND=8) :: PB_STAGE_START
+     REAL(CHM_REAL4)  PHI(*),EPSX(*),EPSY(*),EPSZ(*),CDEN(*),FKAPA(*)
+     real(chm_real)  OMEGA,TOL,TMEMB,EPSW,EPSP,EPSM,KAPPA2
+     INTEGER IXMAX,IYMAX,IZMAX,IXMIN,IYMIN,IZMIN
+@@ -6689,7 +6801,67 @@
+     INTEGER NCYZ,NC3,N
+     INTEGER IG,JG,KG,IP0,IP0X,IP1X,IP2X,IP0Y,IP3Y,IP4Y,IP5Z,IP6Z
+     INTEGER KSW
+-    !
++    ! Only the original odd-grid nonperiodic checkerboard loop is offloaded.
++    LOGICAL QCUDA_NONPER
++    INTEGER CUDA_ENV_STATUS, CUDA_IZMIN_BASE, CUDA_IZMAX_BASE, CUDA_I
++    INTEGER(C_INT) CUDA_STATUS,CUDA_ITERATIONS
++    REAL(C_DOUBLE) CUDA_ANORM
++    REAL(C_DOUBLE),ALLOCATABLE :: CUDA_NORM_TRACE(:),CUDA_OMEGA_TRACE(:)
++    REAL(C_FLOAT),ALLOCATABLE :: CUDA_PHI_TRACE(:)
++    INTEGER CUDA_TRACE_ALLOC_STATUS
++    CHARACTER(LEN=32) CUDA_BACKEND
++    CHARACTER(LEN=1024) CUDA_MESSAGE
++    CHARACTER(KIND=C_CHAR) CUDA_ERROR(1024)
++    INTERFACE
++       FUNCTION CHARMM_PBEQ1_CUDA(NX,NY,NZ,IXLO,IXHI,IYLO,IYHI,IZLO,IZHI, &
++            MAXIT,OM,TOLERANCE,EW,RJ,P,EX,EY,EZ,C,F,IT,NORM,ERR,ERRLEN) &
++            BIND(C,NAME='charmm_pbeq1_cuda') RESULT(STATUS)
++          IMPORT C_INT,C_FLOAT,C_DOUBLE,C_CHAR
++          INTEGER(C_INT),VALUE :: NX,NY,NZ,IXLO,IXHI,IYLO,IYHI,IZLO,IZHI,MAXIT,ERRLEN
++          REAL(C_DOUBLE),VALUE :: OM,TOLERANCE,EW,RJ
++          REAL(C_FLOAT) :: P(*)
++          REAL(C_FLOAT),INTENT(IN) :: EX(*),EY(*),EZ(*),C(*),F(*)
++          INTEGER(C_INT),INTENT(OUT) :: IT
++          REAL(C_DOUBLE),INTENT(OUT) :: NORM
++          CHARACTER(KIND=C_CHAR),INTENT(OUT) :: ERR(*)
++          INTEGER(C_INT) :: STATUS
++       END FUNCTION CHARMM_PBEQ1_CUDA
++       FUNCTION CHARMM_PBEQ1_CUDA_TRACE(NX,NY,NZ,IXLO,IXHI,IYLO,IYHI,IZLO,IZHI, &
++            MAXIT,OM,TOLERANCE,EW,RJ,P,EX,EY,EZ,C,F,IT,NORM,ERR,ERRLEN,NORMS,OMEGAS,CENTERS,CAPACITY) &
++            BIND(C,NAME='charmm_pbeq1_cuda_trace') RESULT(STATUS)
++          IMPORT C_INT,C_FLOAT,C_DOUBLE,C_CHAR
++          INTEGER(C_INT),VALUE :: NX,NY,NZ,IXLO,IXHI,IYLO,IYHI,IZLO,IZHI,MAXIT,ERRLEN
++          REAL(C_DOUBLE),VALUE :: OM,TOLERANCE,EW,RJ
++          REAL(C_FLOAT) :: P(*)
++          REAL(C_FLOAT),INTENT(IN) :: EX(*),EY(*),EZ(*),C(*),F(*)
++          INTEGER(C_INT),INTENT(OUT) :: IT
++          REAL(C_DOUBLE),INTENT(OUT) :: NORM
++          CHARACTER(KIND=C_CHAR),INTENT(OUT) :: ERR(*)
++          INTEGER(C_INT),VALUE :: CAPACITY
++          REAL(C_DOUBLE),INTENT(OUT) :: NORMS(*),OMEGAS(*)
++          REAL(C_FLOAT),INTENT(OUT) :: CENTERS(*)
++          INTEGER(C_INT) :: STATUS
++       END FUNCTION CHARMM_PBEQ1_CUDA_TRACE
++    END INTERFACE
++    !
++    PB_STAGE_START=PB_WALLTIME()
++    IF(CHM_REAL4.NE.C_FLOAT .OR. CHM_REAL.NE.C_DOUBLE .OR. KIND(MAXITS).NE.C_INT) THEN
++       WRITE(OUTU,*) 'PBEQ CUDA ABI kind mismatch'
++       ERROR STOP 81
++    ENDIF
++    CUDA_BACKEND='cuda'
++    CALL GET_ENVIRONMENT_VARIABLE('MUTABIND2_PB_BACKEND',CUDA_BACKEND,STATUS=CUDA_ENV_STATUS)
++    IF(CUDA_ENV_STATUS.EQ.1) CUDA_BACKEND='cuda'
++    IF(CUDA_ENV_STATUS.NE.0 .AND. CUDA_ENV_STATUS.NE.1) THEN
++       WRITE(OUTU,*) 'Invalid MUTABIND2_PB_BACKEND environment value'
++       ERROR STOP 82
++    ENDIF
++    IF(TRIM(CUDA_BACKEND).NE.'cuda' .AND. TRIM(CUDA_BACKEND).NE.'cpu') THEN
++       WRITE(OUTU,*) 'MUTABIND2_PB_BACKEND must be cuda or cpu'
++       ERROR STOP 83
++    ENDIF
++    IF(TRIM(CUDA_BACKEND).EQ.'cpu' .AND. PRNLEV.GE.2) &
++         WRITE(OUTU,*) 'PBEQ1 backend: original serial CPU control'
+     NCyz=NCLy*NCLz
+     NC3=NCLx*NCyz
+ 
+@@ -6711,6 +6883,9 @@
+     ENDIF
+ 
+     KSW=1
++    IF(TRIM(CUDA_BACKEND).EQ.'cuda' .AND. (QPBC .OR. QNPBC)) THEN
++       IF(PRNLEV.GE.2) WRITE(OUTU,*) 'PBEQ1 backend: periodic mode, original serial CPU fallback'
++    ENDIF
+ 
+     IF(QPBC .AND. .NOT.QFOCUS  .AND. .NOT. QNPBC)THEN
+        !     -------------------------------------------------
+@@ -6958,6 +7133,87 @@
+           IXMAX=NCLx-1
+        ENDIF
+ 
++       ! Guard conditions match the validated OpenMP index mapping; no OpenMP
++       ! numerical path is included in this source. Unsupported modes keep CPU.
++       QCUDA_NONPER = .NOT.QPBC .AND. .NOT.QNPBC .AND. .NOT.QFOCUS &
++            .AND. TMEMB.EQ.ZERO .AND. MOD(NCLX,2).EQ.1 &
++            .AND. MOD(NCLY,2).EQ.1 .AND. MOD(NCLZ,2).EQ.1 &
++            .AND. NCLX.GE.5 .AND. NCLY.GE.5 .AND. NCLZ.GE.5
++       IF(IXMIN.LE.IXMAX) THEN
++          QCUDA_NONPER = QCUDA_NONPER &
++               .AND. IXMIN.GE.2 .AND. IXMAX.LE.NCLX-1 &
++               .AND. IYMIN.GE.2 .AND. IYMAX.LE.NCLY-1 &
++               .AND. IYMIN.LE.IYMAX &
++               .AND. MOD(IXMAX-IXMIN,2).EQ.0 &
++               .AND. MOD(IYMAX-IYMIN,2).EQ.0 &
++               .AND. MOD(IXMIN+IYMIN,2).EQ.0 &
++               .AND. IZMIN.GE.2 .AND. IZMAX.LE.NCLZ-1 &
++               .AND. IZMIN.LT.IZMAX &
++               .AND. MOD(IZMIN,2).EQ.0 .AND. MOD(IZMAX,2).EQ.1
++       ELSE
++          QCUDA_NONPER = QCUDA_NONPER .AND. IXMIN.EQ.NCLX &
++               .AND. IXMAX.EQ.NCLX-1
++       ENDIF
++       IF(TRIM(CUDA_BACKEND).EQ.'cuda' .AND. QCUDA_NONPER) THEN
++          IF(PRNLEV.GE.2) WRITE(OUTU,*) 'PBEQ1 backend: CUDA nonperiodic odd-grid path'
++          CUDA_IZMIN_BASE=IZMIN
++          CUDA_IZMAX_BASE=IZMAX
++          CUDA_ERROR=C_NULL_CHAR
++          IF(PRNLEV.GT.10) THEN
++             ALLOCATE(CUDA_NORM_TRACE(MAXITS),CUDA_OMEGA_TRACE(MAXITS),CUDA_PHI_TRACE(MAXITS), &
++                  STAT=CUDA_TRACE_ALLOC_STATUS)
++             IF(CUDA_TRACE_ALLOC_STATUS.NE.0) ERROR STOP 86
++             FLUSH(OUTU)
++             CUDA_STATUS=CHARMM_PBEQ1_CUDA_TRACE(NCLX,NCLY,NCLZ,IXMIN,IXMAX,IYMIN,IYMAX,IZMIN,IZMAX, &
++                  MAXITS,OMEGA,TOL,EPSW,RJAC,PHI,EPSX,EPSY,EPSZ,CDEN,FKAPA, &
++                  CUDA_ITERATIONS,CUDA_ANORM,CUDA_ERROR,INT(SIZE(CUDA_ERROR),C_INT), &
++                  CUDA_NORM_TRACE,CUDA_OMEGA_TRACE,CUDA_PHI_TRACE,MAXITS)
++          ELSE
++          CUDA_STATUS=CHARMM_PBEQ1_CUDA(NCLX,NCLY,NCLZ,IXMIN,IXMAX,IYMIN,IYMAX,IZMIN,IZMAX, &
++               MAXITS,OMEGA,TOL,EPSW,RJAC,PHI,EPSX,EPSY,EPSZ,CDEN,FKAPA, &
++               CUDA_ITERATIONS,CUDA_ANORM,CUDA_ERROR,INT(SIZE(CUDA_ERROR),C_INT))
++          ENDIF
++          IF(CUDA_STATUS.NE.0) THEN
++             CUDA_MESSAGE=' '
++             DO CUDA_I=1,SIZE(CUDA_ERROR)
++                IF(CUDA_ERROR(CUDA_I).EQ.C_NULL_CHAR) EXIT
++                CUDA_MESSAGE(CUDA_I:CUDA_I)=CUDA_ERROR(CUDA_I)
++             ENDDO
++             WRITE(OUTU,*) 'PBEQ CUDA failed: ',CUDA_STATUS,TRIM(CUDA_MESSAGE)
++             FLUSH(OUTU)
++             ERROR STOP 84
++          ENDIF
++          N=CUDA_ITERATIONS
++          ANORM=CUDA_ANORM
++          IF(N.LT.1 .OR. N.GT.MAXITS+1) ERROR STOP 85
++          IF(PRNLEV.GT.10) THEN
++             DO CUDA_I=1,MIN(N,MAXITS)
++                WRITE(OUTU,'(3x,A,2X,I5,4E11.4)') &
++                     'N,ANORM,DEPS,OMEGA,PHI',CUDA_I,CUDA_NORM_TRACE(CUDA_I),TOL, &
++                     CUDA_OMEGA_TRACE(CUDA_I),CUDA_PHI_TRACE(CUDA_I)
++             ENDDO
++             DEALLOCATE(CUDA_NORM_TRACE,CUDA_OMEGA_TRACE,CUDA_PHI_TRACE)
++             FLUSH(OUTU)
++          ENDIF
++          IF(PRNLEV.GE.2) THEN
++             IF(N.LE.MAXITS) THEN
++                WRITE(OUTU,'(A,I8,A,ES18.10)') &
++                     'PBEQ_CUDA_SUCCESS iterations=',N,' anorm=',ANORM
++             ELSE
++                WRITE(OUTU,'(A,I8,A,ES18.10)') &
++                     'PBEQ_CUDA_NOT_CONVERGED iterations=',N,' anorm=',ANORM
++             ENDIF
++          ENDIF
++          IF(IXMIN.LE.IXMAX) THEN
++             IZMIN=CUDA_IZMIN_BASE+MOD(MIN(N,MAXITS),2)
++             IZMAX=CUDA_IZMAX_BASE-MOD(MIN(N,MAXITS),2)
++          ENDIF
++          IF(N.LE.MAXITS) GOTO 19
++          GOTO 18
++       ELSEIF(TRIM(CUDA_BACKEND).EQ.'cuda') THEN
++          IF(PRNLEV.GE.2) WRITE(OUTU,*) 'PBEQ1 backend: unsupported CUDA bounds, original serial CPU fallback'
++       ENDIF
++
+        DO N=1,MAXITS
+           ANORM=ZERO
+ 
+@@ -7099,6 +7355,7 @@
+     ENDIF
+     !     -----
+ 
++18  CONTINUE
+     IF(PRNLEV.GE.2) WRITE(OUTU,'(3x,A,2X,2E13.6)') &
+          'Calculation not converged, MAXITS is too small ',ANORM,TOL
+ 
+@@ -7106,6 +7363,7 @@
+ 
+     OMEGA=OMEGA2
+ 
++    CALL PB_STAGE_TIME('PBEQ1',PB_STAGE_START)
+     IF(.not.QPRIN) RETURN
+     IF(PRNLEV.GE.2) WRITE(OUTU,'(3X,A,I5)') 'Number of iterations: ',N
+     !
+@@ -9226,6 +9484,7 @@
+     use param_store, only: set_param
+ 
+     implicit none
++    REAL(KIND=8) :: PB_STAGE_START
+ 
+     integer ntprp, lstprp(*)
+     integer NCLX,NCLY,NCLZ
+@@ -9244,6 +9503,7 @@
+     integer jx1,jx2,jy1,jy2,jz1,jz2,k,l,m,ipx,ipy,ipz,nfil
+     real(chm_real)  xc,yc,zc
+     !
++    PB_STAGE_START=PB_WALLTIME()
+     ncyz=ncly*nclz
+     enelp=zero
+     !
+@@ -9368,6 +9628,7 @@
+          'Electrostatic energy [KCAL/MOL] = ',ENELP
+ 
+     call set_param('ENPB',ENELP)
++    CALL PB_STAGE_TIME('DECOMP',PB_STAGE_START)
+     RETURN
+   END SUBROUTINE DECOMP
+   !
