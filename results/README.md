@@ -40,3 +40,5 @@ tar --zstd -xpf result-links.tar.zst -C restored
 结果包包括 `projects`、`workspaces`、`native-validation`、`validation`、`legacy-predictions`、`legacy-workspaces`、`toolchain-results` 和 `toolchain-validation` 八组。`excluded_non_results.json` 列出未公开的原生二进制、构建对象、完整 CHARMM 派生源码和原始绝对符号链接；它们均保留在本机完整安装中。结果之间的链接由上述补充包恢复，外部软件资源链接仍需用户自己的安装。软件安装资源不属于预测结果。
 
 结果中的绝对路径、时间和协议哈希是历史计算证据，保留原字节。它们不是当前机器的路径配置。旧目录 `/home/zek/mutabind2-tool` 的文件已迁入 `/home/zek/MutaBind2-GPU`；早期外部结果在本机 `projects/7mkj_rpod` 与 `projects/legacy_workspaces` 下有完整副本。使用迁移后的软件创建新任务；不要把历史停止的过渡扫描直接重启，否则会重复计算已并入合并表的突变。
+
+两份分析目录的可安装依赖清单已将 Pillow 更新至 13.0.0。原始分析环境版本单独保存在各目录的 `historical_environment.freeze` 和原始归档中；相关说明见各目录的 `ENVIRONMENT.md`。

@@ -43,3 +43,5 @@ Security-Sensitive: YES. Reviewed by the primary Codex task. Scope: native-build
 | A10 SSRF | No server-side network request feature added. |
 
 Review status: PASS for the supported Linux deployment and published code/results. This review does not audit the full proprietary native toolchain. Validation is recorded in `validation/release_2.1.0_checks.json` and the release asset manifests.
+
+Publication follow-up: GitHub identified Pillow advisories in two copied historical plotting-environment manifests. The installable lists now pin Pillow 13.0.0; both complete pinned lists pass pip-audit. Their original bytes remain in `historical_environment.freeze` and the immutable result archives. No prediction dependency, result or figure was changed. Security Review Status: ISSUES_FIXED for the newly published installable analysis manifests.
