@@ -1,0 +1,20 @@
+{
+  "stage": "paused",
+  "pid": 33279,
+  "error": "",
+  "scheduler": "pipeline",
+  "pipeline_status": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_cells/pipeline_status.json",
+  "updated_utc": "2026-10-30T06:06:29.844358+00:00",
+  "total": 1368,
+  "completed": 38,
+  "pending": 1330,
+  "batches": 72,
+  "batches_complete": 2,
+  "batch": 2,
+  "batch_mutations": 19,
+  "workspace": "/home/zek/mutabind2-tool/workspaces/7e0ce058d83ee6f8/batch_0002_attempt_001",
+  "active_pid": null,
+  "native_stage": "",
+  "current_mutation": "T163R",
+  "completed_utc": null
+}

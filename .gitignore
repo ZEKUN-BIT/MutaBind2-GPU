@@ -35,3 +35,17 @@ build/
 dist/
 .coverage
 htmlcov/
+
+# Complete local deployment and original migration copies
+/local_archive/
+/release_assets/
+/bin/
+/databases
+/mutabind2_tool/engines/resources/*/pdb2crd
+/toolchain/*
+!/toolchain/vendor/
+!/toolchain/scripts/
+/toolchain/scripts/*
+!/toolchain/scripts/build_provean.sh
+/validation/*
+/scripts/migrate_directory.py

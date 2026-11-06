@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "dense_cases": 8,
+  "stable_selection_cases": 36,
+  "streaming_pairs": 17991001,
+  "capacity_and_rejection_checks": true
+}

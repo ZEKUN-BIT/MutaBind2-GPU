@@ -1,0 +1,15 @@
+{
+  "files": {
+    "/home/zek/mutabind2-tool/native_build/pipeline_memory_20261030/continue_scan.py": "0f8787e04c9e31016858061bf6a3baffee44964d299b6af7b5406ff3eb1022e7",
+    "/home/zek/mutabind2-tool/native_build/pipeline_memory_20261030/worker.py": "5ae3dd57e814614bb459884a0fb78c62da51e39df75d923c2d0f704cb4e60ba5",
+    "/home/zek/mutabind2-tool/native_build/pipeline_memory_20261030/recover.py": "f7268a8bd3d378f633420e6645589374d1061b56aa539d6e0ac16433968bb7d8",
+    "/home/zek/mutabind2-tool/native_build/pipeline_memory_20261030/memory_admission.py": "5ad83061fd70f11a5787f3153de4912964dd2588cdb9c802179931c4da406107",
+    "/home/zek/mutabind2-tool/projects/7mkj_256_374_20261102_inputs/run_pipeline.py": "7bc590684227736220b822c993036701e06aaa71ff72e4c6195c12ed803175b2",
+    "/home/zek/mutabind2-tool/projects/7mkj_256_374_20261102_inputs/run_prediction.sh": "d401b5e448f6b0efde082c64d350e43a126151a671fc4ddbb1ad55408f14f571"
+  },
+  "protocol_sha256": "c114ec8eb5d9b05e42e99c76a805a88f1d4e545659a0f5af4d94ccc6e4adf32e",
+  "deployed_utc": "2026-11-02T07:29:13.947320+00:00",
+  "scientific_package_unchanged": true,
+  "minimum_available_gib": 30,
+  "finish_current_batch_on_prefetch_failure": true
+}

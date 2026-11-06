@@ -1,0 +1,319 @@
+{
+  "stem": "fragments_ve41a",
+  "label": "fragments_ve41a",
+  "archived_inputs_verified": true,
+  "logged_results_identical": true,
+  "three_phi_files_bitwise_equal": true,
+  "phi_sha256": {
+    "baseline": {
+      "ga.phi": "94a4c86d3d55e9f5a37f415abb5c0178c99b0234d30eaa50df4844e89c996734",
+      "gab.phi": "d4dcf549e0cc68af48afc4ebe97fce290272891a7cbd0d124279c0489925c3e3",
+      "gb.phi": "77be93685ed15130f587dbf3b3504fe225ac60857e93093db5ada6d1f6070fd0"
+    },
+    "candidate": {
+      "ga.phi": "94a4c86d3d55e9f5a37f415abb5c0178c99b0234d30eaa50df4844e89c996734",
+      "gab.phi": "d4dcf549e0cc68af48afc4ebe97fce290272891a7cbd0d124279c0489925c3e3",
+      "gb.phi": "77be93685ed15130f587dbf3b3504fe225ac60857e93093db5ada6d1f6070fd0"
+    }
+  },
+  "backends": {
+    "baseline": {
+      "label": "warp_20261030_scan_mutant_baseline",
+      "executable": "/home/zek/mutabind2-tool/bin/charmm-pb-gpu",
+      "source_hashes": {
+        "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/jobout/fragments_ve41a_charmm.psf": "98277e6632b4f9c0e30ad809adb85c2120280a85c536d79f44dc0512779b837a",
+        "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/jobout/fragments_ve41a_min.crd": "f5426faa5957a5f50eb667cdc48c9d3171cd98c144718212dd84c09d04228bfc"
+      },
+      "timeout_seconds": 1800,
+      "address_limit_gib": 20,
+      "memory_reserve_gib": 10,
+      "threads": 1,
+      "require_gpu": true,
+      "returncode": 0,
+      "stopped_reason": null,
+      "wall_seconds": 75.02126687799955,
+      "values": {
+        "GAB": 1288745.19,
+        "GA": 204211.355,
+        "GB": 1084316.4,
+        "DELTAGELEC": 217.435
+      },
+      "normal": true,
+      "converged": true,
+      "iterations": [
+        1937,
+        1800,
+        1925
+      ],
+      "energies": [
+        1288745.19183,
+        204211.35487,
+        1084316.40476
+      ],
+      "grids": [
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ]
+      ],
+      "boxes": [
+        "Box in X from  -89.600 to   89.600",
+        "Box in Y from  -97.600 to   97.600",
+        "Box in Z from -100.800 to  100.800",
+        "Box in X from  -89.600 to   89.600",
+        "Box in Y from  -97.600 to   97.600",
+        "Box in Z from -100.800 to  100.800",
+        "Box in X from  -89.600 to   89.600",
+        "Box in Y from  -97.600 to   97.600",
+        "Box in Z from -100.800 to  100.800"
+      ],
+      "gpu_solves": 3,
+      "stage_seconds": {
+        "BOUNDARY_SUM": [
+          2.061212,
+          0.498397,
+          1.697463
+        ],
+        "BOUNDARY_INTERPOLATE": [
+          0.002251,
+          0.002226,
+          0.002276
+        ],
+        "MAYER_BP_INT": [
+          2.063492,
+          0.500646,
+          1.699764
+        ],
+        "MAYER_CD_TRIL": [
+          0.002953,
+          0.000516,
+          0.002707
+        ],
+        "MAYER_MSTEP": [
+          3.19967,
+          0.491632,
+          2.697662
+        ],
+        "REEN_CUDA_NEIGHBOR_PREP": [
+          3.376107,
+          0.106857,
+          2.396726
+        ],
+        "REEN_CUDA_PROBE_GRID": [
+          9.103097,
+          1.983693,
+          7.841874
+        ],
+        "REEN_CPU_FINAL_GRID": [
+          0.135101,
+          0.124819,
+          0.13615
+        ],
+        "MAYER_REEN": [
+          12.622138,
+          2.218346,
+          10.381606
+        ],
+        "MAYER": [
+          18.724922,
+          3.288855,
+          14.85946
+        ],
+        "PREP1": [
+          18.725434,
+          3.28903,
+          14.859693
+        ],
+        "PBEQ1": [
+          12.796524,
+          8.796132,
+          11.371409
+        ],
+        "DECOMP": [
+          0.004097,
+          0.00071,
+          0.003423
+        ]
+      },
+      "max_rss_gib": 4.440666198730469,
+      "sources_unchanged": true,
+      "reference": "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/reference_pb.log",
+      "comparison": {
+        "values_difference": {
+          "GAB": 0.0,
+          "GA": 0.0,
+          "GB": 0.0,
+          "DELTAGELEC": 0.0
+        },
+        "energies_difference": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "grids_equal": true,
+        "boxes_equal": true,
+        "iterations_equal": true
+      }
+    },
+    "candidate": {
+      "label": "warp_20261030_scan_mutant_candidate",
+      "executable": "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/bin/charmm",
+      "source_hashes": {
+        "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/jobout/fragments_ve41a_charmm.psf": "98277e6632b4f9c0e30ad809adb85c2120280a85c536d79f44dc0512779b837a",
+        "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/jobout/fragments_ve41a_min.crd": "f5426faa5957a5f50eb667cdc48c9d3171cd98c144718212dd84c09d04228bfc"
+      },
+      "timeout_seconds": 1800,
+      "address_limit_gib": 20,
+      "memory_reserve_gib": 10,
+      "threads": 1,
+      "require_gpu": true,
+      "returncode": 0,
+      "stopped_reason": null,
+      "wall_seconds": 62.01353997500064,
+      "values": {
+        "GAB": 1288745.19,
+        "GA": 204211.355,
+        "GB": 1084316.4,
+        "DELTAGELEC": 217.435
+      },
+      "normal": true,
+      "converged": true,
+      "iterations": [
+        1937,
+        1800,
+        1925
+      ],
+      "energies": [
+        1288745.19183,
+        204211.35487,
+        1084316.40476
+      ],
+      "grids": [
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ]
+      ],
+      "boxes": [
+        "Box in X from  -89.600 to   89.600",
+        "Box in Y from  -97.600 to   97.600",
+        "Box in Z from -100.800 to  100.800",
+        "Box in X from  -89.600 to   89.600",
+        "Box in Y from  -97.600 to   97.600",
+        "Box in Z from -100.800 to  100.800",
+        "Box in X from  -89.600 to   89.600",
+        "Box in Y from  -97.600 to   97.600",
+        "Box in Z from -100.800 to  100.800"
+      ],
+      "gpu_solves": 3,
+      "stage_seconds": {
+        "BOUNDARY_SUM": [
+          2.076246,
+          0.500428,
+          1.753016
+        ],
+        "BOUNDARY_INTERPOLATE": [
+          0.002264,
+          0.002246,
+          0.002241
+        ],
+        "MAYER_BP_INT": [
+          2.078543,
+          0.502699,
+          1.755283
+        ],
+        "MAYER_CD_TRIL": [
+          0.003024,
+          0.000516,
+          0.002729
+        ],
+        "MAYER_MSTEP": [
+          3.208578,
+          0.498935,
+          2.693842
+        ],
+        "REEN_CUDA_NEIGHBOR_PREP": [
+          3.402262,
+          0.108433,
+          2.444304
+        ],
+        "REEN_CUDA_PROBE_GRID": [
+          2.225714,
+          1.176932,
+          2.072214
+        ],
+        "REEN_CPU_FINAL_GRID": [
+          0.13435,
+          0.126028,
+          0.132562
+        ],
+        "MAYER_REEN": [
+          5.770075,
+          1.414267,
+          4.655786
+        ],
+        "MAYER": [
+          11.898542,
+          2.494302,
+          9.187364
+        ],
+        "PREP1": [
+          11.899052,
+          2.494478,
+          9.187594
+        ],
+        "PBEQ1": [
+          12.772438,
+          8.76921,
+          11.374635
+        ],
+        "DECOMP": [
+          0.003997,
+          0.000649,
+          0.003509
+        ]
+      },
+      "max_rss_gib": 4.437705993652344,
+      "sources_unchanged": true,
+      "reference": "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/reference_pb.log",
+      "comparison": {
+        "values_difference": {
+          "GAB": 0.0,
+          "GA": 0.0,
+          "GB": 0.0,
+          "DELTAGELEC": 0.0
+        },
+        "energies_difference": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "grids_equal": true,
+        "boxes_equal": true,
+        "iterations_equal": true
+      }
+    }
+  }
+}

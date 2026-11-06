@@ -1,0 +1,21 @@
+{
+  "stage": "complete",
+  "pid": 1051578,
+  "error": "",
+  "started_utc": "2026-11-02T07:29:12.995211+00:00",
+  "updated_utc": "2026-11-03T17:04:34.152855+00:00",
+  "total": 2261,
+  "completed": 2261,
+  "pending": 0,
+  "batches": 119,
+  "batches_complete": 119,
+  "workspace": "/home/zek/mutabind2-tool/workspaces/681110607488f4d1/batch_0119_attempt_001",
+  "active_pid": null,
+  "native_stage": "",
+  "current_mutation": "A321R",
+  "scheduler": "pipeline",
+  "pipeline_status": "/home/zek/mutabind2-tool/projects/7mkj_256_374_20261102/pipeline_status.json",
+  "batch": 119,
+  "batch_mutations": 19,
+  "completed_utc": "2026-11-03T17:04:34.152820+00:00"
+}

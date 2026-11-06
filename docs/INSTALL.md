@@ -108,3 +108,7 @@ For full-sequence PROVEAN, prepare a one-chain FASTA whose positions agree with 
 ```
 
 All observed residues are checked against the supplied sequence. Numbering offsets, insertion codes and negative residue numbers require an explicit verified mapping before this workflow. Never reuse an existing cache directory after changing the database or native tools; see [known limitations](KNOWN_LIMITATIONS.md).
+
+## Later optimizations and complete results
+
+See [2.1.0 updates](UPDATES_20261106.md) for `pb-latest`, `vdw-gpu`, the resource-aware pipeline and mixed-case installation paths. Full result archives are indexed in [results](../results/README.md).

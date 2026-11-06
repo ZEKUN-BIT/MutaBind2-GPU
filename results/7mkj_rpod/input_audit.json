@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-20T05:24:20.489906+00:00",
+  "stage": "inputs_validated_pilot_pending",
+  "mutation_count": 8949,
+  "sites": 471,
+  "mode": "independent single substitutions",
+  "Partner1": "I_1.J_1",
+  "Partner2": "L_1",
+  "source_files": {
+    "/home/zek/文档/xwechat_files/wxid_69kyi54k2ghi22_5d83/msg/file/2026-10/7MKJ2610.pdb": {
+      "bytes": 1998357,
+      "sha256": "90c8214ac3b1e656b94a3e58bcd472e4f97615438b557352fbe73da0540d715b"
+    },
+    "/home/zek/文档/xwechat_files/wxid_69kyi54k2ghi22_5d83/msg/file/2026-10/RpoD_mutations_filtered.txt": {
+      "bytes": 80351,
+      "sha256": "fa40ecd3392917891568b11404a973910dac97cb0222fdaf4b62d3ea88990471"
+    }
+  },
+  "chains": {
+    "I_1": {
+      "complete_standard_residues": 1340,
+      "first": "2",
+      "last": "1341"
+    },
+    "J_1": {
+      "complete_standard_residues": 1336,
+      "first": "16",
+      "last": "1375"
+    },
+    "L_1": {
+      "complete_standard_residues": 471,
+      "first": "90",
+      "last": "611"
+    }
+  },
+  "all_wild_types_match": true,
+  "input_table": "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/inputs/all_mutations.input",
+  "excluded_by_original_method": [
+    "HETATM small molecules",
+    "HETATM metals",
+    "unresolved and incomplete residues"
+  ],
+  "pilot_mutation": {
+    "PDBfile": "7MKJ2610.pdb",
+    "Partner1": "I_1.J_1",
+    "Partner2": "L_1",
+    "MutChain": "L_1",
+    "Mutation_PDB": "E90A",
+    "Result_Id": "1",
+    "isPI": "0"
+  }
+}

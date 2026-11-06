@@ -1,0 +1,15 @@
+{
+  "requested_utc": "2026-10-30T06:00:06.900104+00:00",
+  "preparation": {
+    "batch": 3,
+    "pid": 44888,
+    "workspace": "/home/zek/mutabind2-tool/workspaces/7e0ce058d83ee6f8/batch_0003_attempt_001",
+    "stage": "waiting_pipeline_energy",
+    "mutation": "D160A",
+    "energy_complete": 0
+  },
+  "activated_utc": "2026-10-30T06:06:41.856566+00:00",
+  "new_scan": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_gpu",
+  "protocol_sha256": "91c31d483e948c0a961e9f58690f29591132467dc7cbd7f35271e2cb3201cece",
+  "frozen_wt_preserved": true
+}

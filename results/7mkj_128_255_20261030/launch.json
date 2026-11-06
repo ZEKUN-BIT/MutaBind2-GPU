@@ -1,0 +1,14 @@
+{
+  "pid": 16551,
+  "command": [
+    "/home/zek/mutabind2-tool/mutabind2",
+    "scan",
+    "run",
+    "--resume",
+    "--output",
+    "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030"
+  ],
+  "started_utc": "2026-10-30T00:59:56.174454+00:00",
+  "output": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030",
+  "execution": "detached background scheduler; checkpoints saved after each batch"
+}

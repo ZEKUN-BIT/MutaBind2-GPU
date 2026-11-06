@@ -1,0 +1,68 @@
+{
+  "vmd": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/env/bin/vmd"
+  },
+  "charmm": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/bin/charmm"
+  },
+  "namd": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/toolchain/tools/namd2"
+  },
+  "dssp": {
+    "ok": true,
+    "path": "/usr/local/bin/mkdssp"
+  },
+  "provean": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/toolchain/external/provean-1.1.5-modern/bin/provean"
+  },
+  "foldx": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/toolchain/external/foldx5-20261231/foldx_20261231"
+  },
+  "rscript": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/env/bin/Rscript"
+  },
+  "R:randomForest": {
+    "ok": true
+  },
+  "R:forestFloor": {
+    "ok": true
+  },
+  "PROVEAN database": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/toolchain/databases/local_nr/nr"
+  },
+  "psiblast": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/toolchain/external/ncbi-blast-2.17.0+/bin/psiblast"
+  },
+  "blastdbcmd": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/toolchain/external/ncbi-blast-2.17.0+/bin/blastdbcmd"
+  },
+  "cd-hit": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/env/bin/cd-hit"
+  },
+  "provean_binary": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/toolchain/external/provean-1.1.5-modern/bin/provean"
+  },
+  "pb_executable": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/bin/charmm-pb-gpu-mstep"
+  },
+  "vdw_executable": {
+    "ok": true,
+    "path": "/home/zek/MutaBind2-GPU/bin/charmm-vdw-gpu-lists"
+  },
+  "NVIDIA GPU": {
+    "ok": true,
+    "detail": "NVIDIA GeForce RTX 5070 Ti, 16303 MiB"
+  }
+}

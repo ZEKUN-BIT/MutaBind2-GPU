@@ -1,0 +1,63 @@
+--- intere.F90
++++ intere.F90
+@@ -152,6 +152,7 @@
+   !     Jay L. Banks 19 October 1995: Added MMFF energy calls
+   !
+   use gbmv, only:rungbmv                          
++  use iso_c_binding, only:c_int,c_char
+   use chm_kinds
+   use dimens_fcm
+   use number
+@@ -201,6 +202,22 @@
+   use memory            
+ #endif
+   implicit none
++  integer :: mb_gpu_status,mb_gpu_env_status
++  logical :: mb_gpu_selected
++  character(len=16) :: mb_gpu_env
++  character(kind=c_char) :: mb_gpu_error(256)
++  interface
++     function mb_select_cuda(n,capacity,rows,pairs,sel,other,drows,dest,err,elen) &
++          bind(C,name='charmm_vdw_select_cuda') result(status)
++       import c_int,c_char
++       integer(c_int),value :: n,capacity,elen
++       integer(c_int),intent(in) :: rows(*),pairs(*),sel(*),other(*)
++       integer(c_int) :: drows(*),dest(*)
++       character(kind=c_char) :: err(*)
++       integer(c_int) :: status
++     end function
++  end interface
++
+ 
+   real(chm_real) X(*),Y(*),Z(*)
+   INTEGER ISLCT(*),JSLCT(*),ISKIP(*)
+@@ -541,6 +558,21 @@
+              write(OUTU,'(A)') ' MUTABIND2_VDW_COMPACT original-copy fallback'
+      endif
+ 
++     mb_gpu_selected=.false.
++     call get_environment_variable('MUTABIND2_VDW_GPU',mb_gpu_env,status=mb_gpu_env_status)
++     if(mb_compact.and.mb_gpu_env_status==0.and.mb_gpu_env=='1') then
++        mb_gpu_status=mb_select_cuda(NATOM,size(bnbndc%JNB),bnbnd%INBLO,bnbnd%JNB, &
++             ISLCT,JSLCT,bnbndc%INBLO,bnbndc%JNB,mb_gpu_error,256)
++        if(mb_gpu_status==0) then
++           mb_gpu_selected=.true.
++           bnbndc%INBLOG(1:NGRP)=0
++           write(OUTU,'(A,I0)') ' MBVDW_SELECT_CUDA_SUCCESS pairs=',bnbndc%INBLO(NATOM)
++        else
++           write(OUTU,'(A,I0,1X,256A)') ' MBVDW_SELECT_CUDA_ERROR ',mb_gpu_status,mb_gpu_error
++           error stop 106
++        endif
++     endif
++     if(.not.mb_gpu_selected) then
+      ! Inter3g added by Lazaridis, Apr 99
+      ! MULTE addition, June 2008 bt
+      IF (LGROUP) THEN
+@@ -574,6 +606,7 @@
+                 )
+         ENDIF
+      ENDIF
++     endif
+ #if KEY_GRID==1
+   EndIf   
+ #endif

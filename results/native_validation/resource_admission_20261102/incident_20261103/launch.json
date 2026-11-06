@@ -1,0 +1,10 @@
+{
+  "pid": 1051578,
+  "started_utc": "2026-11-03T10:34:50.540911+00:00",
+  "command": [
+    "bash",
+    "/home/zek/mutabind2-tool/native_build/resource_admission_20261102/resume.sh"
+  ],
+  "log": "/home/zek/mutabind2-tool/projects/7mkj_256_374_20261102_inputs/resource_admission_launcher.log",
+  "output": "/home/zek/mutabind2-tool/projects/7mkj_256_374_20261102"
+}

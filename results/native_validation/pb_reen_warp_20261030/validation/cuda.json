@@ -1,0 +1,2678 @@
+{
+  "case_count": 116,
+  "all_passed": true,
+  "library": "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/lib/libreen.so",
+  "library_sha256": "ce09d70529bccca00ce3b50615e98fd0140fb2a31b292a0d2e19ee17389ff1f5",
+  "acceptance": "Byte equality of all four grids both before and after original CPU cleanup; unchanged input geometry, neighbor lists and native RNG sphere points.",
+  "oracle": "Full original MAYER_REEN with fixed native-generated sphere points; original full neighbor scan and QCKSRT independent of candidate.",
+  "cases": [
+    {
+      "name": "single_center",
+      "qfkap": false,
+      "atoms": 1,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.1028307290007433,
+      "passed": true
+    },
+    {
+      "name": "single_center",
+      "qfkap": true,
+      "atoms": 1,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0025510040004519396,
+      "passed": true
+    },
+    {
+      "name": "far_separated",
+      "qfkap": false,
+      "atoms": 4,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0025429580000491114,
+      "passed": true
+    },
+    {
+      "name": "far_separated",
+      "qfkap": true,
+      "atoms": 4,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0026456440000401926,
+      "passed": true
+    },
+    {
+      "name": "overlap",
+      "qfkap": false,
+      "atoms": 4,
+      "mapt": 128,
+      "max_neighbors": 3,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0031965019998096977,
+      "passed": true
+    },
+    {
+      "name": "overlap",
+      "qfkap": true,
+      "atoms": 4,
+      "mapt": 128,
+      "max_neighbors": 3,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002482171999872662,
+      "passed": true
+    },
+    {
+      "name": "fully_buried",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003370441999322793,
+      "passed": true
+    },
+    {
+      "name": "fully_buried",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0024707409993425244,
+      "passed": true
+    },
+    {
+      "name": "near_touch_-inf",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.00257934799992654,
+      "passed": true
+    },
+    {
+      "name": "near_touch_-inf",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0025437089998376905,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_-inf",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002483244999893941,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_-inf",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002532930000597844,
+      "passed": true
+    },
+    {
+      "name": "near_touch_inf",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0033548229994266876,
+      "passed": true
+    },
+    {
+      "name": "near_touch_inf",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0025409039999431116,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_inf",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003246606999709911,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_inf",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002603384000394726,
+      "passed": true
+    },
+    {
+      "name": "exact_touch",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002555992999987211,
+      "passed": true
+    },
+    {
+      "name": "exact_touch",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0026088340000569588,
+      "passed": true
+    },
+    {
+      "name": "exact_axis_gate",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003231067000342591,
+      "passed": true
+    },
+    {
+      "name": "exact_axis_gate",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002573235999989265,
+      "passed": true
+    },
+    {
+      "name": "six_box_edges",
+      "qfkap": false,
+      "atoms": 6,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0025046360005944734,
+      "passed": true
+    },
+    {
+      "name": "six_box_edges",
+      "qfkap": true,
+      "atoms": 6,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002517248999538424,
+      "passed": true
+    },
+    {
+      "name": "negative_fractional_box",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002447697000206972,
+      "passed": true
+    },
+    {
+      "name": "negative_fractional_box",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002420525000161433,
+      "passed": true
+    },
+    {
+      "name": "selection_reordered_repeated",
+      "qfkap": false,
+      "atoms": 5,
+      "mapt": 128,
+      "max_neighbors": 3,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002542567999626044,
+      "passed": true
+    },
+    {
+      "name": "selection_reordered_repeated",
+      "qfkap": true,
+      "atoms": 5,
+      "mapt": 128,
+      "max_neighbors": 3,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002466683000420744,
+      "passed": true
+    },
+    {
+      "name": "guard_large_coordinate",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0008463600006507477,
+      "passed": true
+    },
+    {
+      "name": "guard_large_coordinate",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0025978930007113377,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_coordinate",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002528070000153093,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_coordinate",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0025329089994556853,
+      "passed": true
+    },
+    {
+      "name": "guard_small_radius",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022271569996519247,
+      "passed": true
+    },
+    {
+      "name": "guard_small_radius",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022493199994642055,
+      "passed": true
+    },
+    {
+      "name": "guard_large_radius",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002938019999419339,
+      "passed": true
+    },
+    {
+      "name": "guard_large_radius",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.00251191999996081,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_radius",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023941250001371372,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_radius",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 128,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003395029999410326,
+      "passed": true
+    },
+    {
+      "name": "random_0",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.004213316000459599,
+      "passed": true
+    },
+    {
+      "name": "random_0",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0030326400001285947,
+      "passed": true
+    },
+    {
+      "name": "random_1",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 3,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0037450350000654,
+      "passed": true
+    },
+    {
+      "name": "random_1",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 3,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003209336000509211,
+      "passed": true
+    },
+    {
+      "name": "random_2",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003507303000333195,
+      "passed": true
+    },
+    {
+      "name": "random_2",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003222770999855129,
+      "passed": true
+    },
+    {
+      "name": "random_3",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 21,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003277084999353974,
+      "passed": true
+    },
+    {
+      "name": "random_3",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 21,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0026226299996778835,
+      "passed": true
+    },
+    {
+      "name": "random_4",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0034110800006601494,
+      "passed": true
+    },
+    {
+      "name": "random_4",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002255510999930266,
+      "passed": true
+    },
+    {
+      "name": "random_5",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002241265000520798,
+      "passed": true
+    },
+    {
+      "name": "random_5",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023187719998531975,
+      "passed": true
+    },
+    {
+      "name": "random_6",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 18,
+      "buried_count": 7,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002391168999565707,
+      "passed": true
+    },
+    {
+      "name": "random_6",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 18,
+      "buried_count": 7,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002969239999401907,
+      "passed": true
+    },
+    {
+      "name": "random_7",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 19,
+      "buried_count": 3,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002310285999556072,
+      "passed": true
+    },
+    {
+      "name": "random_7",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 19,
+      "buried_count": 3,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022768620001443196,
+      "passed": true
+    },
+    {
+      "name": "random_8",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002266171999508515,
+      "passed": true
+    },
+    {
+      "name": "random_8",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022481770001832047,
+      "passed": true
+    },
+    {
+      "name": "random_9",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 6,
+      "buried_count": 3,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003454382999734662,
+      "passed": true
+    },
+    {
+      "name": "random_9",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 6,
+      "buried_count": 3,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023201950007205596,
+      "passed": true
+    },
+    {
+      "name": "random_10",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 8,
+      "buried_count": 2,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0032399649999206304,
+      "passed": true
+    },
+    {
+      "name": "random_10",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 8,
+      "buried_count": 2,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023658320005779387,
+      "passed": true
+    },
+    {
+      "name": "random_11",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022317359998851316,
+      "passed": true
+    },
+    {
+      "name": "random_11",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.00223949100018217,
+      "passed": true
+    },
+    {
+      "name": "random_12",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002250862000437337,
+      "passed": true
+    },
+    {
+      "name": "random_12",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002237797999441682,
+      "passed": true
+    },
+    {
+      "name": "random_13",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 2,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002312690000508155,
+      "passed": true
+    },
+    {
+      "name": "random_13",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 2,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0029500529999495484,
+      "passed": true
+    },
+    {
+      "name": "random_14",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023119190000215895,
+      "passed": true
+    },
+    {
+      "name": "random_14",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003194859000359429,
+      "passed": true
+    },
+    {
+      "name": "random_15",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 18,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022735450002073776,
+      "passed": true
+    },
+    {
+      "name": "random_15",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 18,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002204154000537528,
+      "passed": true
+    },
+    {
+      "name": "random_16",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022753390003344975,
+      "passed": true
+    },
+    {
+      "name": "random_16",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0032894589994612033,
+      "passed": true
+    },
+    {
+      "name": "random_17",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022603300003538607,
+      "passed": true
+    },
+    {
+      "name": "random_17",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022294110003713286,
+      "passed": true
+    },
+    {
+      "name": "random_18",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 18,
+      "buried_count": 9,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023940949995449046,
+      "passed": true
+    },
+    {
+      "name": "random_18",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 18,
+      "buried_count": 9,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023679249998167506,
+      "passed": true
+    },
+    {
+      "name": "random_19",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 16,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002278525000292575,
+      "passed": true
+    },
+    {
+      "name": "random_19",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 16,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002607250999972166,
+      "passed": true
+    },
+    {
+      "name": "random_20",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002359758999773476,
+      "passed": true
+    },
+    {
+      "name": "random_20",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002275479000672931,
+      "passed": true
+    },
+    {
+      "name": "random_21",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 6,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022746369995729765,
+      "passed": true
+    },
+    {
+      "name": "random_21",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 6,
+      "buried_count": 1,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023065690002113115,
+      "passed": true
+    },
+    {
+      "name": "random_22",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 8,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023817709998184,
+      "passed": true
+    },
+    {
+      "name": "random_22",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 8,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023783950000506593,
+      "passed": true
+    },
+    {
+      "name": "random_23",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002751815999545215,
+      "passed": true
+    },
+    {
+      "name": "random_23",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0027237730000706506,
+      "passed": true
+    },
+    {
+      "name": "random_24",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022270269992077374,
+      "passed": true
+    },
+    {
+      "name": "random_24",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002739131000453199,
+      "passed": true
+    },
+    {
+      "name": "random_25",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0027882140002475353,
+      "passed": true
+    },
+    {
+      "name": "random_25",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023641580000912654,
+      "passed": true
+    },
+    {
+      "name": "random_26",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0024050359998000204,
+      "passed": true
+    },
+    {
+      "name": "random_26",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003308504999949946,
+      "passed": true
+    },
+    {
+      "name": "random_27",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 17,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002264678999381431,
+      "passed": true
+    },
+    {
+      "name": "random_27",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 17,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022869010008435,
+      "passed": true
+    },
+    {
+      "name": "random_28",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.003084598999521404,
+      "passed": true
+    },
+    {
+      "name": "random_28",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002307409999957599,
+      "passed": true
+    },
+    {
+      "name": "random_29",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022654710001006606,
+      "passed": true
+    },
+    {
+      "name": "random_29",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002289175999976578,
+      "passed": true
+    },
+    {
+      "name": "random_30",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 18,
+      "buried_count": 10,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0031141449999267934,
+      "passed": true
+    },
+    {
+      "name": "random_30",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 18,
+      "buried_count": 10,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0024159069998859195,
+      "passed": true
+    },
+    {
+      "name": "random_31",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 9,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023041139993438264,
+      "passed": true
+    },
+    {
+      "name": "random_31",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 9,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.00229185099942697,
+      "passed": true
+    },
+    {
+      "name": "random_32",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002291019000040251,
+      "passed": true
+    },
+    {
+      "name": "random_32",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022707300004185527,
+      "passed": true
+    },
+    {
+      "name": "random_33",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 6,
+      "buried_count": 2,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0023354730001301505,
+      "passed": true
+    },
+    {
+      "name": "random_33",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 6,
+      "buried_count": 2,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022576960000151303,
+      "passed": true
+    },
+    {
+      "name": "random_34",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 7,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002460120999785431,
+      "passed": true
+    },
+    {
+      "name": "random_34",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 7,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002509775000362424,
+      "passed": true
+    },
+    {
+      "name": "random_35",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022314959996947437,
+      "passed": true
+    },
+    {
+      "name": "random_35",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002975963000608317,
+      "passed": true
+    },
+    {
+      "name": "random_36",
+      "qfkap": false,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.00223116500001197,
+      "passed": true
+    },
+    {
+      "name": "random_36",
+      "qfkap": true,
+      "atoms": 2,
+      "mapt": 1,
+      "max_neighbors": 1,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0029770440005449927,
+      "passed": true
+    },
+    {
+      "name": "random_37",
+      "qfkap": false,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 2,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002699385999221704,
+      "passed": true
+    },
+    {
+      "name": "random_37",
+      "qfkap": true,
+      "atoms": 7,
+      "mapt": 16,
+      "max_neighbors": 2,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002334411999981967,
+      "passed": true
+    },
+    {
+      "name": "random_38",
+      "qfkap": false,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022926419997020275,
+      "passed": true
+    },
+    {
+      "name": "random_38",
+      "qfkap": true,
+      "atoms": 19,
+      "mapt": 64,
+      "max_neighbors": 0,
+      "buried_count": 0,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002307911000571039,
+      "passed": true
+    },
+    {
+      "name": "random_39",
+      "qfkap": false,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 16,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.0022157459998197737,
+      "passed": true
+    },
+    {
+      "name": "random_39",
+      "qfkap": true,
+      "atoms": 37,
+      "mapt": 511,
+      "max_neighbors": 36,
+      "buried_count": 16,
+      "raw_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "final_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "readonly_arrays_unchanged": true,
+      "cuda_seconds": 0.002217207999819948,
+      "passed": true
+    }
+  ]
+}

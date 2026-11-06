@@ -1,0 +1,8 @@
+{
+  "pid": 101878,
+  "command": [
+    "/home/zek/mutabind2-tool/.env/bin/python",
+    "/home/zek/mutabind2-tool/native_build/pipeline_memory_20261030/continue_scan.py",
+    "run"
+  ]
+}

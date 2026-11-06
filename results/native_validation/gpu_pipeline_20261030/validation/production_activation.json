@@ -1,0 +1,61 @@
+{
+  "observed_utc": "2026-10-30T06:07:57.581619+00:00",
+  "mutation": "D160A",
+  "label": "fragments_de71a",
+  "energy_manifest": "/home/zek/mutabind2-tool/workspaces/f9fd313391b5721c/batch_0001_attempt_001/jobout/optimized_energy/fragments_de71a/manifest.json",
+  "status": "complete",
+  "processes": {
+    "vdw": {
+      "returncode": 0,
+      "wall_seconds": 10.009078694999516,
+      "threads": 1,
+      "address_limit_bytes": 21474836480,
+      "reserve_bytes": 10737418240,
+      "timeout_seconds": 1800
+    },
+    "pb": {
+      "returncode": 0,
+      "wall_seconds": 41.020977068999855,
+      "threads": 1,
+      "address_limit_bytes": 21474836480,
+      "reserve_bytes": 10737418240,
+      "timeout_seconds": 1800
+    }
+  },
+  "protocol_sha256": "91c31d483e948c0a961e9f58690f29591132467dc7cbd7f35271e2cb3201cece",
+  "loaded_libraries": {
+    "vdw": {
+      "pid": 55367,
+      "lines": [
+        "732078a00000-732078b19000 r--p 00000000 103:08 20054052                  /home/zek/mutabind2-tool/toolchain/external/charmm-vdw-cuda-lists/lib/libchmm.so",
+        "732078b19000-732079ad3000 r-xp 00119000 103:08 20054052                  /home/zek/mutabind2-tool/toolchain/external/charmm-vdw-cuda-lists/lib/libchmm.so",
+        "732079ad3000-732079e39000 r--p 010d3000 103:08 20054052                  /home/zek/mutabind2-tool/toolchain/external/charmm-vdw-cuda-lists/lib/libchmm.so",
+        "732079e39000-732079e4e000 r--p 01438000 103:08 20054052                  /home/zek/mutabind2-tool/toolchain/external/charmm-vdw-cuda-lists/lib/libchmm.so",
+        "732079e4e000-732079e79000 rw-p 0144d000 103:08 20054052                  /home/zek/mutabind2-tool/toolchain/external/charmm-vdw-cuda-lists/lib/libchmm.so"
+      ]
+    },
+    "pb": {
+      "pid": 55248,
+      "lines": [
+        "7fad5a400000-7fad5a51b000 r--p 00000000 103:08 20054049                  /home/zek/mutabind2-tool/toolchain/external/charmm-pb-cuda-mstep/lib/libchmm.so",
+        "7fad5a51b000-7fad5b52b000 r-xp 0011b000 103:08 20054049                  /home/zek/mutabind2-tool/toolchain/external/charmm-pb-cuda-mstep/lib/libchmm.so",
+        "7fad5b52b000-7fad5b8ae000 r--p 0112b000 103:08 20054049                  /home/zek/mutabind2-tool/toolchain/external/charmm-pb-cuda-mstep/lib/libchmm.so",
+        "7fad5b8ae000-7fad5b8c3000 r--p 014ae000 103:08 20054049                  /home/zek/mutabind2-tool/toolchain/external/charmm-pb-cuda-mstep/lib/libchmm.so",
+        "7fad5b8c3000-7fad5b8ee000 rw-p 014c3000 103:08 20054049                  /home/zek/mutabind2-tool/toolchain/external/charmm-pb-cuda-mstep/lib/libchmm.so"
+      ]
+    }
+  },
+  "frozen_coordinate_files_verified": 20,
+  "mstep_seconds": [
+    0.304731,
+    0.071906,
+    0.243149
+  ],
+  "production_combined_energy_seconds": 51.03005576399937,
+  "preserved_completed_predictions": 133,
+  "evidence_sha256": {
+    "vdw.log": "3a7c8d44ab23e6a0616dd12c16b698c952a78d7e671f27a8976b36148e469d67",
+    "pb.log": "7101aed955c367b62dc7a9031283856846d78d569e244e4283362edd1834930e",
+    "manifest.json": "abd799e350cdaa10b059f2097e442dd414f57fe25bc588191687b1e24b6767d0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "frozen_wt_files": 80,
+  "donated_coordinate_files": 20,
+  "previous_scans_stopped": true,
+  "continuation_scripts_pinned": true,
+  "actual_loaded_libraries_verified": true,
+  "protocol_sha256": "91c31d483e948c0a961e9f58690f29591132467dc7cbd7f35271e2cb3201cece"
+}

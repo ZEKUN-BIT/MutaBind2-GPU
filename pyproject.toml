@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mutabind2-gpu-local"
-version = "2.0.0"
+version = "2.1.0"
 description = "Unofficial GPU-accelerated MutaBind2 with CUDA PB, mutation scans and checkpoints"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -26,6 +26,9 @@ include = ["mutabind2_tool*"]
 
 [tool.setuptools.package-data]
 mutabind2_tool = ["core/*.R", "engines/resources/single/*", "engines/resources/multiple/*"]
+
+[tool.setuptools.exclude-package-data]
+mutabind2_tool = ["engines/resources/*/pdb2crd"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

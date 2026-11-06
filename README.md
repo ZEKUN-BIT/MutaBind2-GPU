@@ -4,6 +4,10 @@ MutaBind2-GPU 用蛋白质复合物结构预测氨基酸突变引起的结合亲
 
 这个版本沿用原版的随机森林模型，主要改进计算速度和批量任务的运行方式，没有重新训练预测模型。原方法、模型和上游版权声明均予以保留；本项目不属于原作者的官方发布。
 
+## 2.1.0 更新与计算结果
+
+已同步后续 REEN warp/空间索引、PB MSTEP、VDW GPU 构表、批次预取及内存等待恢复改进。可重建的最新后端和运行方法见 [更新说明](docs/UPDATES_20261106.md)。预测表与分析见 [计算结果](results/README.md)，完整中间文件和验证记录通过 [Release 附件](https://github.com/ZEKUN-BIT/MutaBind2-GPU/releases/tag/v2.1.0) 分发。
+
 ## 这个版本改了什么
 
 - 为 CHARMM 中受支持的 PB SOR 网格迭代、边界电势求和，以及 REEN 探针计算和网格恢复加入 CUDA 加速。Fortran 接口会检查运行条件，不支持时回退到 CPU，并在日志中说明。

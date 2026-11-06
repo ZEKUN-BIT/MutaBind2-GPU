@@ -1,0 +1,16 @@
+{
+  "new_baseline_complete": true,
+  "same_new_geometry_old_and_new_backend_logged_results_identical": true,
+  "gpu_success_counts": {
+    "PBEQ_REEN_CUDA_SUCCESS": 3,
+    "PBEQ_BOUNDARY_CUDA_SUCCESS": 3,
+    "PBEQ_CUDA_SUCCESS": 3
+  },
+  "new_pb_wall_seconds": 57.53310291700018,
+  "old_backend_on_same_new_geometry_pb_wall_seconds": 72.01602073599952,
+  "new_vdw_wall_seconds": 14.51081225300004,
+  "new_library_sha256": "492fbfadde7d41226d25a3656a7aef7d6fc94c0cd7f55b18ad4742bda504c71d",
+  "baseline_reconstruction_note": "New independent minimization produces slight coordinate differences; preserve separate baseline provenance for old 38 and new 1425 variants. Same-geometry backend recheck confirms these are not caused by REEN kernel changes.",
+  "old_wt_electrostatic_binding": 222.264,
+  "new_wt_electrostatic_binding": 222.226
+}

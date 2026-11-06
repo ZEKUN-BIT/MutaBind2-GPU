@@ -1,0 +1,282 @@
+{
+  "passed": true,
+  "cases": 46,
+  "tests": [
+    {
+      "name": "random_dense_0",
+      "active": true,
+      "atoms": 256,
+      "intersections": 518
+    },
+    {
+      "name": "permuted_0",
+      "active": true,
+      "atoms": 256,
+      "intersections": 518
+    },
+    {
+      "name": "random_dense_1",
+      "active": true,
+      "atoms": 288,
+      "intersections": 516
+    },
+    {
+      "name": "permuted_1",
+      "active": true,
+      "atoms": 288,
+      "intersections": 516
+    },
+    {
+      "name": "random_dense_2",
+      "active": true,
+      "atoms": 320,
+      "intersections": 754
+    },
+    {
+      "name": "permuted_2",
+      "active": true,
+      "atoms": 320,
+      "intersections": 754
+    },
+    {
+      "name": "random_dense_3",
+      "active": true,
+      "atoms": 352,
+      "intersections": 754
+    },
+    {
+      "name": "permuted_3",
+      "active": true,
+      "atoms": 352,
+      "intersections": 754
+    },
+    {
+      "name": "random_dense_4",
+      "active": true,
+      "atoms": 384,
+      "intersections": 974
+    },
+    {
+      "name": "permuted_4",
+      "active": true,
+      "atoms": 384,
+      "intersections": 974
+    },
+    {
+      "name": "random_dense_5",
+      "active": true,
+      "atoms": 416,
+      "intersections": 1104
+    },
+    {
+      "name": "permuted_5",
+      "active": true,
+      "atoms": 416,
+      "intersections": 1104
+    },
+    {
+      "name": "random_dense_6",
+      "active": true,
+      "atoms": 448,
+      "intersections": 1338
+    },
+    {
+      "name": "permuted_6",
+      "active": true,
+      "atoms": 448,
+      "intersections": 1338
+    },
+    {
+      "name": "random_dense_7",
+      "active": true,
+      "atoms": 480,
+      "intersections": 1564
+    },
+    {
+      "name": "permuted_7",
+      "active": true,
+      "atoms": 480,
+      "intersections": 1564
+    },
+    {
+      "name": "random_dense_8",
+      "active": true,
+      "atoms": 512,
+      "intersections": 1646
+    },
+    {
+      "name": "permuted_8",
+      "active": true,
+      "atoms": 512,
+      "intersections": 1646
+    },
+    {
+      "name": "random_dense_9",
+      "active": true,
+      "atoms": 544,
+      "intersections": 1882
+    },
+    {
+      "name": "permuted_9",
+      "active": true,
+      "atoms": 544,
+      "intersections": 1882
+    },
+    {
+      "name": "random_dense_10",
+      "active": true,
+      "atoms": 576,
+      "intersections": 2042
+    },
+    {
+      "name": "permuted_10",
+      "active": true,
+      "atoms": 576,
+      "intersections": 2042
+    },
+    {
+      "name": "random_dense_11",
+      "active": true,
+      "atoms": 608,
+      "intersections": 2556
+    },
+    {
+      "name": "permuted_11",
+      "active": true,
+      "atoms": 608,
+      "intersections": 2556
+    },
+    {
+      "name": "noncontiguous_selection",
+      "active": true,
+      "atoms": 512,
+      "intersections": 18778
+    },
+    {
+      "name": "faces_shift_0.0",
+      "active": true,
+      "atoms": 512,
+      "intersections": 9888
+    },
+    {
+      "name": "faces_shift_-999900.0",
+      "active": true,
+      "atoms": 512,
+      "intersections": 10506
+    },
+    {
+      "name": "faces_shift_999900.0",
+      "active": true,
+      "atoms": 512,
+      "intersections": 10234
+    },
+    {
+      "name": "radius_scale_0.0001",
+      "active": true,
+      "atoms": 512,
+      "intersections": 7082
+    },
+    {
+      "name": "radius_scale_1000.0",
+      "active": true,
+      "atoms": 512,
+      "intersections": 6816
+    },
+    {
+      "name": "over_512_intersections",
+      "active": true,
+      "atoms": 768,
+      "intersections": 589056
+    },
+    {
+      "name": "coincident_contained",
+      "active": true,
+      "atoms": 256,
+      "intersections": 65280
+    },
+    {
+      "name": "small_fallback",
+      "active": false,
+      "atoms": 255,
+      "intersections": 0
+    },
+    {
+      "name": "sparse_fallback",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "grid_size_fallback",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_radius_nan",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_radius_inf",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_radius_-2.0",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_radius_100000.0",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_coordinate_nan",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_coordinate_inf",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_coordinate_10000000.0",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_water_-1.0",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_water_nan",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_water_inf",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    },
+    {
+      "name": "invalid_index",
+      "active": false,
+      "atoms": 256,
+      "intersections": 0
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "bundle": "projects",
+    "files_verified": 3406,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": true
+  },
+  {
+    "bundle": "workspaces",
+    "files_verified": 6329,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": false
+  },
+  {
+    "bundle": "native-validation",
+    "files_verified": 484,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": true
+  },
+  {
+    "bundle": "validation",
+    "files_verified": 1013,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": false
+  },
+  {
+    "bundle": "legacy-predictions",
+    "files_verified": 590,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": true
+  },
+  {
+    "bundle": "legacy-workspaces",
+    "files_verified": 1833,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": false
+  },
+  {
+    "bundle": "toolchain-results",
+    "files_verified": 238,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": false
+  },
+  {
+    "bundle": "toolchain-validation",
+    "files_verified": 141,
+    "all_content_hashes_match": true,
+    "split_reassembly_verified": false
+  }
+]

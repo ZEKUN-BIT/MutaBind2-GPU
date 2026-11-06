@@ -15,3 +15,7 @@ Unsupported geometry/settings or exhausted REEN neighbor capacity use the checke
 The VDW optimization changes allocation size for disjoint, exhaustive partner selections while retaining pair generation/filtering and energy kernels. Unsupported settings use the original allocation path. It is a CPU/memory optimization, separate from CUDA PB acceleration.
 
 Use `scripts/build_native.py` from the repository root; see [installation instructions](../docs/INSTALL.md). It verifies original and patched file hashes and links against an existing CHARMM CMake build. All outputs go into a new directory. Source patching or compilation success alone does not establish numerical equivalence; run the comparison workflow with fixed geometries on your own installation.
+
+## Latest supported implementation
+
+`--kind pb-latest` adds the warp REEN implementation, ordered spatial candidates and compact MSTEP flags; `--kind vdw-gpu` adds GPU pair construction and stable selection. `latest_source_manifest.json` checks each incremental patch against the originally validated and final source bytes. See [2.1.0 update notes](../docs/UPDATES_20261106.md). Historical experiments and operational regression tests are preserved under `native_build/`; their large outputs are release assets.

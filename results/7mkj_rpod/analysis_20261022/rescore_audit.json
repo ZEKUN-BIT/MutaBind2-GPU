@@ -1,0 +1,9 @@
+{
+  "compared": 665,
+  "mismatches_after_original_two_decimal_rounding": [],
+  "max_difference_before_rounding": 0.004993385958933061,
+  "method": "Re-evaluated original random forest on saved physical features, compared after original two-decimal rounding; no native recomputation",
+  "all_native_batches_match_summary": true,
+  "no_negative_predictions": true,
+  "all_24_ge_1_5_interface_yes": true
+}

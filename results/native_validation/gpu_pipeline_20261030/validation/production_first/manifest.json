@@ -1,0 +1,186 @@
+{
+  "generation": "split-cold-sor-clcg4-v1",
+  "status": "complete",
+  "context": {
+    "generation": "split-cold-sor-clcg4-v1",
+    "implementation_sha256": "6d51fc5a5873c0f9a3148b6b4d4056ec1d4733a9c6bf628f0a74918a537a0380",
+    "workspace": "/home/zek/mutabind2-tool/workspaces/f9fd313391b5721c/batch_0001_attempt_001",
+    "stem": "fragments_de71a",
+    "label": "fragments_de71a",
+    "threads": 1,
+    "clcg_seeds": [
+      314159265,
+      22222222,
+      33333333,
+      44444444
+    ],
+    "runtime": {
+      "executable": "/home/zek/mutabind2-tool/bin/charmm-pb-gpu-mstep",
+      "target": "/home/zek/mutabind2-tool/toolchain/external/charmm-51/bin/charmm",
+      "pb_backend": "cuda",
+      "ld_library_path": "/home/zek/mutabind2-tool/toolchain/external/charmm-pb-cuda-mstep/lib:/usr/local/cuda/lib64:/home/zek/miniforge3/lib",
+      "files": {
+        "/home/zek/miniforge3/lib/././libz.so.1": "22f1601237b86f0f48ed5b83071d1505167ae2e16365b33b4eed6e96dbf71ab0",
+        "/home/zek/miniforge3/lib/./libopen-pal.so.40": "d5b8f88a56f3e0342f824c3e401a9afe6118d83479a9c4c5d449069e55c89dd4",
+        "/home/zek/miniforge3/lib/./libopen-rte.so.40": "0dc88aca74d5fc7174e454b4f3d981a08d8f7ad1bf350b7649ee4c98330ff346",
+        "/home/zek/miniforge3/lib/./libquadmath.so.0": "5391fc55ee01d145b951b472b31095223efd5fa419e9dfb2924aaaf5f5bb695e",
+        "/home/zek/miniforge3/lib/libgcc_s.so.1": "610cb43df7e282a0468ec448bb6c5d5a0d42e634d9e923ce52fd534cbfeb4ed2",
+        "/home/zek/miniforge3/lib/libgfortran.so.5": "6b991565953897e33f5d220abfcd1515b0cd3a90a483d4e836a49b3ab6d6d77c",
+        "/home/zek/miniforge3/lib/libgomp.so.1": "f97ff3634099ed2ded13e2da1e19472a20bc63e873007b764cccc532f542a451",
+        "/home/zek/miniforge3/lib/libmpi.so.40": "c8f93aa15211e6559e9dbbc56f0b3e60177c51fd8be35b17537ed62c181c05a6",
+        "/home/zek/miniforge3/lib/libmpi_mpifh.so.40": "55a1922146b696972b19529272b2aedccb465c378a97db9d34becc53116b58bb",
+        "/home/zek/miniforge3/lib/libmpi_usempi_ignore_tkr.so.40": "1d30ebaa32d4887f683f0b312c17e7f9600bfb0d3cfb523a7b1417815243e4cf",
+        "/home/zek/miniforge3/lib/libmpi_usempif08.so.40": "c7a5f367b462e874c6ee76564014a070a5f5c26696f608cbc6e7fbe53972d15c",
+        "/home/zek/miniforge3/lib/libstdc++.so.6": "43df50d580721fe5c0a0def95404157c81765da645900c59bd3cbed1ad9d3930",
+        "/home/zek/mutabind2-tool/bin/charmm-pb-gpu-mstep": "907f9aeaf41242890cf2d3edb1fd2afb7f558ca5af02f6f466ad78af2b1390fb",
+        "/home/zek/mutabind2-tool/toolchain/external/charmm-51/bin/charmm": "aae8783a50cddef8c15be41db0104696e0a336d761ff51821bd1548f6ede0076",
+        "/home/zek/mutabind2-tool/toolchain/external/charmm-pb-cuda-mstep/lib/libchmm.so": "bc6570e6202d4a682cce382c3e2edaebbb0e9a00eb497ecf3ac478627574f798",
+        "/lib64/ld-linux-x86-64.so.2": "bda779ea9e9ad234f60315477d7cfd0bdde861cd8ddd9df8cdaf62f18c4cec14",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6": "85e64f97e348786a8fb4d9f3d52fec289e2fb86bba20f0731dfe61990525e0f7",
+        "/usr/lib/x86_64-linux-gnu/libdl.so.2": "59d725ca30596a9863f4fa2552a7125f834842abc86b40890231c129358965d2",
+        "/usr/lib/x86_64-linux-gnu/libfftw3.so.3": "de77e73eb77a10462e27cb851c0a68e9064d0b6d72b90f6be3edcf64b6d2bdc7",
+        "/usr/lib/x86_64-linux-gnu/libfftw3f.so.3": "8fae0bc5d15b6caf5bb843f6a9328d2b08cd5440bef97722401cffdebc553611",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6": "1c488db6f4fe8cecb72456bc018de000b7a9b539c2994864b0416b5e8371b3d8",
+        "/usr/lib/x86_64-linux-gnu/libmvec.so.1": "2f2e7f4ad88e1b13f2f8345c826b25f85ba61c93527d91e59dd0d2943eac6e80",
+        "/usr/lib/x86_64-linux-gnu/libpthread.so.0": "1327fc40710691dbd94e88b6cf4efce27fefe8fbb93f7d1164a75b4dccaea696",
+        "/usr/lib/x86_64-linux-gnu/librt.so.1": "9f3cc59207bcaaac74aaf7aca961f4816f0f4d945e4bd1c3cb98ec516becf161",
+        "/usr/lib/x86_64-linux-gnu/libutil.so.1": "1d5fdfec85a9c4ca1e7a8c3125aac07c92d551b902a02fdd6bbdf8c66c9e4c4a",
+        "/usr/local/cuda/lib64/libcudart.so.13": "9955aa41ec390676be408b6c615f3d94f067f64cb756ef3cdf2b656ac2a81900"
+      }
+    },
+    "inputs": {
+      "jobout/fragments_de71a_charmm.psf": "193f1ac6bdfcb8d0c0a3c586bc896ff5a07eb09d4b1eddcf1d5bc25058618b53",
+      "jobout/fragments_de71a_min.crd": "c76e612dec5e8b94ef555f5a3660df8279fe59c9380486c3b8107fdc5738aa1e",
+      "jobout/energy_fragments_de71a.inp": "bb92391b280085b54a897f3c33e4a14b92dfc96671b117b96963f55abe22f341",
+      "sinputfiles/MutaBindS_forestFloor.R": "9851588ecde3400616fdf619d46f8363bc51b9f4fd66fffc471fe394592b08d4",
+      "sinputfiles/append.inp": "e51b2d0e279b1791679f3cff4b2a5a06460fd468c20f2e826e06667e852a629e",
+      "sinputfiles/charmm_to_namd.inp": "f68e4f5b77193d5c0e9ad32ca0500ba5ed7a0fd836cd1cb615a2a6bad5165e3f",
+      "sinputfiles/energy.inp": "e2be0511f98dd4ca286046da6511399eada05ccf48e71cbd1b8182864a8fb8ef",
+      "sinputfiles/frame.inp": "343bbeeb53c6b217c8ffc76a944868fb17d3ad0e7c6fbd38325e9b6becfd27e8",
+      "sinputfiles/interface.inp": "99982437d3179ab636717d885e8dd609e7312a05204220da273f00582c9a9e9c",
+      "sinputfiles/min.conf": "ef2e31322c3927479ad44cd57f1d6bcac53df49431be056cff38ae2a07a0380a",
+      "sinputfiles/mutabinds.RData": "b8d32b62fcfb894a01bb8a85fa7cd3d73de5ee6ba4b127ffc88325656e20e02f",
+      "sinputfiles/par_all36_prot.prm": "4c754774c995c242a79c55349b436d4dab9bba473a5cf5a0e4c72f4d2fc8f572",
+      "sinputfiles/pdb2crd": "f1d7e30caf0a9c3cbb93659553d4d7dd8c1986b157ad31167e7d487a8b9546e5",
+      "sinputfiles/pdb_distance_withH.inp": "a4b59aa606b21dc773fa80e7c6f1c7df67981762fbce7f9561de675c1ee8356c",
+      "sinputfiles/radii_prot_na_.str": "3f880aa8e507c89b39c5d60d4b91af80e3a7432567aa973ac96fbd52d4447e2a",
+      "sinputfiles/rest.pgn": "0351460c124d38b11126c0533849b2a9a45e9c6648030c6a4e38eb24d750b3b3",
+      "sinputfiles/sasa.str": "4f0bdf352ff31151adc162de4d3126bbc26ca3b12dbbdbc10001345e95ada4de",
+      "sinputfiles/setup.inp": "d8e8a6183942f4e6204f47a3a679368bbf01a94b4c3cd50e6759d74ed6c97392",
+      "sinputfiles/surface.inp": "6f576ab65daf428ef05e17f87d84bc718c9940c33110036803dde2df929ea2ff",
+      "sinputfiles/surface_residue.str": "269e6a402cb855f378e29caac77cbe45de9a5a7bb269ccda82a44bea2a257a28",
+      "sinputfiles/top_all36_prot.rtf": "f9350c50a534d076b8f1409db8b9c5da3d220ee9a9f8dfff241bc7f4ac398674",
+      "sinputfiles/toppar_water_ions.str": "eafb0efcf71ef34c2ac860311039318e10cecb96cc4ca23d9ed8e30499a12536",
+      "sinputfiles/vdw_pb.str": "a1a061243af743a9fcd4ed6a6ebb4619b00e88443831b995519833142d58f71c",
+      "sinputfiles/vmd.pgn": "74e665d07789703cc13f419ca9e80669ced20e6f999233da3e52bfea53f5d3b2"
+    },
+    "decks": {
+      "vdw": "f416910f004d11546f7a19e7fb0b7cb1fa32593ce4bb2a989670c74eb13aeb40",
+      "pb": "599829cf4815bf09f4b1767acfe9ce115ee28ae2499b74763e658ebd2b4e6aa1"
+    },
+    "vdw_runtime": {
+      "executable": "/home/zek/mutabind2-tool/bin/charmm-vdw-gpu-lists",
+      "target": "/home/zek/mutabind2-tool/toolchain/external/charmm-51/bin/charmm",
+      "pb_backend": "cpu",
+      "ld_library_path": "/home/zek/mutabind2-tool/toolchain/external/charmm-vdw-cuda-lists/lib:/usr/local/cuda/lib64:/home/zek/miniforge3/lib",
+      "files": {
+        "/home/zek/miniforge3/lib/././libz.so.1": "22f1601237b86f0f48ed5b83071d1505167ae2e16365b33b4eed6e96dbf71ab0",
+        "/home/zek/miniforge3/lib/./libopen-pal.so.40": "d5b8f88a56f3e0342f824c3e401a9afe6118d83479a9c4c5d449069e55c89dd4",
+        "/home/zek/miniforge3/lib/./libopen-rte.so.40": "0dc88aca74d5fc7174e454b4f3d981a08d8f7ad1bf350b7649ee4c98330ff346",
+        "/home/zek/miniforge3/lib/./libquadmath.so.0": "5391fc55ee01d145b951b472b31095223efd5fa419e9dfb2924aaaf5f5bb695e",
+        "/home/zek/miniforge3/lib/libgcc_s.so.1": "610cb43df7e282a0468ec448bb6c5d5a0d42e634d9e923ce52fd534cbfeb4ed2",
+        "/home/zek/miniforge3/lib/libgfortran.so.5": "6b991565953897e33f5d220abfcd1515b0cd3a90a483d4e836a49b3ab6d6d77c",
+        "/home/zek/miniforge3/lib/libgomp.so.1": "f97ff3634099ed2ded13e2da1e19472a20bc63e873007b764cccc532f542a451",
+        "/home/zek/miniforge3/lib/libmpi.so.40": "c8f93aa15211e6559e9dbbc56f0b3e60177c51fd8be35b17537ed62c181c05a6",
+        "/home/zek/miniforge3/lib/libmpi_mpifh.so.40": "55a1922146b696972b19529272b2aedccb465c378a97db9d34becc53116b58bb",
+        "/home/zek/miniforge3/lib/libmpi_usempi_ignore_tkr.so.40": "1d30ebaa32d4887f683f0b312c17e7f9600bfb0d3cfb523a7b1417815243e4cf",
+        "/home/zek/miniforge3/lib/libmpi_usempif08.so.40": "c7a5f367b462e874c6ee76564014a070a5f5c26696f608cbc6e7fbe53972d15c",
+        "/home/zek/miniforge3/lib/libstdc++.so.6": "43df50d580721fe5c0a0def95404157c81765da645900c59bd3cbed1ad9d3930",
+        "/home/zek/mutabind2-tool/bin/charmm-vdw-gpu-lists": "e6d8a2882ab099434cfde72c0621c7e37ba4276f0b1ff5174771538425787a32",
+        "/home/zek/mutabind2-tool/toolchain/external/charmm-51/bin/charmm": "aae8783a50cddef8c15be41db0104696e0a336d761ff51821bd1548f6ede0076",
+        "/home/zek/mutabind2-tool/toolchain/external/charmm-vdw-cuda-lists/lib/libchmm.so": "785801bd291e8a409360428d817bfb08a8da0b5a6e7804257c35446030e5aa4d",
+        "/lib64/ld-linux-x86-64.so.2": "bda779ea9e9ad234f60315477d7cfd0bdde861cd8ddd9df8cdaf62f18c4cec14",
+        "/usr/lib/x86_64-linux-gnu/libc.so.6": "85e64f97e348786a8fb4d9f3d52fec289e2fb86bba20f0731dfe61990525e0f7",
+        "/usr/lib/x86_64-linux-gnu/libdl.so.2": "59d725ca30596a9863f4fa2552a7125f834842abc86b40890231c129358965d2",
+        "/usr/lib/x86_64-linux-gnu/libfftw3.so.3": "de77e73eb77a10462e27cb851c0a68e9064d0b6d72b90f6be3edcf64b6d2bdc7",
+        "/usr/lib/x86_64-linux-gnu/libfftw3f.so.3": "8fae0bc5d15b6caf5bb843f6a9328d2b08cd5440bef97722401cffdebc553611",
+        "/usr/lib/x86_64-linux-gnu/libm.so.6": "1c488db6f4fe8cecb72456bc018de000b7a9b539c2994864b0416b5e8371b3d8",
+        "/usr/lib/x86_64-linux-gnu/libmvec.so.1": "2f2e7f4ad88e1b13f2f8345c826b25f85ba61c93527d91e59dd0d2943eac6e80",
+        "/usr/lib/x86_64-linux-gnu/libpthread.so.0": "1327fc40710691dbd94e88b6cf4efce27fefe8fbb93f7d1164a75b4dccaea696",
+        "/usr/lib/x86_64-linux-gnu/librt.so.1": "9f3cc59207bcaaac74aaf7aca961f4816f0f4d945e4bd1c3cb98ec516becf161",
+        "/usr/lib/x86_64-linux-gnu/libutil.so.1": "1d5fdfec85a9c4ca1e7a8c3125aac07c92d551b902a02fdd6bbdf8c66c9e4c4a",
+        "/usr/local/cuda/lib64/libcudart.so.13": "9955aa41ec390676be408b6c615f3d94f067f64cb756ef3cdf2b656ac2a81900"
+      }
+    }
+  },
+  "started_utc": "2026-10-30T06:07:05.528014+00:00",
+  "processes": {
+    "vdw": {
+      "returncode": 0,
+      "wall_seconds": 10.009078694999516,
+      "threads": 1,
+      "address_limit_bytes": 21474836480,
+      "reserve_bytes": 10737418240,
+      "timeout_seconds": 1800
+    },
+    "pb": {
+      "returncode": 0,
+      "wall_seconds": 41.020977068999855,
+      "threads": 1,
+      "address_limit_bytes": 21474836480,
+      "reserve_bytes": 10737418240,
+      "timeout_seconds": 1800
+    }
+  },
+  "audits": {
+    "vdw": {
+      "VDWENER": -414.362691
+    },
+    "pb": {
+      "GAB": 1288670.08,
+      "GA": 203937.932,
+      "GB": 1084511.43,
+      "DELTAGELEC": 220.718,
+      "iterations": [
+        1937,
+        1800,
+        1925
+      ],
+      "energies": [
+        1288670.07573,
+        203937.93212,
+        1084511.42886
+      ],
+      "grids": [
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ]
+      ],
+      "final_residuals": [
+        1.992e-06,
+        1.989e-06,
+        1.995e-06
+      ]
+    }
+  },
+  "artifacts": {
+    "vdw.inp": "f416910f004d11546f7a19e7fb0b7cb1fa32593ce4bb2a989670c74eb13aeb40",
+    "pb.inp": "599829cf4815bf09f4b1767acfe9ce115ee28ae2499b74763e658ebd2b4e6aa1",
+    "vdw.log": "3a7c8d44ab23e6a0616dd12c16b698c952a78d7e671f27a8976b36148e469d67",
+    "pb.log": "7101aed955c367b62dc7a9031283856846d78d569e244e4283362edd1834930e"
+  },
+  "merged_sha256": "7a0f13ed774a1350f2181d2cbbb3546224c60224337eca0f2846ecd7e20643f9",
+  "finished_utc": "2026-10-30T06:07:56.608500+00:00"
+}

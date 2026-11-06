@@ -1,0 +1,119 @@
+--- pbeq.F90
++++ pbeq.F90
+@@ -4263,6 +4263,7 @@
+     !------------------------------------------------------------------------
+     !     Molecular (contact+reentrance) surface
+     !
++    use mb_reen_cell_index,only:build_reen_cells
+     use clcg_mod,only:clcginit
+     use chm_kinds
+     USE STREAM, ONLY: OUTU,PRNLEV
+@@ -4282,7 +4283,9 @@
+     CHARACTER(LEN=32) :: CUDA_BACKEND
+     CHARACTER(LEN=1024) :: CUDA_MESSAGE
+     CHARACTER(KIND=C_CHAR) :: CUDA_ERROR(1024)
+-    LOGICAL :: QCUDA_REEN,QAXIS_SAFE
++    LOGICAL :: QCUDA_REEN,QAXIS_SAFE,QCELL_INDEX
++    INTEGER,ALLOCATABLE :: CELL_OFFSETS(:),CELL_CANDIDATES(:),ATOM_CELL(:)
++    INTEGER :: CELL_J,CELL_LIMIT,CELL_BEGIN
+     REAL(CHM_REAL) :: AXIS_CUTOFF
+     REAL(KIND=8) :: CUDA_PREP_START,CUDA_REEN_START
+     INTERFACE
+@@ -4371,6 +4374,10 @@
+           CUDA_ML=0
+           CUDA_NL=0
+           CUDA_NEIGHBORS=0
++          CALL BUILD_REEN_CELLS(NTPRP,LSTPRP,X,Y,Z,PBRAD,RADW, &
++               CELL_OFFSETS,CELL_CANDIDATES,ATOM_CELL,QCELL_INDEX)
++          IF(QCELL_INDEX.AND.PRNLEV.GE.2) &
++               WRITE(OUTU,'(A,I0)') 'PBEQ_REEN_CELL_CANDIDATES entries=',SIZE(CELL_CANDIDATES)
+           CUDA_PREP_ATOMS: DO IL=1,NTPRP
+              NL=0
+              I=LSTPRP(IL)
+@@ -4378,7 +4385,15 @@
+              YI=Y(I)
+              ZI=Z(I)
+              RANETI=PBRAD(I)+RADW
+-             DO JL=1,NTPRP
++             CELL_LIMIT=NTPRP
++             CELL_BEGIN=1
++             IF(QCELL_INDEX) THEN
++                CELL_BEGIN=CELL_OFFSETS(ATOM_CELL(IL))
++                CELL_LIMIT=CELL_OFFSETS(ATOM_CELL(IL)+1)-CELL_BEGIN
++             ENDIF
++             DO CELL_J=1,CELL_LIMIT
++                JL=CELL_J
++                IF(QCELL_INDEX) JL=CELL_CANDIDATES(CELL_BEGIN+CELL_J-1)
+                 IF(IL.EQ.JL) CYCLE
+                 J=LSTPRP(JL)
+                 XJ=X(J)
+@@ -4440,6 +4455,9 @@
+     ELSE
+        IF(PRNLEV.GE.2) WRITE(OUTU,*) 'MAYER_REEN: original serial CPU probe/grid path'
+     ENDIF
++    IF(ALLOCATED(CELL_OFFSETS)) DEALLOCATE(CELL_OFFSETS)
++    IF(ALLOCATED(CELL_CANDIDATES)) DEALLOCATE(CELL_CANDIDATES)
++    IF(ALLOCATED(ATOM_CELL)) DEALLOCATE(ATOM_CELL)
+     IF(ALLOCATED(CUDA_ML)) DEALLOCATE(CUDA_ML)
+     IF(ALLOCATED(CUDA_NL)) DEALLOCATE(CUDA_NL)
+     IF(ALLOCATED(CUDA_NEIGHBORS)) DEALLOCATE(CUDA_NEIGHBORS)
+@@ -5315,10 +5333,30 @@
+     !     M = 0 : inside solute
+     !         1 : outside solute
+     !
++    use iso_c_binding, only:c_int,c_double,c_float,c_char,c_null_char
++    use psf, only:natom
++    use stream, only:outu
+     use chm_kinds
+     use number
+     use consta
+     implicit none
++    INTEGER :: CUDA_STATUS,ENV_STATUS,CUDA_J
++    CHARACTER(LEN=16) :: CUDA_BACKEND,MSTEP_BACKEND
++    CHARACTER(KIND=C_CHAR) :: CUDA_ERROR(256)
++    INTERFACE
++       FUNCTION CHARMM_PB_MSTEP_CUDA(NX,NY,NZ,NA,NS,H,RW,RI,EP,TX,TY,TZ,BX,BY,BZ, &
++            QR,QK,SEL,XS,YS,ZS,RAD,G,GX,GY,GZ,ERR,ERRLEN) &
++            BIND(C,NAME='charmm_pb_mstep_cuda') RESULT(STATUS)
++          IMPORT C_INT,C_DOUBLE,C_FLOAT,C_CHAR
++          INTEGER(C_INT),VALUE :: NX,NY,NZ,NA,NS,QR,QK,ERRLEN
++          REAL(C_DOUBLE),VALUE :: H,RW,RI,EP,TX,TY,TZ,BX,BY,BZ
++          INTEGER(C_INT),INTENT(IN) :: SEL(*)
++          REAL(C_DOUBLE),INTENT(IN) :: XS(*),YS(*),ZS(*),RAD(*)
++          REAL(C_FLOAT) :: G(*),GX(*),GY(*),GZ(*)
++          CHARACTER(KIND=C_CHAR),INTENT(OUT) :: ERR(*)
++          INTEGER(C_INT) :: STATUS
++       END FUNCTION
++    END INTERFACE
+     REAL(KIND=8) :: PB_DETAIL_START
+     INTEGER  NTPRP,LSTPRP(*)
+     INTEGER  NCLX,NCLY,NCLZ
+@@ -5337,6 +5375,28 @@
+     !
+     !wi      ncyz=nclx*ncly
+     PB_DETAIL_START=PB_WALLTIME()
++    IF(CHM_REAL4.NE.C_FLOAT.OR.CHM_REAL.NE.C_DOUBLE.OR.KIND(NTPRP).NE.C_INT) ERROR STOP 101
++    CUDA_BACKEND='cuda'
++    CALL GET_ENVIRONMENT_VARIABLE('MUTABIND2_PB_BACKEND',CUDA_BACKEND,STATUS=ENV_STATUS)
++    IF(ENV_STATUS.NE.0) CUDA_BACKEND='cuda'
++    MSTEP_BACKEND='cuda'
++    CALL GET_ENVIRONMENT_VARIABLE('MUTABIND2_PB_MSTEP',MSTEP_BACKEND,STATUS=ENV_STATUS)
++    IF(ENV_STATUS.NE.0) MSTEP_BACKEND='cuda'
++    IF(TRIM(CUDA_BACKEND).EQ.'cuda'.AND.TRIM(MSTEP_BACKEND).NE.'cpu') THEN
++       CUDA_ERROR=C_NULL_CHAR
++       CUDA_STATUS=CHARMM_PB_MSTEP_CUDA(NCLX,NCLY,NCLZ,NATOM,NTPRP,DCEL,RADW,RADI,EPSP, &
++            TRANX,TRANY,TRANZ,XBCEN,YBCEN,ZBCEN,MERGE(1,0,QREEN),MERGE(1,0,QFKAP), &
++            LSTPRP,X,Y,Z,PBRAD,RMAY,RMAYX,RMAYY,RMAYZ,CUDA_ERROR,256)
++       IF(CUDA_STATUS.EQ.0) THEN
++          WRITE(OUTU,'(A)') ' PBEQ_MSTEP_CUDA_SUCCESS'
++          CALL PB_STAGE_TIME('MAYER_MSTEP',PB_DETAIL_START)
++          RETURN
++       ENDIF
++       WRITE(OUTU,'(A,I0,1X,256A)') ' PBEQ_MSTEP_CUDA_STATUS ',CUDA_STATUS, &
++            (CUDA_ERROR(CUDA_J),CUDA_J=1,256)
++       IF(CUDA_STATUS.NE.2) ERROR STOP 104
++    ENDIF
++
+     ncyz=ncly*nclz
+     il_loop: do il=1,ntprp
+        i=lstprp(il)

@@ -1,0 +1,42 @@
+{
+  "observed_utc": "2026-10-30T05:19:08.682742+00:00",
+  "mutation": "S133A",
+  "energy_manifest": "/home/zek/mutabind2-tool/workspaces/7e0ce058d83ee6f8/batch_0001_attempt_001/jobout/optimized_energy/fragments_se44a/manifest.json",
+  "status": "complete",
+  "processes": {
+    "vdw": {
+      "returncode": 0,
+      "wall_seconds": 15.510690586999772,
+      "threads": 1,
+      "address_limit_bytes": 21474836480,
+      "reserve_bytes": 10737418240,
+      "timeout_seconds": 1800
+    },
+    "pb": {
+      "returncode": 0,
+      "wall_seconds": 48.02329463299975,
+      "threads": 1,
+      "address_limit_bytes": 21474836480,
+      "reserve_bytes": 10737418240,
+      "timeout_seconds": 1800
+    }
+  },
+  "neighbor_seconds": [
+    0.856301,
+    0.07142,
+    0.714838
+  ],
+  "total_neighbor_seconds": 1.6425589999999999,
+  "cells_enabled_solves": 3,
+  "protocol_sha256": "172673a34af1402602decf096dfdb2e100b222e106b2405970a450a59d6321e4",
+  "preserved_completed_predictions": 95,
+  "preserved_donated_mutant_geometries": 19,
+  "evidence_sha256": {
+    "vdw.log": "b1cf3144931b50ff74e2789f68690261783ee9dbd96d59a4bcfdaba6961283ce",
+    "pb.log": "c2cfc58ae91d74b10309d0fa73b090ff6db65815090cb241074e272bb458e86a",
+    "manifest.json": "d0bfda498f71dfdae977d4f0ada01279fab35d2d8e606642d45b1a3c20a39db8"
+  },
+  "current_protocol_verified": true,
+  "frozen_coordinate_files_verified": 20,
+  "production_combined_energy_seconds": 63.53398521999952
+}

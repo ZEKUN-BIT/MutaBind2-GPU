@@ -1,0 +1,7 @@
+{
+  "SEQRES_length": 613,
+  "observed_residues_checked": 471,
+  "numbering_mismatches": [],
+  "source": "PDB SEQRES chain L",
+  "status": "all_observed_residues_match"
+}

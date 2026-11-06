@@ -1,0 +1,76 @@
+{
+  "n_predictions": 2261,
+  "n_sites": 119,
+  "substitutions_per_site": 19,
+  "position_range": [
+    256,
+    374
+  ],
+  "positive": 2195,
+  "negative": 62,
+  "zero_rounded": 4,
+  "mean": 0.44212737726669615,
+  "median": 0.41,
+  "min": -0.89,
+  "max": 2.23,
+  "descriptive_score_bands": {
+    "ddG <= -1.5": 0,
+    "-1.5 < ddG <= -0.5": 11,
+    "-0.5 < ddG < +0.5": 1381,
+    "+0.5 <= ddG < +1.5": 857,
+    "ddG >= +1.5": 12
+  },
+  "confidence_counts": {
+    "Low": 2242,
+    "High": 19
+  },
+  "interface_counts": {
+    "no": 2242,
+    "yes": 19
+  },
+  "near_truncated_terminus_predictions": 171,
+  "near_truncated_terminus_sites": [
+    "F256",
+    "K257",
+    "Q258",
+    "F259",
+    "R260",
+    "L261",
+    "G352",
+    "T354",
+    "Q357"
+  ],
+  "best_enhancement": {
+    "Result_Id": 373,
+    "Chain": "L",
+    "Mutation": "V275T",
+    "Status": "complete",
+    "DeltaDeltaG_kcal_mol": -0.89,
+    "Predicted_binding_effect": "stronger",
+    "Model_Interface": "no",
+    "Model_Confidence": "Low",
+    "PROVEAN": 1.709,
+    "PROVEAN_mode": "full",
+    "Truncated_terminus": 0,
+    "Near_truncated_terminus_10A": 0,
+    "Partner_min_heavy_distance_A": 14.9859,
+    "Structure_note": "auto_fragments_neutral_termini"
+  },
+  "strongest_weakening": {
+    "Result_Id": 1291,
+    "Chain": "L",
+    "Mutation": "N323P",
+    "Status": "complete",
+    "DeltaDeltaG_kcal_mol": 2.23,
+    "Predicted_binding_effect": "weaker",
+    "Model_Interface": "no",
+    "Model_Confidence": "Low",
+    "PROVEAN": -2.857,
+    "PROVEAN_mode": "full",
+    "Truncated_terminus": 0,
+    "Near_truncated_terminus_10A": 0,
+    "Partner_min_heavy_distance_A": 29.9021,
+    "Structure_note": "auto_fragments_neutral_termini"
+  },
+  "pipeline_completed_utc": "2026-11-03T17:04:34.153033+00:00"
+}

@@ -32,7 +32,7 @@ def limits():
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--kind', choices=['pb', 'vdw'], required=True)
+    parser.add_argument('--kind', choices=['pb', 'vdw', 'pb-latest', 'vdw-gpu'], required=True)
     parser.add_argument('--source', type=Path, required=True, help='licensed CHARMM source root')
     parser.add_argument('--build', type=Path, required=True, help='completed CMake Makefiles build directory')
     parser.add_argument('--executable', type=Path, required=True, help='matching CHARMM ELF executable')
@@ -53,11 +53,16 @@ def main():
     pb = ROOT/'native/pb'
     reen = ROOT/'native/reen'
     vdw = ROOT/'native/vdw'
+    latest = json.loads((ROOT/'native/latest_source_manifest.json').read_text())
+    is_pb = args.kind in ('pb', 'pb-latest')
+    uses_cuda = is_pb or args.kind == 'vdw-gpu'
     expected = {source/'source/misc/pbeq.F90': json.loads((pb/'bridge_source_manifest.json').read_text())['original_sha256']}
-    if args.kind == 'vdw':
+    if not is_pb:
         manifest = json.loads((vdw/'source_manifest.json').read_text())['files']
         expected = {source/'source'/directory/name: manifest[name]['original_sha256']
                     for name, directory in [('datstr.F90','util'), ('intere.F90','energy')]}
+        if args.kind == 'vdw-gpu':
+            expected[source/'source/nbonds/nbonda.F90'] = latest['nbonda.F90']['base_sha256']
     for path, checksum in expected.items():
         if digest(path) != checksum:
             raise ValueError(f'Unsupported CHARMM patch base: {path}; port and validate this release first')
@@ -70,7 +75,9 @@ def main():
     flags = [f for f in flags if f not in ('-O2','-O3') and not f.startswith('-J')]
     flags = ['-I'+str(output/'modules'), '-I'+str(build), '-J'+str(output/'modules'),
              *flags, '-O3', '-fno-fast-math', '-ffp-contract=off']
-    runtime = [output/'lib'] + ([cuda/'lib64'] if args.kind=='pb' else []) + [p.resolve() for p in args.runtime_lib]
+    if args.kind == 'vdw-gpu':
+        flags.append('-I'+str(source/'source/nbonds'))
+    runtime = [output/'lib'] + ([cuda/'lib64'] if uses_cuda else []) + [p.resolve() for p in args.runtime_lib]
     for path in [executable, *runtime]:
         if not re.fullmatch(r'/[A-Za-z0-9_./-]+', str(path)):
             raise ValueError('Executable and runtime library paths must be ASCII without spaces')
@@ -101,7 +108,7 @@ def main():
 
     try:
         cuda_objects = []
-        if args.kind == 'pb':
+        if is_pb:
             prepared = output/'pbeq.F90'
             shutil.copyfile(source/'source/misc/pbeq.F90',prepared)
             for n, patch in enumerate((pb/'pbeq_cuda_bridge.patch',reen/'reen_bridge.patch')):
@@ -109,24 +116,52 @@ def main():
             if digest(prepared) != json.loads((reen/'source_manifest.json').read_text())['candidate_sha256']:
                 raise ValueError('Patched PB source differs from validated candidate')
             replacements = {'pbeq.F90.o':output/'pbeq.F90.o'}
+            if args.kind == 'pb-latest':
+                if digest(prepared) != latest['pbeq.F90']['base_sha256']:
+                    raise ValueError('Latest PB patch base checksum mismatch')
+                run('patch_latest_pb', ['patch','--batch','--forward','--fuzz=0',
+                    str(prepared),str(ROOT/latest['pbeq.F90']['patch'])])
+                if digest(prepared) != latest['pbeq.F90']['candidate_sha256']:
+                    raise ValueError('Latest PB source checksum mismatch')
+                cells = output/'reen_cells.o'; cuda_objects.append(cells)
+                run('fortran_cells', [compiler,*flags,'-c',str(ROOT/'native/cells/reen_cells.f90'),
+                                      '-o',str(cells)], True)
             run('fortran_pb',[compiler,*flags,'-c',str(prepared),'-o',str(replacements['pbeq.F90.o'])],True)
-            for native in (pb/'pbeq_cuda.cu',pb/'pb_boundary_cuda.cu',reen/'pb_reen_cuda.cu'):
+            natives = [pb/'pbeq_cuda.cu',pb/'pb_boundary_cuda.cu',
+                       reen/('pb_reen_warp_cuda.cu' if args.kind == 'pb-latest' else 'pb_reen_cuda.cu')]
+            if args.kind == 'pb-latest':
+                natives.append(ROOT/'native/mstep/mstep_cuda.cu')
+            for native in natives:
                 obj = output/(native.stem+'.o'); cuda_objects.append(obj)
                 run(native.stem,[str(cuda/'bin/nvcc'),'--gpu-architecture='+args.arch,'--fmad=false',
                     '--ftz=false','-O3','-std=c++17','-Xcompiler=-fPIC','-Xcompiler=-ffp-contract=off',
                     '-c',str(native),'-o',str(obj)],True)
         else:
             replacements = {}
-            for name in ('datstr.F90','intere.F90'):
+            names = ['datstr.F90','intere.F90'] + (['nbonda.F90'] if args.kind == 'vdw-gpu' else [])
+            for name in names:
                 prepared = output/name
-                directory = 'util' if name == 'datstr.F90' else 'energy'
+                directory = {'datstr.F90':'util','intere.F90':'energy','nbonda.F90':'nbonds'}[name]
                 shutil.copyfile(source/'source'/directory/name, prepared)
-                run('patch_'+name, ['patch','--batch','--forward','--fuzz=0',
-                                   str(prepared),str(vdw/(name+'.patch'))])
-                if digest(prepared) != manifest[name]['candidate_sha256']:
-                    raise ValueError('VDW patch source checksum mismatch')
+                if name != 'nbonda.F90':
+                    run('patch_'+name, ['patch','--batch','--forward','--fuzz=0',
+                                       str(prepared),str(vdw/(name+'.patch'))])
+                    if digest(prepared) != manifest[name]['candidate_sha256']:
+                        raise ValueError('VDW patch source checksum mismatch')
+                if args.kind == 'vdw-gpu' and name != 'datstr.F90':
+                    if digest(prepared) != latest[name]['base_sha256']:
+                        raise ValueError('GPU VDW patch base checksum mismatch')
+                    run('patch_gpu_'+name, ['patch','--batch','--forward','--fuzz=0',
+                        str(prepared),str(ROOT/latest[name]['patch'])])
+                    if digest(prepared) != latest[name]['candidate_sha256']:
+                        raise ValueError('GPU VDW source checksum mismatch')
                 obj = output/(name+'.o'); replacements[name+'.o'] = obj
                 run(name,[compiler,*flags,'-c',str(prepared),'-o',str(obj)],True)
+            if args.kind == 'vdw-gpu':
+                obj = output/'pairs_cuda.o'; cuda_objects.append(obj)
+                run('pairs_cuda',[str(cuda/'bin/nvcc'),'--gpu-architecture='+args.arch,
+                    '--fmad=false','-O3','-std=c++17','-Xcompiler=-fPIC',
+                    '-c',str(vdw/'pairs_cuda.cu'),'-o',str(obj)],True)
         library = output/'lib/libchmm.so'
         argv=[]; replaced=set()
         for i, value in enumerate(link):
@@ -136,11 +171,15 @@ def main():
             elif value.startswith('-Wl,--dependency-file='): value='-Wl,--dependency-file='+str(output/'link.d')
             argv.append(value)
         if replaced != set(replacements): raise ValueError('Missing CHARMM objects in CMake link command')
-        if args.kind=='pb': argv += [*map(str,cuda_objects),'-L'+str(cuda/'lib64'),'-lcudart','-lstdc++']
+        if uses_cuda: argv += [*map(str,cuda_objects),'-L'+str(cuda/'lib64'),'-lcudart','-lstdc++']
         run('link',argv,True)
         ldpath = ':'.join(map(str,runtime))
         wrapper = output/'bin/charmm'
-        switch = 'MUTABIND2_PB_BACKEND=cuda' if args.kind=='pb' else 'MUTABIND2_VDW_COMPACT=1'
+        switch = 'MUTABIND2_PB_BACKEND=cuda' if is_pb else 'MUTABIND2_VDW_COMPACT=1'
+        if args.kind == 'pb-latest':
+            switch += '\nexport MUTABIND2_PB_MSTEP=cuda'
+        elif args.kind == 'vdw-gpu':
+            switch += '\nexport MUTABIND2_VDW_GPU=1'
         wrapper.write_text(f'#!/bin/sh\nset -eu\nexport LD_LIBRARY_PATH="{ldpath}"\n'
                            f'export OMP_NUM_THREADS=1\nexport {switch}\nexec "{executable}" "$@"\n')
         wrapper.chmod(0o755)

@@ -1,0 +1,1660 @@
+{
+  "case_count": 118,
+  "all_passed": true,
+  "backend": "cuda",
+  "scope": "Actual generated Fortran bridge with original neighbor preparation, native RNG and actual CUDA ABI; includes 513-neighbor slot-overflow fallback.",
+  "cases": [
+    {
+      "name": "single_center",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "single_center",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "far_separated",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "far_separated",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "overlap",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "overlap",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "fully_buried",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "fully_buried",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_touch_-inf",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_touch_-inf",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_-inf",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_-inf",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_touch_inf",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_touch_inf",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_inf",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "near_axis_gate_inf",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "exact_touch",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "exact_touch",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "exact_axis_gate",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "exact_axis_gate",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "six_box_edges",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "six_box_edges",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "negative_fractional_box",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "negative_fractional_box",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "selection_reordered_repeated",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "selection_reordered_repeated",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_large_coordinate",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_large_coordinate",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_coordinate",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_coordinate",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_small_radius",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_small_radius",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_large_radius",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_large_radius",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_radius",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "guard_edge_radius",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_0",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_0",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_1",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_1",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_2",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_2",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_3",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_3",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_4",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_4",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_5",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_5",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_6",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_6",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_7",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_7",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_8",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_8",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_9",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_9",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_10",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_10",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_11",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_11",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_12",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_12",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_13",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_13",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_14",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_14",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_15",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_15",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_16",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_16",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_17",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_17",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_18",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_18",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_19",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_19",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_20",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_20",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_21",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_21",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_22",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_22",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_23",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_23",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_24",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_24",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_25",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_25",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_26",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_26",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_27",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_27",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_28",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_28",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_29",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_29",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_30",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_30",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_31",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_31",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_32",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_32",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_33",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_33",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_34",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_34",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_35",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_35",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_36",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_36",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_37",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_37",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_38",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_38",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_39",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "random_39",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "actual_513_neighbor_fallback",
+      "qfkap": false,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    },
+    {
+      "name": "actual_513_neighbor_fallback",
+      "qfkap": true,
+      "four_grids_bitwise_equal": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "native_genpoint_bitwise_equal": true,
+      "point_array_tails_unchanged": true,
+      "native_rng_state_equal_after_single_generation": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "requested_utc": "2026-10-30T05:07:21.485311+00:00",
+  "preparation": {
+    "batch": 4,
+    "pid": 25637,
+    "workspace": "/home/zek/mutabind2-tool/workspaces/4df7beb74ca0a649/batch_0004_attempt_001",
+    "stage": "waiting_pipeline_energy",
+    "mutation": "S133A",
+    "energy_complete": 0
+  },
+  "activated_utc": "2026-10-30T05:17:26.508145+00:00",
+  "new_scan": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_cells",
+  "protocol_sha256": "172673a34af1402602decf096dfdb2e100b222e106b2405970a450a59d6321e4",
+  "frozen_wt_preserved": true
+}

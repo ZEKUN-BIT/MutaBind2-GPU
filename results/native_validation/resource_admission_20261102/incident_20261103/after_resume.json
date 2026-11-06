@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-11-03T10:36:48.957110+00:00",
+  "protected_files_unchanged": 239,
+  "completed_predictions_preserved": 1805,
+  "protocol_sha256": "c114ec8eb5d9b05e42e99c76a805a88f1d4e545659a0f5af4d94ccc6e4adf32e",
+  "scheduler_pid": 1051578,
+  "worker_pid": 1051754,
+  "worker_command": "/home/zek/mutabind2-tool/.env/bin/python -u /home/zek/mutabind2-tool/native_build/resource_admission_20261102/recover.py mutabind2_tool.scan.task --source /home/zek/mutabind2-tool/projects/7mkj_256_374_20261102/batches/batch_0096/batch.input --workspace /home/zek/mutabind2-tool/workspaces/681110607488f4d1/batch_0096_attempt_001 --parameters /home/zek/mutabind2-tool/projects/7mkj_256_374_20261102/batches/batch_0096/worker_parameters.json --config /home/zek/mutabind2-tool/projects/7mkj_256_374_20261102/config.snapshot.json --baseline /home/zek/mutabind2-tool/projects/7mkj_256_374_20261102/baseline ",
+  "native_resource_admission": {
+    "stage": "admitted",
+    "updated_utc": "2026-11-03T10:36:34.179820+00:00",
+    "stem": "fragments_ag78l",
+    "mode": "pb",
+    "host_minimum_bytes": 32212254720,
+    "host_available_bytes": 34162626560,
+    "gpu_minimum_bytes": 5368709120,
+    "gpu_available_bytes": 15726542848,
+    "gpu_retry_count": 0,
+    "wait_seconds": 0.017
+  },
+  "stage": "mutant_pb_energy_fragments_ag78l",
+  "tests_passed": 15
+}

@@ -70,7 +70,12 @@ def update(output, **changes):
 
 
 def workspace_root(output, explicit=None):
-    base = Path(explicit or os.environ.get('MUTABIND2_WORKSPACE_ROOT', TOOL_ROOT / 'workspaces')).expanduser().resolve()
+    configured = explicit or os.environ.get('MUTABIND2_WORKSPACE_ROOT')
+    base = Path(configured or TOOL_ROOT / 'workspaces').expanduser().resolve()
+    if configured is None and not re.fullmatch(r'/[a-z0-9_./-]+', str(base)):
+        # CHARMM lowercases input paths. A mixed-case checkout still needs a
+        # lowercase scratch directory independent of the installation path.
+        base = (Path.home() / '.cache/mutabind2/workspaces').resolve()
     if not re.fullmatch(r'/[a-z0-9_./-]+', str(base)):
         raise ValueError('Native scratch path must use lowercase ASCII without spaces; use --workspace-root')
     scan_id = hashlib.sha256(str(Path(output).resolve()).encode()).hexdigest()[:16]

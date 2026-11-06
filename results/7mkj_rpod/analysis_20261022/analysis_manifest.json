@@ -1,0 +1,40 @@
+{
+  "analysis_date": "2026-10-22",
+  "data_rows": 665,
+  "sites": 35,
+  "native_batches_reconciled": 35,
+  "native_predictions_rerun": false,
+  "model_rescoring_matches_at_2dp": 665,
+  "transforms": [
+    "preselected original-L ranges 375–390 and 435–453",
+    "descriptive per-site summaries of 19 substitutions",
+    "no imputation, smoothing, significance tests, or independent replicates"
+  ],
+  "plot": {
+    "file": "heatmap.png",
+    "pixels": [
+      2880,
+      1584
+    ],
+    "dpi": [
+      180.00979999999998,
+      180.00979999999998
+    ],
+    "palette": "YlOrBr",
+    "color_limits_kcal_mol": [
+      0,
+      2.5
+    ],
+    "wt_cells": "gray x, not calculated",
+    "threshold_markers": "unfilled circles for ddG>=1.5, not p-values",
+    "missing_glyph_warnings": false,
+    "visually_reviewed": true,
+    "alt_text": "Two heatmaps of RpoD substitutions across residues 375–390 and 435–453; all 665 binding ddG predictions are positive; 24 exceed or equal 1.5 kcal/mol, including 12 at I450."
+  },
+  "source_sha256": {
+    "selected_completed_predictions.tsv": "d2d057cdbbc75f029e6eacb51f3b5d6c7445f47e942c8b4145e0b6635fade5d8",
+    "selection_plan.json": "2a099ba572b32fca9ddc687383c18f4d3ffae0a5ba8a1b18ae224ba925bdb30e",
+    "site_annotations.tsv": "321f18048eefeeade59f0a96bf1e30405953a9b93932b6bc1d684706d465f1a5",
+    "batch_status.json": "e0e279dddebe8208d476dcba623e545ae0f0d1d748ca1d992ac2b93ff359c234"
+  }
+}

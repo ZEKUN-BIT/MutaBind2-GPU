@@ -1,0 +1,12 @@
+{
+  "stage": "complete",
+  "pid": 1051578,
+  "updated_utc": "2026-11-03T17:04:34.153033+00:00",
+  "energy": null,
+  "preparation": null,
+  "available_gib": 37.106,
+  "lowest_available_gib": 24.694,
+  "protocol_sha256": "c114ec8eb5d9b05e42e99c76a805a88f1d4e545659a0f5af4d94ccc6e4adf32e",
+  "depth": 2,
+  "energy_concurrency": 1
+}

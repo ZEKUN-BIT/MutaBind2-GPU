@@ -1,0 +1,17 @@
+{
+  "pbeq.F90": {
+    "base_sha256": "3f0675f60b41b65a4e75c51a7fcf4fc28140a18c40ed3aedbb7be4ef3ac3da2d",
+    "candidate_sha256": "4514d2fde2bfc0c2aa0e6281f256777ede18065ee742f5efe88d85bdba651d02",
+    "patch": "native/mstep/pbeq_latest.patch"
+  },
+  "intere.F90": {
+    "base_sha256": "7f9c65296d053e86b2379f4a6a1decbf00a55be79a8cc41005ae2e666bab27b9",
+    "candidate_sha256": "13ab25d812b94160006409829426ba92a6568a5e20674975792b729263535b6e",
+    "patch": "native/vdw/intere_gpu.patch"
+  },
+  "nbonda.F90": {
+    "base_sha256": "eabeca3a4319fe4797349837e440a1a74937178261ce02b28968715eb2999f85",
+    "candidate_sha256": "d79337441252b1ff67411d890cc7964709048f58ef5cde519186653fd032902e",
+    "patch": "native/vdw/nbonda_gpu.patch"
+  }
+}

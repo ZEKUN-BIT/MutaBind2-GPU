@@ -1,0 +1,18 @@
+{
+  "fragments_charmm.crd": {
+    "atoms": 49972,
+    "changed_atoms": 0,
+    "max_shift_A": 0.0,
+    "rms_shift_A": 0.0,
+    "heavy_max_shift_A": 0.0,
+    "heavy_rms_shift_A": 0.0
+  },
+  "fragments_min.crd": {
+    "atoms": 49972,
+    "changed_atoms": 49480,
+    "max_shift_A": 0.03829524513563552,
+    "rms_shift_A": 0.0003241682427810857,
+    "heavy_max_shift_A": 0.03829524513563552,
+    "heavy_rms_shift_A": 0.0003976886534824865
+  }
+}

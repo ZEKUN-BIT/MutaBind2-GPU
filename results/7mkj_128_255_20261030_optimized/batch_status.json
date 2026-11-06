@@ -1,0 +1,23 @@
+{
+  "stage": "paused",
+  "pid": 9732,
+  "error": "",
+  "started_utc": "2026-10-30T02:13:03.137764+00:00",
+  "updated_utc": "2026-10-30T05:17:14.520108+00:00",
+  "total": 1425,
+  "completed": 57,
+  "pending": 1368,
+  "batches": 75,
+  "batches_complete": 3,
+  "workspace": "/home/zek/mutabind2-tool/workspaces/4df7beb74ca0a649/batch_0003_attempt_002",
+  "active_pid": null,
+  "native_stage": "",
+  "current_mutation": "Q129R",
+  "batch": 3,
+  "batch_mutations": 19,
+  "scheduler": "pipeline",
+  "pipeline_status": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_optimized/pipeline_status.json",
+  "paused_utc": "2026-10-30T03:04:57.014097+00:00",
+  "pause_reason": "User requested immediate stop due to high CPU load",
+  "completed_utc": null
+}

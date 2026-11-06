@@ -1,0 +1,20 @@
+{
+  "source": "/home/zek/\u4e0b\u8f7d/256_374.txt",
+  "source_sha256": "a2e7f08fb5cfd1ff4f5e36f2403ed85e3c2560fba71ae1f6845abefa5e6597fc",
+  "mutations": 2261,
+  "sites": 119,
+  "chain": "L",
+  "position_range": [
+    256,
+    374
+  ],
+  "all_requested_WT_match_coordinates_and_full_sequence": true,
+  "partner1": [
+    "I",
+    "J"
+  ],
+  "partner2": [
+    "L"
+  ],
+  "prepared_only": true
+}

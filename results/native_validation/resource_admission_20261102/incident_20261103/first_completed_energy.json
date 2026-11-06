@@ -1,0 +1,50 @@
+{
+  "verified_utc": "2026-11-03T10:37:22.098072+00:00",
+  "mutation": "A319I",
+  "manifest": "/home/zek/mutabind2-tool/workspaces/681110607488f4d1/batch_0096_attempt_001/jobout/optimized_energy/fragments_ag78i/manifest.json",
+  "status": "complete",
+  "original_cache_and_log_validator_passed": true,
+  "audits": {
+    "vdw": {
+      "VDWENER": -417.137115
+    },
+    "pb": {
+      "GAB": 1289725.71,
+      "GA": 204095.957,
+      "GB": 1085418.56,
+      "DELTAGELEC": 211.193,
+      "iterations": [
+        1937,
+        1800,
+        1925
+      ],
+      "energies": [
+        1289725.70544,
+        204095.95661,
+        1085418.55991
+      ],
+      "grids": [
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ],
+        [
+          449,
+          489,
+          505
+        ]
+      ],
+      "final_residuals": [
+        1.997e-06,
+        1.992e-06,
+        1.995e-06
+      ]
+    }
+  }
+}

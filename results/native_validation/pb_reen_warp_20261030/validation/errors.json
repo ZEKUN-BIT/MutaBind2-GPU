@@ -1,0 +1,293 @@
+{
+  "case_count": 41,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "zero_dimension",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "negative_selected_count",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "zero_atom_count",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "zero_mapt",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "invalid_stride",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "invalid_qfkap",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "zero_spacing",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "nan_spacing",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "negative_probe_radius",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "nan_epsp",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "negative_rsmall",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "infinite_shift",
+      "status": 2,
+      "message": "REEN CUDA received invalid dimensions or geometry scalars",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "grid_integer_overflow",
+      "status": 2,
+      "message": "REEN CUDA grid exceeds CHARMM's 32-bit indexing",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unsafe_probe_spacing_ratio",
+      "status": 2,
+      "message": "REEN CUDA probe-to-grid ratio exceeds safe index bounds",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "unsafe_transformed_index",
+      "status": 2,
+      "message": "REEN CUDA transformed probe can exceed safe grid index bounds",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "selected_zero",
+      "status": 2,
+      "message": "REEN CUDA received an invalid atom identifier or ML/NL table",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "selected_outside",
+      "status": 2,
+      "message": "REEN CUDA received an invalid atom identifier or ML/NL table",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "negative_ml",
+      "status": 2,
+      "message": "REEN CUDA received an invalid atom identifier or ML/NL table",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "ml_exceeds_mapt",
+      "status": 2,
+      "message": "REEN CUDA received an invalid atom identifier or ML/NL table",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "invalid_nl",
+      "status": 2,
+      "message": "REEN CUDA received an invalid atom identifier or ML/NL table",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "nl_exceeds_stride",
+      "status": 2,
+      "message": "REEN CUDA received an invalid atom identifier or ML/NL table",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "buried_with_probes",
+      "status": 2,
+      "message": "REEN CUDA received an invalid atom identifier or ML/NL table",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "invalid_neighbor",
+      "status": 2,
+      "message": "REEN CUDA received an invalid neighbor atom identifier",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "nan_atom_coordinate",
+      "status": 2,
+      "message": "REEN CUDA received nonfinite atom coordinates/radius",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "infinite_atom_radius",
+      "status": 2,
+      "message": "REEN CUDA received nonfinite atom coordinates/radius",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "nan_probe_point",
+      "status": 2,
+      "message": "REEN CUDA received nonfinite probe coordinates",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_18",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_19",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_20",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_21",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_22",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_23",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_24",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_25",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_26",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_27",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_28",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_29",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_30",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_31",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    },
+    {
+      "name": "null_pointer_32",
+      "status": 2,
+      "message": "REEN CUDA received a null array pointer",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    }
+  ]
+}

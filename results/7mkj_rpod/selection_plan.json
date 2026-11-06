@@ -1,0 +1,223 @@
+{
+  "scope": "selected_ranges",
+  "residue_ranges": "375-390,435-453",
+  "chain": "L",
+  "numbering": "original PDB",
+  "full_requested": 8949,
+  "selected_sites": [
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453
+  ],
+  "selected_requested": 665,
+  "batch_count": 35,
+  "batches": [
+    {
+      "batch": 12,
+      "site": 449,
+      "mutations": 19
+    },
+    {
+      "batch": 35,
+      "site": 446,
+      "mutations": 19
+    },
+    {
+      "batch": 43,
+      "site": 453,
+      "mutations": 19
+    },
+    {
+      "batch": 48,
+      "site": 450,
+      "mutations": 19
+    },
+    {
+      "batch": 51,
+      "site": 452,
+      "mutations": 19
+    },
+    {
+      "batch": 61,
+      "site": 451,
+      "mutations": 19
+    },
+    {
+      "batch": 62,
+      "site": 377,
+      "mutations": 19
+    },
+    {
+      "batch": 63,
+      "site": 448,
+      "mutations": 19
+    },
+    {
+      "batch": 64,
+      "site": 384,
+      "mutations": 19
+    },
+    {
+      "batch": 72,
+      "site": 381,
+      "mutations": 19
+    },
+    {
+      "batch": 74,
+      "site": 380,
+      "mutations": 19
+    },
+    {
+      "batch": 94,
+      "site": 447,
+      "mutations": 19
+    },
+    {
+      "batch": 109,
+      "site": 445,
+      "mutations": 19
+    },
+    {
+      "batch": 110,
+      "site": 442,
+      "mutations": 19
+    },
+    {
+      "batch": 116,
+      "site": 376,
+      "mutations": 19
+    },
+    {
+      "batch": 144,
+      "site": 378,
+      "mutations": 19
+    },
+    {
+      "batch": 148,
+      "site": 441,
+      "mutations": 19
+    },
+    {
+      "batch": 154,
+      "site": 438,
+      "mutations": 19
+    },
+    {
+      "batch": 160,
+      "site": 436,
+      "mutations": 19
+    },
+    {
+      "batch": 165,
+      "site": 379,
+      "mutations": 19
+    },
+    {
+      "batch": 168,
+      "site": 387,
+      "mutations": 19
+    },
+    {
+      "batch": 172,
+      "site": 382,
+      "mutations": 19
+    },
+    {
+      "batch": 179,
+      "site": 389,
+      "mutations": 19
+    },
+    {
+      "batch": 184,
+      "site": 443,
+      "mutations": 19
+    },
+    {
+      "batch": 185,
+      "site": 390,
+      "mutations": 19
+    },
+    {
+      "batch": 187,
+      "site": 388,
+      "mutations": 19
+    },
+    {
+      "batch": 188,
+      "site": 383,
+      "mutations": 19
+    },
+    {
+      "batch": 192,
+      "site": 375,
+      "mutations": 19
+    },
+    {
+      "batch": 193,
+      "site": 385,
+      "mutations": 19
+    },
+    {
+      "batch": 195,
+      "site": 439,
+      "mutations": 19
+    },
+    {
+      "batch": 197,
+      "site": 444,
+      "mutations": 19
+    },
+    {
+      "batch": 211,
+      "site": 437,
+      "mutations": 19
+    },
+    {
+      "batch": 216,
+      "site": 435,
+      "mutations": 19
+    },
+    {
+      "batch": 223,
+      "site": 440,
+      "mutations": 19
+    },
+    {
+      "batch": 228,
+      "site": 386,
+      "mutations": 19
+    }
+  ]
+}

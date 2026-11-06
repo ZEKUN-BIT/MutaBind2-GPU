@@ -1,0 +1,48 @@
+{
+  "pid": 979938,
+  "argv": [
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/mutabind2/.env/bin/python",
+    "-u",
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/scripts/task_engine.py",
+    "--input",
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/inputs/fragmented/geometry_check.input",
+    "--workspace",
+    "/home/zek/mutabind2_runs/7mkj_rpod/geometry_neutral_01",
+    "--workers",
+    "2",
+    "--prepare-only"
+  ],
+  "selected": [
+    "E90A",
+    "E90G",
+    "E90P",
+    "D213P",
+    "H242P",
+    "S506A"
+  ],
+  "interior_interface": {
+    "original_chain": "L",
+    "original_number": "506",
+    "wild_type": "S",
+    "fragment_chain": "D",
+    "fragment_number": "506",
+    "cleaned_chain": "G",
+    "cleaned_number": "265",
+    "partner_IJ_min_heavy_atom_distance_A": "2.3176",
+    "any_gap_endpoint_min_heavy_atom_distance_A": "40.0209",
+    "rpod_gap_endpoint_min_heavy_atom_distance_A": "57.8801",
+    "gap_J_931_948_endpoint_min_heavy_atom_distance_A": "40.0209",
+    "gap_J_1126_1135_endpoint_min_heavy_atom_distance_A": "43.7406",
+    "gap_L_166_213_endpoint_min_heavy_atom_distance_A": "57.8801",
+    "gap_L_236_242_endpoint_min_heavy_atom_distance_A": "75.6096",
+    "is_internal_gap_endpoint": "0",
+    "within_10A_of_any_gap_endpoint": "0",
+    "within_10A_of_rpod_gap_endpoint": "0",
+    "within_10A_of_partner_IJ": "1",
+    "any_truncated_terminus_min_heavy_atom_distance_A": "34.3601",
+    "rpod_truncated_terminus_min_heavy_atom_distance_A": "34.3601",
+    "is_truncated_fragment_terminus": "0",
+    "within_10A_of_any_truncated_terminus": "0",
+    "within_10A_of_rpod_truncated_terminus": "0"
+  }
+}

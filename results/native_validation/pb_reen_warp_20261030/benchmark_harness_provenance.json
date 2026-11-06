@@ -1,0 +1,9 @@
+{
+  "source": "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/scripts/benchmark_pb.py",
+  "source_sha256": "6032bf885883a819dac47229dbc7bebb3ce20936a20c26f0faff65e5767eac44",
+  "changes": [
+    "Use blocking exclusive shared energy lock while scan continues.",
+    "Keep original TASK path after copying harness."
+  ],
+  "validator_source": "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/scripts/validate_reen_native.py"
+}

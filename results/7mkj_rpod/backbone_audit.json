@@ -1,0 +1,29 @@
+{
+  "backbone_discontinuities": [
+    {
+      "chain": "J",
+      "before": "931",
+      "after": "948",
+      "C_N_distance_A": 29.772
+    },
+    {
+      "chain": "J",
+      "before": "1126",
+      "after": "1135",
+      "C_N_distance_A": 22.244
+    },
+    {
+      "chain": "L",
+      "before": "166",
+      "after": "213",
+      "C_N_distance_A": 10.096
+    },
+    {
+      "chain": "L",
+      "before": "236",
+      "after": "242",
+      "C_N_distance_A": 3.297
+    }
+  ],
+  "count": 4
+}

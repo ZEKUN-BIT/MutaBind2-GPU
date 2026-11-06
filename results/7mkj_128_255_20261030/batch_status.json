@@ -1,0 +1,19 @@
+{
+  "stage": "paused",
+  "pid": 16551,
+  "error": "",
+  "started_utc": "2026-10-30T00:59:56.287718+00:00",
+  "updated_utc": "2026-10-30T02:13:02.101451+00:00",
+  "total": 1463,
+  "completed": 38,
+  "pending": 1425,
+  "batches": 77,
+  "batches_complete": 2,
+  "workspace": "/home/zek/mutabind2-tool/workspaces/524074c843019d44/batch_0002_attempt_001",
+  "active_pid": null,
+  "native_stage": "",
+  "current_mutation": "V134R",
+  "batch": 2,
+  "batch_mutations": 19,
+  "completed_utc": null
+}

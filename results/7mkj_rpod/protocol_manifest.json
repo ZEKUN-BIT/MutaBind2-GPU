@@ -1,0 +1,43 @@
+{
+  "updated_utc": "2026-10-20T06:32:55.378357+00:00",
+  "authorization": "那就继续利用现有结构进行预测",
+  "scope": "All 8949 independent single substitutions in original L chain; binding partner I+J",
+  "changes_from_original_protocol": [
+    "Seven continuous fragments without rebuilt missing residues",
+    "All 14 observed termini are truncations: ACE/ACP N caps and CT2 C caps",
+    "PROVEAN uses validated full 613-aa SEQRES sequence",
+    "One fixed WT geometry/energy baseline across batches",
+    "Residue-independent WT contact calculation reused with coordinate identity checks"
+  ],
+  "retained_protocol": [
+    "Original random forest model",
+    "CHARMM36 protein force field",
+    "Original 100 NAMD minimization steps and backbone restraints",
+    "Original 0.4-A PB grid, dielectric constants, solver tolerance and VDW settings"
+  ],
+  "output_scope": "Approximate structural screening; no accepted ddG until pilot and feature checks pass",
+  "scripts_sha256": {
+    "run_batches.py": "71b896b99707b22e3ef0b8ece6a01e989e5381d495152dc1d36d60c7a17b1e6d",
+    "run_provean_cache.py": "a9204a7029b75a52b9f12616f66534e72a766a15e04c1fe66153dbb2b3f001e2",
+    "run_provean_full.py": "8357ef66a3d843a8387373976ec3c85d4d6a2b9c4d8abc490cfddd59499d4b26",
+    "charmm_capped.py": "1d297fd906200918411a2fe85dd4a8aba12c96738e14e009e0d323985da4a92d",
+    "prepare_fragments.py": "c30defcdbec8f979e16c823e4d4dcd56e4bf619fbec5a4440c2ebda121a25430",
+    "provean_lookup.py": "20bc6f4369bec16f5daa8f239b79ef9b7677eae2c86729493ff48760dffbfdc3",
+    "task_engine.py": "5ad23b909ecf361cab8615baab6f6ad600fa5d04242cbac03f1d67cbfcf72ac4"
+  },
+  "resources_sha256": {
+    "mutabinds.RData": "b8d32b62fcfb894a01bb8a85fa7cd3d73de5ee6ba4b127ffc88325656e20e02f",
+    "top_all36_prot.rtf": "f9350c50a534d076b8f1409db8b9c5da3d220ee9a9f8dfff241bc7f4ac398674",
+    "par_all36_prot.prm": "4c754774c995c242a79c55349b436d4dab9bba473a5cf5a0e4c72f4d2fc8f572",
+    "vdw_pb.str": "a1a061243af743a9fcd4ed6a6ebb4619b00e88443831b995519833142d58f71c",
+    "min.conf": "ef2e31322c3927479ad44cd57f1d6bcac53df49431be056cff38ae2a07a0380a",
+    "rest.pgn": "0351460c124d38b11126c0533849b2a9a45e9c6648030c6a4e38eb24d750b3b3"
+  },
+  "resource_policy": {
+    "task_global_pb_concurrency": 1,
+    "minimum_available_memory_gib": 30,
+    "calculation_budget_gib": 20,
+    "reserve_gib": 10,
+    "reason": "Confirmed global OOM when four independent CHARMM processes overlapped; observed stable 7.3 GiB RSS underestimated allocation peaks."
+  }
+}

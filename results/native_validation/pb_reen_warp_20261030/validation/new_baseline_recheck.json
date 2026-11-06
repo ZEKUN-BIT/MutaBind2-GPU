@@ -1,0 +1,149 @@
+{
+  "label": "warp_20261030_new_baseline_recheck",
+  "executable": "/home/zek/mutabind2-tool/bin/charmm-pb-gpu",
+  "source_hashes": {
+    "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_optimized/baseline/jobout/fragments_charmm.psf": "836687e8ac3b69d13562f115b2bc2ef471ff9cd850ba8bbd2016c8a6a83f814b",
+    "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_optimized/baseline/jobout/fragments_min.crd": "59a1cbf95698b128a2d6fb675377b5a6cc38a27094322662d95dcd23f06832fb"
+  },
+  "timeout_seconds": 1800,
+  "address_limit_gib": 20,
+  "memory_reserve_gib": 10,
+  "threads": 1,
+  "require_gpu": true,
+  "returncode": 0,
+  "stopped_reason": null,
+  "wall_seconds": 72.01602073599952,
+  "values": {
+    "GAB": 1288993.05,
+    "GA": 204171.934,
+    "GB": 1084598.89,
+    "DELTAGELEC": 222.226
+  },
+  "normal": true,
+  "converged": true,
+  "iterations": [
+    1937,
+    1800,
+    1925
+  ],
+  "energies": [
+    1288993.04833,
+    204171.93366,
+    1084598.89125
+  ],
+  "grids": [
+    [
+      449,
+      489,
+      505
+    ],
+    [
+      449,
+      489,
+      505
+    ],
+    [
+      449,
+      489,
+      505
+    ]
+  ],
+  "boxes": [
+    "Box in X from  -89.600 to   89.600",
+    "Box in Y from  -97.600 to   97.600",
+    "Box in Z from -100.800 to  100.800",
+    "Box in X from  -89.600 to   89.600",
+    "Box in Y from  -97.600 to   97.600",
+    "Box in Z from -100.800 to  100.800",
+    "Box in X from  -89.600 to   89.600",
+    "Box in Y from  -97.600 to   97.600",
+    "Box in Z from -100.800 to  100.800"
+  ],
+  "gpu_solves": 3,
+  "stage_seconds": {
+    "BOUNDARY_SUM": [
+      2.052352,
+      0.525714,
+      1.702815
+    ],
+    "BOUNDARY_INTERPOLATE": [
+      0.002242,
+      0.002251,
+      0.002222
+    ],
+    "MAYER_BP_INT": [
+      2.054625,
+      0.52799,
+      1.705061
+    ],
+    "MAYER_CD_TRIL": [
+      0.003,
+      0.00052,
+      0.0027
+    ],
+    "MAYER_MSTEP": [
+      3.346367,
+      0.517025,
+      2.768039
+    ],
+    "REEN_CUDA_NEIGHBOR_PREP": [
+      3.564568,
+      0.113843,
+      2.482671
+    ],
+    "REEN_CUDA_PROBE_GRID": [
+      9.186265,
+      2.053782,
+      8.006996
+    ],
+    "REEN_CPU_FINAL_GRID": [
+      0.139737,
+      0.130342,
+      0.13585
+    ],
+    "MAYER_REEN": [
+      12.899293,
+      2.3011,
+      10.633686
+    ],
+    "MAYER": [
+      19.202225,
+      3.426941,
+      15.187442
+    ],
+    "PREP1": [
+      19.20275,
+      3.427116,
+      15.187662
+    ],
+    "PBEQ1": [
+      12.784352,
+      8.819895,
+      11.239298
+    ],
+    "DECOMP": [
+      0.004045,
+      0.000651,
+      0.003376
+    ]
+  },
+  "max_rss_gib": 4.440509796142578,
+  "sources_unchanged": true,
+  "reference": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_optimized/baseline/jobout/optimized_energy/fragments_p2/pb.log",
+  "comparison": {
+    "values_difference": {
+      "GAB": 0.0,
+      "GA": 0.0,
+      "GB": 0.0,
+      "DELTAGELEC": 0.0
+    },
+    "energies_difference": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "grids_equal": true,
+    "boxes_equal": true,
+    "iterations_equal": true
+  }
+}

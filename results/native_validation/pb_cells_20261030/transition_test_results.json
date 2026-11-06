@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "frozen_wt_files": 80,
+  "frozen_mutants": 19,
+  "corrupted_checkpoint_rejected": true
+}

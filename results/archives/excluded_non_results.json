@@ -1,0 +1,3312 @@
+[
+  {
+    "path": "projects/7mkj_128_255_20261030/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "projects/7mkj_128_255_20261030_cells/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "projects/7mkj_128_255_20261030_gpu/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "projects/7mkj_128_255_20261030_optimized/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "projects/7mkj_256_374_20261102/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "workspaces/4df7beb74ca0a649/batch_0002_attempt_001/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2-tool/workspaces/4df7beb74ca0a649/batch_0002_attempt_001/bin/foldx"
+  },
+  {
+    "path": "workspaces/4df7beb74ca0a649/batch_0002_attempt_002/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2-tool/workspaces/4df7beb74ca0a649/batch_0002_attempt_002/bin/foldx"
+  },
+  {
+    "path": "workspaces/4df7beb74ca0a649/batch_0002_attempt_002/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "workspaces/4df7beb74ca0a649/batch_0003_attempt_001/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2-tool/workspaces/4df7beb74ca0a649/batch_0003_attempt_001/bin/foldx"
+  },
+  {
+    "path": "workspaces/4df7beb74ca0a649/batch_0003_attempt_001/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "workspaces/4df7beb74ca0a649/batch_0004_attempt_001/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2-tool/workspaces/4df7beb74ca0a649/batch_0004_attempt_001/bin/foldx"
+  },
+  {
+    "path": "workspaces/4df7beb74ca0a649/batch_0004_attempt_001/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "workspaces/681110607488f4d1/batch_0097_attempt_001/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2-tool/workspaces/681110607488f4d1/batch_0097_attempt_001/bin/foldx"
+  },
+  {
+    "path": "workspaces/681110607488f4d1/batch_0097_attempt_001/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "workspaces/7e0ce058d83ee6f8/batch_0003_attempt_001/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2-tool/workspaces/7e0ce058d83ee6f8/batch_0003_attempt_001/bin/foldx"
+  },
+  {
+    "path": "workspaces/7e0ce058d83ee6f8/batch_0003_attempt_001/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb/libmstep.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1094088
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb/libreference.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 15280
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb/mstep_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 59960
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb/mstep_reference.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 5503
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1614464
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb/pbeq_mstep.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 914546
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22872320
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb_flags/libmstep.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1085136
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb_flags/libreference.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 15280
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb_flags/mstep_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 51808
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb_flags/mstep_reference.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 5503
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb_flags/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1614480
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb_flags/pbeq_mstep.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 914546
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/pb_flags/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22867464
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/datstr.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 21662
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/intere.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 44105
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/nbonda.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 13997
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/audit/datstr.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 34168
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/audit/intere.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 101448
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/audit/libpairs.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1151760
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/audit/nbonda.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 91264
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/audit/pairs_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 201488
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/audit/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22379320
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/production/datstr.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 34168
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/production/intere.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 91968
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/production/libpairs.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1151760
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/production/nbonda.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 91264
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/production/pairs_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 201488
+  },
+  {
+    "path": "native_build/gpu_pipeline_20261030/vdw/production/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22370912
+  },
+  {
+    "path": "native_build/pb/pb_boundary_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 61824
+  },
+  {
+    "path": "native_build/pb/pb_reen_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 58792
+  },
+  {
+    "path": "native_build/pb/pbeq.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 911528
+  },
+  {
+    "path": "native_build/pb/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1540696
+  },
+  {
+    "path": "native_build/pb/pbeq_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 300096
+  },
+  {
+    "path": "native_build/pb/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22770760
+  },
+  {
+    "path": "native_build/pb_cells_20261030/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1612152
+  },
+  {
+    "path": "native_build/pb_cells_20261030/pbeq_cells.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 912489
+  },
+  {
+    "path": "native_build/pb_cells_20261030/reen_cells.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 5888
+  },
+  {
+    "path": "native_build/pb_cells_20261030/test_cells.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 19968
+  },
+  {
+    "path": "native_build/pb_cells_20261030/test_wrapper.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 795
+  },
+  {
+    "path": "native_build/pb_cells_20261030/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22824472
+  },
+  {
+    "path": "native_build/pb_reen_warp_20261030/pb_reen_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 59376
+  },
+  {
+    "path": "native_build/pb_reen_warp_20261030/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22820280
+  },
+  {
+    "path": "native_build/pb_reen_warp_20261030/lib/libreen.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 65752
+  },
+  {
+    "path": "native_build/pb_reen_warp_20261030/validation/scan_mutant/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "native_build/pb_reen_warp_20261030/validation/scan_mutant_setup_attempt_1/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "native_build/vdw_final/datstr.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 34096
+  },
+  {
+    "path": "native_build/vdw_final/intere.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 88752
+  },
+  {
+    "path": "native_build/vdw_final/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22259200
+  },
+  {
+    "path": "validation/1cse_gpu/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "validation/1cse_gpu/batches/batch_0001/fragments.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2-tool/validation/1cse_gpu/plan/fragments.pdb"
+  },
+  {
+    "path": "validation/1cse_gpu_final/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "validation/1cse_gpu_v3/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "validation/1cse_partner1_neutral/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "validation/1cse_relocated/baseline/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "validation/energy_comparison/mutant/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "validation/energy_comparison/wt/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/gpu/libpbeq1_oracle.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 23616
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/gpu/pbeq1_serial_oracle.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 5990
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/gpu_boundary/boundary_serial_oracle.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 21826
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/gpu_boundary/chm_kinds.mod",
+    "reason": "compiled tool/build object, not a scientific result",
+    "bytes": 400
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/gpu_boundary/consta.mod",
+    "reason": "compiled tool/build object, not a scientific result",
+    "bytes": 382
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/gpu_boundary/libboundary_oracle.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 40360
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/gpu_boundary/number.mod",
+    "reason": "compiled tool/build object, not a scientific result",
+    "bytes": 429
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/chm_kinds.mod",
+    "reason": "compiled tool/build object, not a scientific result",
+    "bytes": 2594
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/independent_reen.mod",
+    "reason": "compiled tool/build object, not a scientific result",
+    "bytes": 2573
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/liboriginal_sphere_points.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 15968
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/libreen_actual_bridge.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 29720
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/libreen_oracle.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 41568
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/number.mod",
+    "reason": "compiled tool/build object, not a scientific result",
+    "bytes": 2673
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/original_sphere_points.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 1294
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/reen_serial_oracle.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 26512
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/native_bridge_build/independent_actual_bridge.mod",
+    "reason": "compiled tool/build object, not a scientific result",
+    "bytes": 1349
+  },
+  {
+    "path": "legacy/predictions/7mkj_rpod/validation/optimization_v3/native_bridge_build/reen_actual_bridge.f90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 15195
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/baseline_01/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/bin/foldx"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/baseline_01/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/batch_0051_attempt_01/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/batch_0051_attempt_01/bin/foldx"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/batch_0051_attempt_01/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_candidate/jobout/mutabinds_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_candidate/jobout/mutabinds_lb38p_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_lb38p_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_candidate/jobout/mutabinds_lb38p_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_lb38p_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_candidate/jobout/mutabinds_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_deployed/jobout/mutabinds_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_deployed/jobout/mutabinds_lb38p_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_lb38p_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_deployed/jobout/mutabinds_lb38p_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_lb38p_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_reen_deployed/jobout/mutabinds_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/mutabind2/runs/full_single_20261020_final/intermediates/mutabinds_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_lb38p_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/mutabind2/runs/full_single_20261020_final/intermediates/mutabinds_lb38p_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_lb38p_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/mutabind2/runs/full_single_20261020_final/intermediates/mutabinds_lb38p_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_adapter_small/jobout/mutabinds_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/mutabind2/runs/full_single_20261020_final/intermediates/mutabinds_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda/pbeq_cuda_bridge.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 899004
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda/cuda_o3/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1599432
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda/cuda_o3/pbeq_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 298816
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda/cuda_o3/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22704568
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda/cuda_o3/lib/libpbeq_cuda.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 219568
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_boundary/pbeq_cuda_bridge.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 905230
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_boundary/cuda_o3/pb_boundary_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 61824
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_boundary/cuda_o3/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1605608
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_boundary/cuda_o3/pbeq_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 300096
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_boundary/cuda_o3/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22768416
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_boundary/cuda_o3/lib/libpbeq_cuda.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 275248
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_reen/pb_reen_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 58792
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_reen/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1611160
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_reen/pbeq_reen_bridge.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 911528
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_reen/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22816184
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_reen/lib/libpbeq_cuda.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 322816
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_v3_profile/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1610160
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_v3_profile/pbeq_profile.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 908056
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_v3_profile/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22768416
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_v3_sor/pbeq_cuda.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 297552
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_v3_sor/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22768416
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_cuda_v3_sor/lib/libpbeq_cuda.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 275248
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_gpu_bench/probe",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1045824
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_native/o2_reference/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1308528
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_native/o2_reference/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22255048
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_native/o3_native/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1620688
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_native/o3_native/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22521544
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG.dssp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG.dssp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_A_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_A_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_B_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_B_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_CH1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_CH1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_CH2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_CH2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_CH3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_CH3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_CH4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_CH4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_CH5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_CH5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_CH6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_CH6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_CH7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_CH7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_C_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_C_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_C_1.seq",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_C_1.seq"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_C_1.var",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_C_1.var"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_CH7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_vmd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_vmd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_DF1P_vmd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_DF1P_vmd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_D_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_D_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_D_1.seq",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_D_1.seq"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_D_1.var",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_D_1.var"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_CH7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_vmd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_vmd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_EE1A_vmd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_EE1A_vmd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_I_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_I_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_J_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_J_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_L_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_L_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_L_1.seq",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_L_1.seq"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_L_1.var",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_L_1.var"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_P1.dssp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_P1.dssp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_P2.dssp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_P2.dssp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_CH7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_vmd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_vmd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_SG265A_vmd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_SG265A_vmd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_vmd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_vmd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7MKJ2610_FRAG_vmd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7MKJ2610_FRAG_vmd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch1.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch1.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch1.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch1.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch2.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch2.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch2.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch2.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch3.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch3.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch3.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch3.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch4.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch4.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch4.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch4.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch5.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch5.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch5.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch5.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch6.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch6.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch6.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch6.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch7.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch7.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ch7.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ch7.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_charmm.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_charmm.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_charmm.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_charmm.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch1.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch1.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch1.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch1.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch2.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch2.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch2.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch2.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch3.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch3.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch3.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch3.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch4.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch4.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch4.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch4.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch5.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch5.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch5.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch5.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch6.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch6.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch6.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch6.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch7.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch7.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_ch7.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_ch7.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_charmm.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_charmm.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_charmm.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_charmm.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.dcd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.dcd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.restart.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.restart.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.restart.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.restart.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.restart.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.restart.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_min.xst",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_min.xst"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_namd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_namd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_namd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_namd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_df1p_namd_restrain.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_df1p_namd_restrain.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch1.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch1.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch1.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch1.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch2.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch2.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch2.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch2.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch3.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch3.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch3.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch3.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch4.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch4.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch4.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch4.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch5.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch5.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch5.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch5.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch6.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch6.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch6.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch6.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch7.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch7.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_ch7.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_ch7.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_charmm.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_charmm.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_charmm.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_charmm.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.dcd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.dcd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.restart.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.restart.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.restart.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.restart.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.restart.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.restart.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_min.xst",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_min.xst"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_namd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_namd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_namd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_namd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_ee1a_namd_restrain.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_ee1a_namd_restrain.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.dcd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.dcd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.restart.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.restart.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.restart.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.restart.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.restart.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.restart.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_min.xst",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_min.xst"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_namd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_namd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_namd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_namd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_namd_restrain.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_namd_restrain.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_p.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_p.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch1.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch1.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch1.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch1.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch2.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch2.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch2.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch2.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch3.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch3.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch3.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch3.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch4.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch4.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch4.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch4.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch5.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch5.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch5.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch5.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch6.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch6.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch6.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch6.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch7.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch7.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_ch7.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_ch7.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_charmm.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_charmm.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_charmm.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_charmm.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.dcd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.dcd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.restart.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.restart.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.restart.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.restart.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.restart.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.restart.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_min.xst",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_min.xst"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_namd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_namd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_namd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_namd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/7mkj2610_frag_sg265a_namd_restrain.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/7mkj2610_frag_sg265a_namd_restrain.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/Dif_job_DF1P.fxout",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/Dif_job_DF1P.fxout"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/Dif_job_EE1A.fxout",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/Dif_job_EE1A.fxout"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/Dif_job_SG265A.fxout",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/Dif_job_SG265A.fxout"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/append_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/append_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/append_7mkj2610_frag_df1p.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/append_7mkj2610_frag_df1p.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/append_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/append_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/append_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/append_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/charmm_to_namd_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/charmm_to_namd_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/charmm_to_namd_7mkj2610_frag_df1p.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/charmm_to_namd_7mkj2610_frag_df1p.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/charmm_to_namd_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/charmm_to_namd_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/charmm_to_namd_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/charmm_to_namd_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_df1p_wt_10.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_df1p_wt_10.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_df1p_wt_10.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_df1p_wt_10.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_p1_p2_df1p_wt_withoutH_10.txt",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_p1_p2_df1p_wt_withoutH_10.txt"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_p1_p2_ee1a_wt_withoutH_10.txt",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_p1_p2_ee1a_wt_withoutH_10.txt"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_p1_p2_sg265a_wt_withoutH_10.txt",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_p1_p2_sg265a_wt_withoutH_10.txt"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/distance_job_len_mp_contact_op_10.txt",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/distance_job_len_mp_contact_op_10.txt"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/dsasa_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/dsasa_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_df1p.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_df1p.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_df1p.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_df1p.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_ee1a.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_ee1a.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_p2.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_p2.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_p2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_p2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_p2.out.interrupted.1792487128098507187",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_p2.out.interrupted.1792487128098507187"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_sg265a.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_sg265a.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/energy_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/energy_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/frame_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/frame_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/frame_7mkj2610_frag_df1p.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/frame_7mkj2610_frag_df1p.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/frame_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/frame_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/frame_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/frame_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/interface_7mkj2610_frag.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/interface_7mkj2610_frag.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/interface_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/interface_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag.conf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag.conf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag.log",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag.log"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag_df1p.conf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag_df1p.conf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag_df1p.log",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag_df1p.log"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag_ee1a.conf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag_ee1a.conf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag_ee1a.log",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag_ee1a.log"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag_sg265a.conf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag_sg265a.conf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/min_7mkj2610_frag_sg265a.log",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/min_7mkj2610_frag_sg265a.log"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/provean_7MKJ2610_FRAG_C_1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/provean_7MKJ2610_FRAG_C_1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/provean_7MKJ2610_FRAG_D_1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/provean_7MKJ2610_FRAG_D_1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/provean_7MKJ2610_FRAG_L_1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/provean_7MKJ2610_FRAG_L_1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/rest_7mkj2610_frag.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/rest_7mkj2610_frag.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/rest_7mkj2610_frag_df1p.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/rest_7mkj2610_frag_df1p.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/rest_7mkj2610_frag_ee1a.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/rest_7mkj2610_frag_ee1a.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/rest_7mkj2610_frag_sg265a.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/rest_7mkj2610_frag_sg265a.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ch1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ch1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ch2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ch2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ch3.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ch3.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ch4.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ch4.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ch5.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ch5.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ch6.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ch6.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ch7.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ch7.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_df1p_ch1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_df1p_ch1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_df1p_ch2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_df1p_ch2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_df1p_ch3.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_df1p_ch3.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_df1p_ch4.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_df1p_ch4.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_df1p_ch5.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_df1p_ch5.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_df1p_ch6.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_df1p_ch6.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_df1p_ch7.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_df1p_ch7.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch3.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch3.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch4.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch4.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch5.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch5.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch6.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch6.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch7.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_ee1a_ch7.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch3.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch3.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch4.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch4.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch5.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch5.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch6.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch6.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch7.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/setup_7mkj2610_frag_sg265a_ch7.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/topology_7mkj2610_frag.json",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/topology_7mkj2610_frag.json"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/topology_7mkj2610_frag_df1p.json",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/topology_7mkj2610_frag_df1p.json"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/topology_7mkj2610_frag_ee1a.json",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/topology_7mkj2610_frag_ee1a.json"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/topology_7mkj2610_frag_sg265a.json",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/topology_7mkj2610_frag_sg265a.json"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/vmd_7MKJ2610_FRAG.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/vmd_7MKJ2610_FRAG.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/vmd_7MKJ2610_FRAG_DF1P.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/vmd_7MKJ2610_FRAG_DF1P.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/vmd_7MKJ2610_FRAG_EE1A.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/vmd_7MKJ2610_FRAG_EE1A.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_baseline_01/jobout/vmd_7MKJ2610_FRAG_SG265A.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01/jobout/vmd_7MKJ2610_FRAG_SG265A.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG.dssp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG.dssp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_A_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_A_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_B_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_B_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_CH1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_CH1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_CH2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_CH2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_CH3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_CH3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_CH4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_CH4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_CH5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_CH5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_CH6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_CH6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_CH7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_CH7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_C_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_C_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_D_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_D_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_D_1.seq",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_D_1.seq"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_D_1.var",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_D_1.var"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_CH7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_vmd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_vmd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_vmd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_EE1A_vmd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_I_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_I_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_J_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_J_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_L_1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_L_1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_L_1.seq",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_L_1.seq"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_L_1.var",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_L_1.var"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_P1.dssp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_P1.dssp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_P2.dssp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_P2.dssp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_CH7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_vmd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_vmd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_vmd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_SG265A_vmd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_vmd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_vmd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7MKJ2610_FRAG_vmd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7MKJ2610_FRAG_vmd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch1.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch1.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch1.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch1.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch2.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch2.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch2.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch2.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch3.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch3.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch3.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch3.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch4.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch4.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch4.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch4.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch5.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch5.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch5.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch5.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch6.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch6.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch6.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch6.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch7.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch7.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ch7.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ch7.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_charmm.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_charmm.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_charmm.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_charmm.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch1.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch1.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch1.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch1.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch2.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch2.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch2.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch2.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch3.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch3.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch3.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch3.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch4.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch4.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch4.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch4.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch5.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch5.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch5.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch5.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch6.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch6.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch6.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch6.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch7.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch7.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_ch7.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_ch7.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_charmm.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_charmm.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_charmm.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_charmm.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.dcd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.dcd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.restart.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.restart.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.restart.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.restart.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.restart.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.restart.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_min.xst",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_min.xst"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_namd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_namd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_namd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_namd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_ee1a_namd_restrain.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_ee1a_namd_restrain.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.dcd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.dcd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.restart.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.restart.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.restart.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.restart.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.restart.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.restart.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_min.xst",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_min.xst"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_namd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_namd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_namd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_namd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_namd_restrain.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_namd_restrain.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_p.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_p.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch1.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch1.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch1.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch1.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch1.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch1.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch2.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch2.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch2.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch2.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch2.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch2.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch3.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch3.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch3.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch3.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch3.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch3.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch4.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch4.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch4.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch4.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch4.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch4.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch5.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch5.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch5.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch5.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch5.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch5.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch6.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch6.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch6.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch6.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch6.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch6.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch7.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch7.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch7.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch7.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_ch7.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_ch7.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_charmm.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_charmm.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_charmm.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_charmm.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_charmm.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_charmm.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.crd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.crd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.dcd",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.dcd"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.restart.coor",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.restart.coor"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.restart.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.restart.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.restart.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.restart.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.vel",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.vel"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.xsc",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.xsc"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_min.xst",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_min.xst"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_namd.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_namd.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_namd.psf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_namd.psf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/7mkj2610_frag_sg265a_namd_restrain.pdb",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/7mkj2610_frag_sg265a_namd_restrain.pdb"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/Dif_job_EE1A.fxout",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/Dif_job_EE1A.fxout"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/Dif_job_SG265A.fxout",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/Dif_job_SG265A.fxout"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/append_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/append_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/append_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/append_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/append_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/append_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/charmm_to_namd_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/charmm_to_namd_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/charmm_to_namd_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/charmm_to_namd_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/charmm_to_namd_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/charmm_to_namd_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/distance_7mkj2610_frag_ee1a_wt_10.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/distance_7mkj2610_frag_p1_p2_ee1a_wt_withoutH_10.txt",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/distance_7mkj2610_frag_p1_p2_ee1a_wt_withoutH_10.txt"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/distance_7mkj2610_frag_p1_p2_sg265a_wt_withoutH_10.txt",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/distance_7mkj2610_frag_p1_p2_sg265a_wt_withoutH_10.txt"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/distance_7mkj2610_frag_sg265a_wt_10.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/distance_job_len_mp_contact_op_10.txt",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/distance_job_len_mp_contact_op_10.txt"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/dsasa_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/dsasa_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/energy_7mkj2610_frag_ee1a.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/energy_7mkj2610_frag_ee1a.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/energy_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/energy_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/energy_7mkj2610_frag_p2.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/energy_7mkj2610_frag_p2.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/energy_7mkj2610_frag_p2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/energy_7mkj2610_frag_p2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/energy_7mkj2610_frag_p2.out.interrupted.1792487584414760679",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/energy_7mkj2610_frag_p2.out.interrupted.1792487584414760679"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/energy_7mkj2610_frag_sg265a.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/energy_7mkj2610_frag_sg265a.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/energy_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/energy_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/frame_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/frame_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/frame_7mkj2610_frag_ee1a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/frame_7mkj2610_frag_ee1a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/frame_7mkj2610_frag_sg265a.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/frame_7mkj2610_frag_sg265a.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/interface_7mkj2610_frag.inp",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/interface_7mkj2610_frag.inp"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/interface_7mkj2610_frag.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/interface_7mkj2610_frag.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/min_7mkj2610_frag.conf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/min_7mkj2610_frag.conf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/min_7mkj2610_frag.log",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/min_7mkj2610_frag.log"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/min_7mkj2610_frag_ee1a.conf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/min_7mkj2610_frag_ee1a.conf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/min_7mkj2610_frag_ee1a.log",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/min_7mkj2610_frag_ee1a.log"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/min_7mkj2610_frag_sg265a.conf",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/min_7mkj2610_frag_sg265a.conf"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/min_7mkj2610_frag_sg265a.log",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/min_7mkj2610_frag_sg265a.log"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/provean_7MKJ2610_FRAG_D_1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/provean_7MKJ2610_FRAG_D_1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/provean_7MKJ2610_FRAG_L_1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/provean_7MKJ2610_FRAG_L_1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/rest_7mkj2610_frag.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/rest_7mkj2610_frag.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/rest_7mkj2610_frag_ee1a.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/rest_7mkj2610_frag_ee1a.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/rest_7mkj2610_frag_sg265a.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/rest_7mkj2610_frag_sg265a.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ch1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ch1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ch2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ch2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ch3.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ch3.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ch4.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ch4.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ch5.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ch5.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ch6.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ch6.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ch7.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ch7.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch3.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch3.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch4.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch4.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch5.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch5.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch6.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch6.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch7.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_ee1a_ch7.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch1.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch1.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch2.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch2.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch3.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch3.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch4.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch4.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch5.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch5.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch6.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch6.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch7.out",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/setup_7mkj2610_frag_sg265a_ch7.out"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/topology_7mkj2610_frag.json",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/topology_7mkj2610_frag.json"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/topology_7mkj2610_frag_ee1a.json",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/topology_7mkj2610_frag_ee1a.json"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/topology_7mkj2610_frag_sg265a.json",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/topology_7mkj2610_frag_sg265a.json"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/vmd_7MKJ2610_FRAG.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/vmd_7MKJ2610_FRAG.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/vmd_7MKJ2610_FRAG_EE1A.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/vmd_7MKJ2610_FRAG_EE1A.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_nonpb_v4_sensitivity_01/jobout/vmd_7MKJ2610_FRAG_SG265A.pgn",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/jobout/vmd_7MKJ2610_FRAG_SG265A.pgn"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_openmp/pbeq_openmp.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 899247
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_openmp/openmp_o3/pbeq.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 1642160
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_openmp/openmp_o3/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22542080
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_reen_axis/pbeq_cuda_bridge.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 906340
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/datstr.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 21662
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/intere.F90",
+    "reason": "CHARMM-derived full source; portable minimal patches are in Git",
+    "bytes": 42722
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/audit/datstr.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 34024
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/audit/intere.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 99176
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/audit/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22271712
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/production/datstr.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 34024
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/production/intere.F90.o",
+    "reason": "native executable/library, retained locally",
+    "bytes": 88016
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/optimization_vdw_v4/production/lib/libchmm.so",
+    "reason": "native executable/library, retained locally",
+    "bytes": 22259200
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/sensitivity_01/foldx",
+    "reason": "original symlink; target retained in local deployment",
+    "target": "/home/zek/mutabind2_runs/7mkj_rpod/sensitivity_01/bin/foldx"
+  },
+  {
+    "path": "legacy/workspaces/7mkj_rpod/sensitivity_01/sinputfiles/pdb2crd",
+    "reason": "native executable/library, retained locally",
+    "bytes": 9151068
+  }
+]

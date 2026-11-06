@@ -20,4 +20,4 @@ The repository MIT license covers original Python/workflow additions and newly a
 
 VMD, CHARMM, FoldX, NAMD, BLAST+, CD-HIT, DSSP, CUDA, R packages and NR databases are external dependencies, each with its own terms. Their binaries, installers, runtime environments and databases are not bundled. Obtain and cite them from their respective distributors. The Python wheel packages the Python CLI and MutaBind2 resources only; native sources remain in the Git repository.
 
-The 1CSE example structure originates from the Protein Data Bank and the upstream MutaBind2 example set. Public validation files are limited to this example and contain no private scan datasets.
+The 1CSE example structure originates from the Protein Data Bank and the upstream MutaBind2 example set. The 2.1.0 results additionally include the user-authorized 7MKJ scans, their analysis, scientific intermediate outputs, and validation evidence. Release assets exclude native executable binaries, complete CHARMM-derived source, and installed databases/environments; the exclusion manifest identifies these non-result files.

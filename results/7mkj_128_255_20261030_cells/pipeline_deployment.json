@@ -1,0 +1,11 @@
+{
+  "files": {
+    "/home/zek/mutabind2-tool/native_build/scan_pipeline_20261030/pipeline.py": "5e00f66084f0d9a6e8329bf2958662c2457ace6f0f08da3747ce9efad41d0c66",
+    "/home/zek/mutabind2-tool/native_build/scan_pipeline_20261030/pipeline_worker.py": "569495ae74f61a9a10630401ef2f47c2a962659bb1722a0b436e530ff5abc285"
+  },
+  "protocol_sha256": "172673a34af1402602decf096dfdb2e100b222e106b2405970a450a59d6321e4",
+  "scientific_package_unchanged": true,
+  "depth": 2,
+  "energy_concurrency": 1,
+  "preparation_admission_gib": 30
+}

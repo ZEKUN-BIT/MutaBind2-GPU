@@ -1,0 +1,9 @@
+{
+  "pid": 33279,
+  "command": [
+    "/home/zek/mutabind2-tool/.env/bin/python",
+    "-u",
+    "/home/zek/mutabind2-tool/native_build/pb_cells_20261030/continue_scan.py",
+    "run"
+  ]
+}

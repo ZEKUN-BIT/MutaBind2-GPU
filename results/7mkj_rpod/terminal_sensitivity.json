@@ -1,0 +1,17 @@
+{
+  "examples": [
+    {
+      "mutation": "E90A",
+      "neutral_ddg": 1.17,
+      "charged_ddg": 0.75,
+      "difference_kcal_mol": -0.42
+    },
+    {
+      "mutation": "S506A",
+      "neutral_ddg": 0.62,
+      "charged_ddg": 0.48,
+      "difference_kcal_mol": -0.14
+    }
+  ],
+  "interpretation": "Two diagnostic examples, not calibrated prediction error bars."
+}

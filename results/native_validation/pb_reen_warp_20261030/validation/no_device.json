@@ -1,0 +1,13 @@
+{
+  "case_count": 1,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "no_visible_device",
+      "status": 1,
+      "message": "REEN cudaGetDevice: no CUDA-capable device is detected",
+      "all_host_arrays_unchanged": true,
+      "passed": true
+    }
+  ]
+}

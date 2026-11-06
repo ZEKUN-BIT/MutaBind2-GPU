@@ -1,0 +1,164 @@
+{
+  "returncode": 0,
+  "wall_seconds": 52.01916381299998,
+  "threads": 1,
+  "address_limit_bytes": 21474836480,
+  "reserve_bytes": 10737418240,
+  "timeout_seconds": 1800,
+  "audit": {
+    "GAB": 1288745.19,
+    "GA": 204211.355,
+    "GB": 1084316.4,
+    "DELTAGELEC": 217.435,
+    "iterations": [
+      1937,
+      1800,
+      1925
+    ],
+    "energies": [
+      1288745.19183,
+      204211.35487,
+      1084316.40476
+    ],
+    "grids": [
+      [
+        449,
+        489,
+        505
+      ],
+      [
+        449,
+        489,
+        505
+      ],
+      [
+        449,
+        489,
+        505
+      ]
+    ],
+    "final_residuals": [
+      1.997e-06,
+      1.992e-06,
+      1.994e-06
+    ]
+  },
+  "stage_seconds": {
+    "BOUNDARY_SUM": [
+      1.881116,
+      0.476438,
+      1.48681
+    ],
+    "BOUNDARY_INTERPOLATE": [
+      0.002323,
+      0.002267,
+      0.002278
+    ],
+    "MAYER_BP_INT": [
+      1.883471,
+      0.47873,
+      1.489111
+    ],
+    "MAYER_CD_TRIL": [
+      0.00299,
+      0.000542,
+      0.002756
+    ],
+    "MAYER_MSTEP": [
+      3.495015,
+      0.547188,
+      2.968035
+    ],
+    "REEN_CUDA_NEIGHBOR_PREP": [
+      0.857067,
+      0.067714,
+      0.712923
+    ],
+    "REEN_CUDA_PROBE_GRID": [
+      2.100823,
+      1.186544,
+      1.919303
+    ],
+    "REEN_CPU_FINAL_GRID": [
+      0.148362,
+      0.138583,
+      0.145412
+    ],
+    "MAYER_REEN": [
+      3.114847,
+      1.396046,
+      2.785011
+    ],
+    "MAYER": [
+      9.405767,
+      2.502851,
+      7.324422
+    ],
+    "PREP1": [
+      9.406323,
+      2.503039,
+      7.324676
+    ],
+    "PBEQ1": [
+      10.371182,
+      7.372167,
+      9.369599
+    ],
+    "DECOMP": [
+      0.004043,
+      0.000662,
+      0.003507
+    ]
+  },
+  "reen_gpu_solves": 3,
+  "boundary_gpu_solves": 3,
+  "cell_entries": [
+    1135584,
+    127790,
+    961335
+  ],
+  "phi_sha256": {
+    "ga.phi": "94a4c86d3d55e9f5a37f415abb5c0178c99b0234d30eaa50df4844e89c996734",
+    "gab.phi": "d4dcf549e0cc68af48afc4ebe97fce290272891a7cbd0d124279c0489925c3e3",
+    "gb.phi": "77be93685ed15130f587dbf3b3504fe225ac60857e93093db5ada6d1f6070fd0"
+  },
+  "source_sha256": {
+    "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/jobout/fragments_ve41a_charmm.psf": "98277e6632b4f9c0e30ad809adb85c2120280a85c536d79f44dc0512779b837a",
+    "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/jobout/fragments_ve41a_min.crd": "f5426faa5957a5f50eb667cdc48c9d3171cd98c144718212dd84c09d04228bfc",
+    "/home/zek/mutabind2-tool/native_build/pb_reen_warp_20261030/validation/scan_mutant/jobout/energy_fragments_ve41a.inp": "13bd1179e98ed300d2af8a1efd6711ee186cc3add211708807b05f037462adfd"
+  },
+  "runtime": {
+    "executable": "/home/zek/mutabind2-tool/native_build/pb_cells_20261030/bin/charmm",
+    "target": "/home/zek/mutabind2-tool/toolchain/external/charmm-51/bin/charmm",
+    "pb_backend": "cuda",
+    "ld_library_path": "/home/zek/mutabind2-tool/native_build/pb_cells_20261030/lib:/usr/local/cuda/lib64:/home/zek/miniforge3/lib",
+    "files": {
+      "/home/zek/miniforge3/lib/././libz.so.1": "22f1601237b86f0f48ed5b83071d1505167ae2e16365b33b4eed6e96dbf71ab0",
+      "/home/zek/miniforge3/lib/./libopen-pal.so.40": "d5b8f88a56f3e0342f824c3e401a9afe6118d83479a9c4c5d449069e55c89dd4",
+      "/home/zek/miniforge3/lib/./libopen-rte.so.40": "0dc88aca74d5fc7174e454b4f3d981a08d8f7ad1bf350b7649ee4c98330ff346",
+      "/home/zek/miniforge3/lib/./libquadmath.so.0": "5391fc55ee01d145b951b472b31095223efd5fa419e9dfb2924aaaf5f5bb695e",
+      "/home/zek/miniforge3/lib/libgcc_s.so.1": "610cb43df7e282a0468ec448bb6c5d5a0d42e634d9e923ce52fd534cbfeb4ed2",
+      "/home/zek/miniforge3/lib/libgfortran.so.5": "6b991565953897e33f5d220abfcd1515b0cd3a90a483d4e836a49b3ab6d6d77c",
+      "/home/zek/miniforge3/lib/libgomp.so.1": "f97ff3634099ed2ded13e2da1e19472a20bc63e873007b764cccc532f542a451",
+      "/home/zek/miniforge3/lib/libmpi.so.40": "c8f93aa15211e6559e9dbbc56f0b3e60177c51fd8be35b17537ed62c181c05a6",
+      "/home/zek/miniforge3/lib/libmpi_mpifh.so.40": "55a1922146b696972b19529272b2aedccb465c378a97db9d34becc53116b58bb",
+      "/home/zek/miniforge3/lib/libmpi_usempi_ignore_tkr.so.40": "1d30ebaa32d4887f683f0b312c17e7f9600bfb0d3cfb523a7b1417815243e4cf",
+      "/home/zek/miniforge3/lib/libmpi_usempif08.so.40": "c7a5f367b462e874c6ee76564014a070a5f5c26696f608cbc6e7fbe53972d15c",
+      "/home/zek/miniforge3/lib/libstdc++.so.6": "43df50d580721fe5c0a0def95404157c81765da645900c59bd3cbed1ad9d3930",
+      "/home/zek/mutabind2-tool/native_build/pb_cells_20261030/bin/charmm": "812f9336f97594401815013b34104a5d2e3b2b41ff1c2ceaa989e41dff11516d",
+      "/home/zek/mutabind2-tool/native_build/pb_cells_20261030/lib/libchmm.so": "cb05c19da7e7fa77814ec951aa1a0cf967dd0d1aad57b98317c6bb472a537f04",
+      "/home/zek/mutabind2-tool/toolchain/external/charmm-51/bin/charmm": "aae8783a50cddef8c15be41db0104696e0a336d761ff51821bd1548f6ede0076",
+      "/lib64/ld-linux-x86-64.so.2": "bda779ea9e9ad234f60315477d7cfd0bdde861cd8ddd9df8cdaf62f18c4cec14",
+      "/usr/lib/x86_64-linux-gnu/libc.so.6": "85e64f97e348786a8fb4d9f3d52fec289e2fb86bba20f0731dfe61990525e0f7",
+      "/usr/lib/x86_64-linux-gnu/libdl.so.2": "59d725ca30596a9863f4fa2552a7125f834842abc86b40890231c129358965d2",
+      "/usr/lib/x86_64-linux-gnu/libfftw3.so.3": "de77e73eb77a10462e27cb851c0a68e9064d0b6d72b90f6be3edcf64b6d2bdc7",
+      "/usr/lib/x86_64-linux-gnu/libfftw3f.so.3": "8fae0bc5d15b6caf5bb843f6a9328d2b08cd5440bef97722401cffdebc553611",
+      "/usr/lib/x86_64-linux-gnu/libm.so.6": "1c488db6f4fe8cecb72456bc018de000b7a9b539c2994864b0416b5e8371b3d8",
+      "/usr/lib/x86_64-linux-gnu/libmvec.so.1": "2f2e7f4ad88e1b13f2f8345c826b25f85ba61c93527d91e59dd0d2943eac6e80",
+      "/usr/lib/x86_64-linux-gnu/libpthread.so.0": "1327fc40710691dbd94e88b6cf4efce27fefe8fbb93f7d1164a75b4dccaea696",
+      "/usr/lib/x86_64-linux-gnu/librt.so.1": "9f3cc59207bcaaac74aaf7aca961f4816f0f4d945e4bd1c3cb98ec516becf161",
+      "/usr/lib/x86_64-linux-gnu/libutil.so.1": "1d5fdfec85a9c4ca1e7a8c3125aac07c92d551b902a02fdd6bbdf8c66c9e4c4a",
+      "/usr/local/cuda/lib64/libcudart.so.13": "9955aa41ec390676be408b6c615f3d94f067f64cb756ef3cdf2b656ac2a81900"
+    }
+  }
+}

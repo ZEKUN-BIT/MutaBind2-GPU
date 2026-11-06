@@ -6,8 +6,8 @@ authors:
   - name: ZEKUN-BIT
 repository-code: "https://github.com/ZEKUN-BIT/MutaBind2-GPU"
 url: "https://github.com/ZEKUN-BIT/MutaBind2-GPU"
-version: 2.0.0
-date-released: "2026-10-22"
+version: 2.1.0
+date-released: "2026-11-06"
 references:
   - type: article
     title: "MutaBind2: Predicting the Impacts of Single and Multiple Mutations on Protein–Protein Interactions"

@@ -1,0 +1,42 @@
+{
+  "cases": {
+    "wt": {
+      "vdw_old_seconds": 15.006710754999403,
+      "vdw_gpu_seconds": 10.005158302000382,
+      "pb_old_seconds": 52.01980621899929,
+      "pb_gpu_seconds": 45.51743783699931,
+      "mstep_old_seconds": 7.040059,
+      "mstep_gpu_seconds": 0.62517,
+      "vdw_time_reduction": 0.3332877227165041,
+      "pb_time_reduction": 0.12499793549067684,
+      "mstep_time_reduction": 0.9111981874015544,
+      "combined_time_reduction": 0.1716323830382186
+    },
+    "mutant": {
+      "vdw_old_seconds": 15.506983493000007,
+      "vdw_gpu_seconds": 10.006030753999767,
+      "pb_old_seconds": 52.021783956000036,
+      "pb_gpu_seconds": 45.51794514699941,
+      "mstep_old_seconds": 7.014477,
+      "mstep_gpu_seconds": 0.6235310000000001,
+      "vdw_time_reduction": 0.3547403491777379,
+      "pb_time_reduction": 0.12502144898570888,
+      "mstep_time_reduction": 0.9111079842445844,
+      "combined_time_reduction": 0.1777729995896531
+    }
+  },
+  "median": {
+    "vdw_old_seconds": 15.256847123999705,
+    "vdw_gpu_seconds": 10.005594528000074,
+    "pb_old_seconds": 52.020795087499664,
+    "pb_gpu_seconds": 45.51769149199936,
+    "mstep_old_seconds": 7.027268,
+    "mstep_gpu_seconds": 0.6243505,
+    "vdw_time_reduction": 0.344014035947121,
+    "pb_time_reduction": 0.12500969223819286,
+    "mstep_time_reduction": 0.9111530858230694,
+    "combined_time_reduction": 0.17470269131393584
+  },
+  "measurement": "Frozen WT and V130A on RTX 5070 Ti; PB validation includes three full PHI writes; VDW uses release libraries; same energy lock and memory limits.",
+  "interpretation": "Combined percentage applies to measured energy processes, not complete batch preparation and contribution work."
+}

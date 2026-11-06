@@ -1,0 +1,22 @@
+{
+  "stage": "complete",
+  "pid": 101878,
+  "error": "",
+  "scheduler": "pipeline",
+  "pipeline_status": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_gpu/pipeline_status.json",
+  "updated_utc": "2026-10-31T02:03:56.646830+00:00",
+  "total": 1463,
+  "completed": 1463,
+  "pending": 0,
+  "batches": 70,
+  "batches_complete": 70,
+  "batch": 70,
+  "batch_mutations": 19,
+  "workspace": "/home/zek/mutabind2-tool/workspaces/f9fd313391b5721c/batch_0070_attempt_001",
+  "active_pid": null,
+  "native_stage": "",
+  "current_mutation": "K236R",
+  "completed_utc": "2026-10-31T02:03:56.646798+00:00",
+  "active_scan": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_gpu",
+  "combined_results": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_combined/completed_predictions.tsv"
+}

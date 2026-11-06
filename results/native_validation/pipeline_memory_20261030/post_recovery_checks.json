@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "protected_files_verified": 157,
+  "changed_files": [],
+  "frozen_batches": {
+    "3": {
+      "files_verified": 123,
+      "changed_files": [],
+      "stage": "mutant_pb_energy_fragments_ce43n",
+      "recovered_energies": 7,
+      "energy_operations_complete": 8
+    },
+    "4": {
+      "files_verified": 123,
+      "changed_files": [],
+      "stage": "waiting_pipeline_energy",
+      "recovered_energies": 0,
+      "energy_operations_complete": 0
+    }
+  },
+  "controller_pid": 101878
+}

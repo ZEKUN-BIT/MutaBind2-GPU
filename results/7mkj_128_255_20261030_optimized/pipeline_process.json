@@ -1,0 +1,13 @@
+{
+  "pid": 12031,
+  "command": [
+    "/home/zek/mutabind2-tool/.env/bin/python",
+    "-u",
+    "/home/zek/mutabind2-tool/native_build/scan_pipeline_20261030/pipeline.py",
+    "--output",
+    "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_optimized",
+    "--combined",
+    "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_combined"
+  ],
+  "started_utc": "2026-10-30T02:48:34.422371+00:00"
+}

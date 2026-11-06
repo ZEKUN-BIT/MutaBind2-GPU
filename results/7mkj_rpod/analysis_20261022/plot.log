@@ -1,0 +1,39 @@
+WARN `--no-project` was provided, but no project was found
+{
+  "all": {
+    "count": 665,
+    "min": 0.11,
+    "median": 0.71,
+    "mean": 0.7353082706766917,
+    "max": 2.35,
+    "negative": 0,
+    "zero": 0,
+    "ge_1_5": 24,
+    "interface_yes": 284,
+    "near_truncation": 0
+  },
+  "375-390": {
+    "count": 304,
+    "min": 0.11,
+    "median": 0.7,
+    "mean": 0.7016776315789474,
+    "max": 1.73,
+    "negative": 0,
+    "zero": 0,
+    "ge_1_5": 5,
+    "interface_yes": 94,
+    "near_truncation": 0
+  },
+  "435-453": {
+    "count": 361,
+    "min": 0.13,
+    "median": 0.71,
+    "mean": 0.763628808864266,
+    "max": 2.35,
+    "negative": 0,
+    "zero": 0,
+    "ge_1_5": 19,
+    "interface_yes": 190,
+    "near_truncation": 0
+  }
+}

@@ -24,3 +24,22 @@ Release checks: 29 Python tests passed in a new virtual environment; Python whee
 Dependency audit scope: NumPy 2.5.4, pandas 3.0.6, python-dateutil 3.0.0, six 1.17.0 and tzdata 2026.5, as resolved in the clean Python 3.12 installation. This describes the audited versions, not a promise that every version allowed by the package constraints is free of advisories.
 
 No critical/high findings were identified in the publication changes. Status: PASS for this scope. Known PROVEAN quality/cache issues remain documented in `KNOWN_LIMITATIONS.md`.
+
+## 2.1.0 synchronization review — 2026-11-06
+
+Security-Sensitive: YES. Reviewed by the primary Codex task. Scope: native-build argument handling, incremental patch integrity, operational pipeline entry point, scratch-directory selection, result publication and local relocation.
+
+| OWASP category | Assessment |
+| --- | --- |
+| A01 Access control | Local trusted-user CLI; existing output ownership, locks and checkpoint checks retained. Relocation preserved original bytes before cleanup. |
+| A02 Cryptographic failures | SHA-256 checks cover patch inputs/outputs, result members and release assets. No credentials found in staged source/results. |
+| A03 Injection | New commands use argument lists. CUDA architecture and generated executable/library paths are validated. No user input is evaluated as shell code. |
+| A04 Insecure design | No increase in native concurrency or reduction in memory limits; numerical failures remain fatal. |
+| A05 Misconfiguration | Machine configuration, environments, native binaries and databases are excluded from Git; wheels explicitly exclude legacy pdb2crd binaries. |
+| A06 Vulnerable components | Audit of NumPy, pandas and their installed runtime dependencies found no known vulnerabilities. The broader old installation audit reported GHSA-xmj3-9gf7-h52w in setuptools 84.0.0, a Windows-only legacy wheel-installation path; this Linux tool does not use that path and the environment is not distributed. |
+| A07 Authentication | No authentication changes or credential handling. |
+| A08 Integrity | Exact CHARMM base/candidate checksums enforced. Historical protocol records are preserved; new scans have new fingerprints. Frozen WT/mutant comparisons matched all reported energy values. |
+| A09 Logging | Resource retries preserve failed logs; release/migration inventories and result member checksums are retained. |
+| A10 SSRF | No server-side network request feature added. |
+
+Review status: PASS for the supported Linux deployment and published code/results. This review does not audit the full proprietary native toolchain. Validation is recorded in `validation/release_2.1.0_checks.json` and the release asset manifests.

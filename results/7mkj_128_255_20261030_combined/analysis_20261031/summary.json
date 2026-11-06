@@ -1,0 +1,149 @@
+{
+  "n_mutations": 1463,
+  "n_sites": 77,
+  "substitutions_per_site": 19,
+  "position_ranges": [
+    [
+      128,
+      166
+    ],
+    [
+      213,
+      236
+    ],
+    [
+      242,
+      255
+    ]
+  ],
+  "score_units": "kcal/mol",
+  "score_sign": "positive = weaker; negative = stronger binding",
+  "min": -1.14,
+  "max": 2.13,
+  "mean": 0.406637047163363,
+  "median": 0.36,
+  "positive": 1377,
+  "negative": 83,
+  "zero_rounded": 3,
+  "score_bands": [
+    [
+      "ddG <= -1.5",
+      0
+    ],
+    [
+      "-1.5 < ddG <= -0.5",
+      19
+    ],
+    [
+      "-0.5 < ddG < +0.5",
+      980
+    ],
+    [
+      "+0.5 <= ddG < +1.5",
+      441
+    ],
+    [
+      "ddG >= +1.5",
+      23
+    ]
+  ],
+  "model_interface": {
+    "no": 1463
+  },
+  "model_confidence": {
+    "Low": 1463
+  },
+  "near_truncation_mutations": 722,
+  "near_truncation_sites": 38,
+  "at_truncated_terminus_mutations": 76,
+  "at_truncated_terminus_sites": [
+    "V166",
+    "D213",
+    "K236",
+    "H242"
+  ],
+  "partner_distance_min_A": 13.2355,
+  "partner_distance_max_A": 40.0084,
+  "protocol_counts": {
+    "91c31d483e948c0a961e9f58690f29591132467dc7cbd7f35271e2cb3201cece": 1330,
+    "1f60065e9cfc4796bc1c5ada830c8b68621d82ff60537b6dc958b72463dadb86": 57,
+    "372fcad0b211948efec8cf66575fafee2fe2821643b2e9e617ace97242f44da8": 38,
+    "172673a34af1402602decf096dfdb2e100b222e106b2405970a450a59d6321e4": 38
+  },
+  "validation": {
+    "input_count": 1463,
+    "result_count": 1463,
+    "exact_input_identity_match": true,
+    "duplicate_mutations": 0,
+    "duplicate_result_ids": 0,
+    "all_complete": true,
+    "finite_scores": true,
+    "all_WT_identities_match_coordinates": true,
+    "each_site_has_all_19_non_WT_substitutions": true,
+    "merged_scores_labels_match_source_batches": true,
+    "distance_max_absolute_recheck_error_A": 4.895568342533352e-05,
+    "missing_positions_match_missing_coordinates": true,
+    "missing_positions_within_128_255": [
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      237,
+      238,
+      239,
+      240,
+      241
+    ],
+    "source_sha256_before": "f2676720c322200bbf87eaec0586bd49cfc593c307a65681b6a65c16db475fcd",
+    "source_counts": {
+      "7mkj_128_255_20261030": 38,
+      "7mkj_128_255_20261030_cells": 38,
+      "7mkj_128_255_20261030_gpu": 1330,
+      "7mkj_128_255_20261030_optimized": 57
+    },
+    "source_sha256_after": "f2676720c322200bbf87eaec0586bd49cfc593c307a65681b6a65c16db475fcd",
+    "original_results_unchanged": true
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-30T00:59:32.891452+00:00",
+  "source": "/home/zek/下载/128-255.txt",
+  "source_sha256": "156029d405e66e7e5cf06e82451eeba0751058834235e7189dbe8e4b6fe4f289",
+  "mutations": 1463,
+  "sites": 77,
+  "chain": "L",
+  "observed_ranges": [
+    [
+      128,
+      166
+    ],
+    [
+      213,
+      236
+    ],
+    [
+      242,
+      255
+    ]
+  ],
+  "partner1": [
+    "I",
+    "J"
+  ],
+  "partner2": [
+    "L"
+  ],
+  "all_requested_wild_types_match_structure": true,
+  "structure_sha256": "90c8214ac3b1e656b94a3e58bcd472e4f97615438b557352fbe73da0540d715b",
+  "cap_mode": "neutral",
+  "provean_mode": "full",
+  "provean_scores_reused": 1463,
+  "legacy_binding_predictions_imported": false,
+  "mutation_table_sha256": "d8524f2ff225484e2649a89417459d03f30f406d4366aae32e4b04569af96dc4"
+}

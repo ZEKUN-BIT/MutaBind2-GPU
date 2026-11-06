@@ -1,0 +1,17 @@
+{
+  "provean_binary": "/home/zek/mutabind2-tool/toolchain/external/provean-1.1.5-modern/bin/provean",
+  "pb_executable": "/home/zek/mutabind2-tool/bin/charmm-pb-gpu",
+  "provean": null,
+  "namd": "/home/zek/mutabind2-tool/toolchain/tools/namd2",
+  "psiblast": "/home/zek/mutabind2-tool/toolchain/external/ncbi-blast-2.17.0+/bin/psiblast",
+  "blast_db": "/home/zek/mutabind2-tool/toolchain/databases/local_nr/nr",
+  "charmm": "/home/zek/mutabind2-tool/bin/charmm",
+  "vmd": "/home/zek/mutabind2-tool/env/bin/vmd",
+  "foldx": "/home/zek/mutabind2-tool/toolchain/external/foldx5-20261231/foldx_20261231",
+  "cdhit": "/home/zek/mutabind2-tool/env/bin/cd-hit",
+  "blastdbcmd": "/home/zek/mutabind2-tool/toolchain/external/ncbi-blast-2.17.0+/bin/blastdbcmd",
+  "toolchain_root": "/home/zek/mutabind2-tool/toolchain",
+  "vdw_executable": "/home/zek/mutabind2-tool/bin/charmm-vdw-compact",
+  "dssp": "/usr/local/bin/mkdssp",
+  "rscript": "/home/zek/mutabind2-tool/env/bin/Rscript"
+}

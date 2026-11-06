@@ -1,0 +1,10 @@
+{
+  "changed_protocol_fields": [
+    "pb",
+    "provean_scores"
+  ],
+  "provean_difference_reason": "Cache contains only the 1425 pending variants; every retained score matches exactly.",
+  "original_predictions_preserved": 38,
+  "pending_provean_scores_verified": 1425,
+  "all_other_protocol_fields_identical": true
+}

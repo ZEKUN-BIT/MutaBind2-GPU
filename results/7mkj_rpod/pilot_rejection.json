@@ -1,0 +1,8 @@
+{
+  "reason": "Original preprocessing creates four peptide bonds across unresolved internal gaps. Pilot rejected before prediction; no scientifically accepted ddG result.",
+  "evidence": [
+    "backbone_audit.json",
+    "psf_bond_audit.json"
+  ],
+  "stage": "stopped_invalid_topology"
+}

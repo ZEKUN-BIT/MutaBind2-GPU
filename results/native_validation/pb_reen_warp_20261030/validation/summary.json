@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "case": "WT",
+      "pb_seconds_before": 75.01937038800043,
+      "pb_seconds_after": 62.012685812999734,
+      "pb_seconds_saved": 13.00668457500069,
+      "pb_time_reduction_percent": 17.337768242695283,
+      "probe_seconds_before": 18.953383,
+      "probe_seconds_after": 5.47521
+    },
+    {
+      "case": "V130A",
+      "pb_seconds_before": 75.02126687799955,
+      "pb_seconds_after": 62.01353997500064,
+      "pb_seconds_saved": 13.007726902998911,
+      "pb_time_reduction_percent": 17.33871933161596,
+      "probe_seconds_before": 18.928664,
+      "probe_seconds_after": 5.47486
+    }
+  ],
+  "small_test_count": 276,
+  "all_small_tests_passed": true,
+  "full_phi_bitwise_equal_both_cases": true,
+  "same_logged_energies_grids_iterations": true,
+  "current_scan_mutant_archived_input_hashes_verified": true,
+  "physical_parameters_changed": false,
+  "measurements_include_phi_output": true,
+  "limitations": "Two representative structures on a shared RTX 5070 Ti; speedup varies with geometry and concurrent load. This is PB timing, not whole-pipeline timing.",
+  "saved_seconds_mean": 13.0072057389998,
+  "estimated_saved_hours_for_1425_pending": 5.148685605020754,
+  "candidate_library_sha256": "492fbfadde7d41226d25a3656a7aef7d6fc94c0cd7f55b18ad4742bda504c71d",
+  "production_transition": {
+    "original_completed": 38,
+    "remaining": 1425,
+    "optimized_scan": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_optimized",
+    "combined_output": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_combined",
+    "baseline_validation": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_combined/baseline_transition_validation.json",
+    "new_baseline_same_geometry_backend_check_passed": true,
+    "baseline_reconstruction_has_small_coordinate_differences": true
+  }
+}

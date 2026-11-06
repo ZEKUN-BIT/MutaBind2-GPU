@@ -1,0 +1,230 @@
+--- /home/zek/下载/charmm/source/nbonds/nbonda.F90
++++ /home/zek/mutabind2-tool/native_build/gpu_pipeline_20261030/vdw/nbonda.F90
+@@ -28,6 +28,8 @@
+   !     22-AUG-1981  By Bernard R. Brooks
+   !     Overhauled (group lists removed) - BRB - October 25, 1996
+   !
++  use iso_c_binding, only:c_int,c_char
++  use ieee_arithmetic, only:ieee_is_finite
+   use chm_kinds
+   use exfunc
+   use dimens_fcm
+@@ -59,6 +61,23 @@
+   use machutil,only:die,timre,timrb
+   !--- ##SE nbutil_module,only:qinlist
+   implicit none
++  logical :: mb_dense,mb_done
++  integer :: mb_status,mb_env_status,mb_env_length
++  character(len=16) :: mb_env
++  character(kind=c_char) :: mb_error(256)
++  real(chm_real) :: mb_diameter2
++  interface
++     function mb_dense_cuda(n,capacity,iblo,inb,rows,pairs,count,err,elen) &
++          bind(C,name='charmm_vdw_dense_cuda') result(status)
++       import c_int,c_char
++       integer(c_int),value :: n,capacity,elen
++       integer(c_int),intent(in) :: iblo(*),inb(*)
++       integer(c_int) :: rows(*),pairs(*),count
++       character(kind=c_char) :: err(*)
++       integer(c_int) :: status
++     end function
++  end interface
++
+   !
+   INTEGER NNNB,MAXJNB,JNB(*),INBLO(*)
+   real(chm_real)  X(*),Y(*),Z(*)
+@@ -257,6 +276,61 @@
+ #undef KEY_EXPAND
+ #endif
+ 
++  call get_environment_variable('MUTABIND2_VDW_GPU',mb_env,length=mb_env_length,status=mb_env_status)
++  mb_dense=mb_env_status==0.and.mb_env_length==1.and.mb_env=='1'
++  mb_done=.false.
++  if(mb_dense) then
++     mb_dense=NATOM>0.and.NBTHOL==0.and..not.LEXS.and..not.QGMREM
++     mb_dense=mb_dense.and.all(IMOVE(1:NATOM)<=0).and.all(IMOVEG(1:NGRP)<=0)
++     mb_dense=mb_dense.and..not.any(ISDRUDE(1:NATOM))
++#if KEY_MTS==1
++     mb_dense=mb_dense.and..not.QTBMTS
++#endif
++#if KEY_PERT==1
++     mb_dense=mb_dense.and..not.QPERT
++#endif
++#if KEY_TSM==1
++     mb_dense=mb_dense.and..not.LTSM
++#endif
++#if KEY_FOURD==1
++     mb_dense=mb_dense.and..not.DIM4
++#endif
++#if KEY_REPLICA==1
++     mb_dense=mb_dense.and..not.QREP
++#endif
++#if KEY_PBOUND==1
++     mb_dense=mb_dense.and..not.QBOUN
++#endif
++#if KEY_PARALLEL==1
++     mb_dense=mb_dense.and.NUMNOD==1
++#endif
++     mb_dense=mb_dense.and.all(ieee_is_finite(X(1:NATOM))).and. &
++          all(ieee_is_finite(Y(1:NATOM))).and.all(ieee_is_finite(Z(1:NATOM)))
++     ! A factor-of-two margin ensures every group pair has RSDISP=1,
++     ! including rounding in group centers. Short-cutoff cases use NBONDA.
++     mb_dense=mb_dense.and.maxval(abs(X(1:NATOM)))<1.0e6_chm_real.and. &
++          maxval(abs(Y(1:NATOM)))<1.0e6_chm_real.and.maxval(abs(Z(1:NATOM)))<1.0e6_chm_real
++     mb_diameter2=(maxval(X(1:NATOM))-minval(X(1:NATOM)))**2+ &
++          (maxval(Y(1:NATOM))-minval(Y(1:NATOM)))**2+ &
++          (maxval(Z(1:NATOM))-minval(Z(1:NATOM)))**2
++     mb_dense=mb_dense.and.ieee_is_finite(mb_diameter2).and.ieee_is_finite(CTNBSQ).and. &
++          CUTNB>0.and.mb_diameter2<0.25_chm_real*CTNBSQ
++     if(mb_dense) then
++        mb_status=mb_dense_cuda(NATOM,MAXJNB,IBLO14,INB14,INBLO,JNB,NNNB,mb_error,256)
++        if(mb_status==3) return ! Preserve the original allocation retry contract.
++        if(mb_status==0) then
++           mb_done=.true.
++           RSDISP(1:NGRP)=1
++           if(PRNLEV>=2) write(OUTU,'(A,I0)') ' MBVDW_DENSE_CUDA_SUCCESS pairs=',NNNB
++        else if(mb_status==2) then
++           NNNB=0 ! The original builder overwrites any declined candidate list.
++        else
++           write(OUTU,'(A,256A)') ' MBVDW_DENSE_CUDA_ERROR ',mb_error
++           error stop 105
++        endif
++     endif
++  endif
++  if(.not.mb_done) then
+ #if KEY_EXPAND == 1 && KEY_FOURD == 1
+ 
+ !-------------------------------------------------------------------
+@@ -296,6 +370,7 @@
+ #undef NBONDA_NOFOURD
+ 
+ #endif /* KEY_EXPAND && KEY_FOURD */
++  endif
+ !=======================================================================
+ 
+   CMPLTD=.TRUE.
+--- /home/zek/mutabind2-tool/toolchain/external/charmm-vdw-compact/source/intere.F90
++++ /home/zek/mutabind2-tool/native_build/gpu_pipeline_20261030/vdw/intere.F90
+@@ -152,6 +152,7 @@
+   !     Jay L. Banks 19 October 1995: Added MMFF energy calls
+   !
+   use gbmv, only:rungbmv                          
++  use iso_c_binding, only:c_int,c_char
+   use chm_kinds
+   use dimens_fcm
+   use number
+@@ -201,6 +202,22 @@
+   use memory            
+ #endif
+   implicit none
++  integer :: mb_gpu_status,mb_gpu_env_status
++  logical :: mb_gpu_selected
++  character(len=16) :: mb_gpu_env
++  character(kind=c_char) :: mb_gpu_error(256)
++  interface
++     function mb_select_cuda(n,capacity,rows,pairs,sel,other,drows,dest,err,elen) &
++          bind(C,name='charmm_vdw_select_cuda') result(status)
++       import c_int,c_char
++       integer(c_int),value :: n,capacity,elen
++       integer(c_int),intent(in) :: rows(*),pairs(*),sel(*),other(*)
++       integer(c_int) :: drows(*),dest(*)
++       character(kind=c_char) :: err(*)
++       integer(c_int) :: status
++     end function
++  end interface
++
+ 
+   real(chm_real) X(*),Y(*),Z(*)
+   INTEGER ISLCT(*),JSLCT(*),ISKIP(*)
+@@ -541,6 +558,21 @@
+              write(OUTU,'(A)') ' MUTABIND2_VDW_COMPACT original-copy fallback'
+      endif
+ 
++     mb_gpu_selected=.false.
++     call get_environment_variable('MUTABIND2_VDW_GPU',mb_gpu_env,status=mb_gpu_env_status)
++     if(mb_compact.and.mb_gpu_env_status==0.and.mb_gpu_env=='1') then
++        mb_gpu_status=mb_select_cuda(NATOM,size(bnbndc%JNB),bnbnd%INBLO,bnbnd%JNB, &
++             ISLCT,JSLCT,bnbndc%INBLO,bnbndc%JNB,mb_gpu_error,256)
++        if(mb_gpu_status==0) then
++           mb_gpu_selected=.true.
++           bnbndc%INBLOG(1:NGRP)=0
++           write(OUTU,'(A,I0)') ' MBVDW_SELECT_CUDA_SUCCESS pairs=',bnbndc%INBLO(NATOM)
++        else
++           write(OUTU,'(A,I0,1X,256A)') ' MBVDW_SELECT_CUDA_ERROR ',mb_gpu_status,mb_gpu_error
++           error stop 106
++        endif
++     endif
++     if(.not.mb_gpu_selected) then
+      ! Inter3g added by Lazaridis, Apr 99
+      ! MULTE addition, June 2008 bt
+      IF (LGROUP) THEN
+@@ -574,6 +606,7 @@
+                 )
+         ENDIF
+      ENDIF
++     endif
+ #if KEY_GRID==1
+   EndIf   
+ #endif
+--- /home/zek/mutabind2-tool/native_build/pb_cells_20261030/pbeq_cells.F90
++++ /home/zek/mutabind2-tool/native_build/gpu_pipeline_20261030/pb_flags/pbeq_mstep.F90
+@@ -5333,10 +5333,30 @@
+     !     M = 0 : inside solute
+     !         1 : outside solute
+     !
++    use iso_c_binding, only:c_int,c_double,c_float,c_char,c_null_char
++    use psf, only:natom
++    use stream, only:outu
+     use chm_kinds
+     use number
+     use consta
+     implicit none
++    INTEGER :: CUDA_STATUS,ENV_STATUS,CUDA_J
++    CHARACTER(LEN=16) :: CUDA_BACKEND,MSTEP_BACKEND
++    CHARACTER(KIND=C_CHAR) :: CUDA_ERROR(256)
++    INTERFACE
++       FUNCTION CHARMM_PB_MSTEP_CUDA(NX,NY,NZ,NA,NS,H,RW,RI,EP,TX,TY,TZ,BX,BY,BZ, &
++            QR,QK,SEL,XS,YS,ZS,RAD,G,GX,GY,GZ,ERR,ERRLEN) &
++            BIND(C,NAME='charmm_pb_mstep_cuda') RESULT(STATUS)
++          IMPORT C_INT,C_DOUBLE,C_FLOAT,C_CHAR
++          INTEGER(C_INT),VALUE :: NX,NY,NZ,NA,NS,QR,QK,ERRLEN
++          REAL(C_DOUBLE),VALUE :: H,RW,RI,EP,TX,TY,TZ,BX,BY,BZ
++          INTEGER(C_INT),INTENT(IN) :: SEL(*)
++          REAL(C_DOUBLE),INTENT(IN) :: XS(*),YS(*),ZS(*),RAD(*)
++          REAL(C_FLOAT) :: G(*),GX(*),GY(*),GZ(*)
++          CHARACTER(KIND=C_CHAR),INTENT(OUT) :: ERR(*)
++          INTEGER(C_INT) :: STATUS
++       END FUNCTION
++    END INTERFACE
+     REAL(KIND=8) :: PB_DETAIL_START
+     INTEGER  NTPRP,LSTPRP(*)
+     INTEGER  NCLX,NCLY,NCLZ
+@@ -5355,6 +5375,28 @@
+     !
+     !wi      ncyz=nclx*ncly
+     PB_DETAIL_START=PB_WALLTIME()
++    IF(CHM_REAL4.NE.C_FLOAT.OR.CHM_REAL.NE.C_DOUBLE.OR.KIND(NTPRP).NE.C_INT) ERROR STOP 101
++    CUDA_BACKEND='cuda'
++    CALL GET_ENVIRONMENT_VARIABLE('MUTABIND2_PB_BACKEND',CUDA_BACKEND,STATUS=ENV_STATUS)
++    IF(ENV_STATUS.NE.0) CUDA_BACKEND='cuda'
++    MSTEP_BACKEND='cuda'
++    CALL GET_ENVIRONMENT_VARIABLE('MUTABIND2_PB_MSTEP',MSTEP_BACKEND,STATUS=ENV_STATUS)
++    IF(ENV_STATUS.NE.0) MSTEP_BACKEND='cuda'
++    IF(TRIM(CUDA_BACKEND).EQ.'cuda'.AND.TRIM(MSTEP_BACKEND).NE.'cpu') THEN
++       CUDA_ERROR=C_NULL_CHAR
++       CUDA_STATUS=CHARMM_PB_MSTEP_CUDA(NCLX,NCLY,NCLZ,NATOM,NTPRP,DCEL,RADW,RADI,EPSP, &
++            TRANX,TRANY,TRANZ,XBCEN,YBCEN,ZBCEN,MERGE(1,0,QREEN),MERGE(1,0,QFKAP), &
++            LSTPRP,X,Y,Z,PBRAD,RMAY,RMAYX,RMAYY,RMAYZ,CUDA_ERROR,256)
++       IF(CUDA_STATUS.EQ.0) THEN
++          WRITE(OUTU,'(A)') ' PBEQ_MSTEP_CUDA_SUCCESS'
++          CALL PB_STAGE_TIME('MAYER_MSTEP',PB_DETAIL_START)
++          RETURN
++       ENDIF
++       WRITE(OUTU,'(A,I0,1X,256A)') ' PBEQ_MSTEP_CUDA_STATUS ',CUDA_STATUS, &
++            (CUDA_ERROR(CUDA_J),CUDA_J=1,256)
++       IF(CUDA_STATUS.NE.2) ERROR STOP 104
++    ENDIF
++
+     ncyz=ncly*nclz
+     il_loop: do il=1,ntprp
+        i=lstprp(il)

@@ -1,0 +1,56 @@
+[
+  {
+    "scan": "7mkj_128_255_20261030",
+    "completed_rows": 38,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030",
+    "tables": "results/7mkj_128_255_20261030"
+  },
+  {
+    "scan": "7mkj_128_255_20261030_cells",
+    "completed_rows": 38,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_cells",
+    "tables": "results/7mkj_128_255_20261030_cells"
+  },
+  {
+    "scan": "7mkj_128_255_20261030_combined",
+    "completed_rows": 1463,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_combined",
+    "tables": "results/7mkj_128_255_20261030_combined"
+  },
+  {
+    "scan": "7mkj_128_255_20261030_gpu",
+    "completed_rows": 1330,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_gpu",
+    "tables": "results/7mkj_128_255_20261030_gpu"
+  },
+  {
+    "scan": "7mkj_128_255_20261030_inputs",
+    "completed_rows": 0,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_inputs",
+    "tables": "results/7mkj_128_255_20261030_inputs"
+  },
+  {
+    "scan": "7mkj_128_255_20261030_optimized",
+    "completed_rows": 57,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_128_255_20261030_optimized",
+    "tables": "results/7mkj_128_255_20261030_optimized"
+  },
+  {
+    "scan": "7mkj_256_374_20261102",
+    "completed_rows": 2261,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_256_374_20261102",
+    "tables": "results/7mkj_256_374_20261102"
+  },
+  {
+    "scan": "7mkj_256_374_20261102_inputs",
+    "completed_rows": 0,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_256_374_20261102_inputs",
+    "tables": "results/7mkj_256_374_20261102_inputs"
+  },
+  {
+    "scan": "7mkj_rpod",
+    "completed_rows": 668,
+    "original_path": "/home/zek/mutabind2-tool/projects/7mkj_rpod",
+    "tables": "results/7mkj_rpod"
+  }
+]

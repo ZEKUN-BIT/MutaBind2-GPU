@@ -1,0 +1,22 @@
+{
+  "pid": 982189,
+  "argv": [
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/mutabind2/.env/bin/python",
+    "-u",
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/scripts/task_engine.py",
+    "--input",
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/inputs/fragmented/baseline.input",
+    "--workspace",
+    "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01",
+    "--workers",
+    "2",
+    "--cap-mode",
+    "neutral"
+  ],
+  "workspace": "/home/zek/mutabind2_runs/7mkj_rpod/baseline_01",
+  "mutations": [
+    "E90A",
+    "D213P",
+    "S506A"
+  ]
+}

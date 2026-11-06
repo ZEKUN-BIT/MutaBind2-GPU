@@ -1,0 +1,15 @@
+{
+  "files": {
+    "/home/zek/mutabind2-tool/native_build/resource_admission_20261102/continue_scan.py": "80e5946c906f6521ad335db984186df85a8c2b9aeaca67c3ed21d20a299a23b7",
+    "/home/zek/mutabind2-tool/native_build/resource_admission_20261102/worker.py": "afe432d7f9fd707a67dc62ad1e5e9468bbb77c97700fa25aa39b93ca7dfc744f",
+    "/home/zek/mutabind2-tool/native_build/resource_admission_20261102/recover.py": "c530e14153d15f8ed5429a7384490dc6a9068cf1c0d8103fb9072cdb612c7815",
+    "/home/zek/mutabind2-tool/native_build/resource_admission_20261102/resource_admission.py": "85eae386d68a38d08b1a881306c6fc84ecf9e7cd1eb469450d9731a86b81675a"
+  },
+  "protocol_sha256": "c114ec8eb5d9b05e42e99c76a805a88f1d4e545659a0f5af4d94ccc6e4adf32e",
+  "deployed_utc": "2026-11-03T10:34:50.996788+00:00",
+  "native_gpu_reserve_gib": 2,
+  "native_host_admission_gib": 30,
+  "gpu_prelaunch_admission_gib": 5,
+  "gpu_memory_retries": 3,
+  "scientific_package_unchanged": true
+}

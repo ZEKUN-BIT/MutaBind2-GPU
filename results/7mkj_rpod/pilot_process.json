@@ -1,0 +1,17 @@
+{
+  "pid": 973647,
+  "argv": [
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/mutabind2/mutabind2",
+    "run",
+    "--mode",
+    "single",
+    "--job",
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/inputs/pilot",
+    "--output",
+    "/home/zek/Documents/Codex/2026-10-19/https-github-com-minghuilab-mutabind2-https/outputs/predictions/7mkj_rpod/pilot_run",
+    "--workers",
+    "1",
+    "--threads",
+    "8"
+  ]
+}

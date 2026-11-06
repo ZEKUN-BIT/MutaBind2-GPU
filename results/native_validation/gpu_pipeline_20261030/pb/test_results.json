@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "bitwise_cases": 112,
+  "transactional_rejections": 6,
+  "reference": "unmodified Fortran MAYER_MSTEP loop"
+}

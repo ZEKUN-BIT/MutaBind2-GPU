@@ -1,0 +1,90 @@
+[
+  {
+    "bundle": "projects",
+    "files": 3406,
+    "uncompressed_bytes": 22408463607,
+    "compressed_bytes": 20320663195,
+    "assets": [
+      "projects.tar.zst.part000",
+      "projects.tar.zst.part001",
+      "projects.tar.zst.part002",
+      "projects.tar.zst.part003",
+      "projects.tar.zst.part004",
+      "projects.tar.zst.part005",
+      "projects.tar.zst.part006",
+      "projects.tar.zst.part007",
+      "projects.tar.zst.part008",
+      "projects.tar.zst.part009",
+      "projects.tar.zst.part010",
+      "projects.tar.zst.part011"
+    ]
+  },
+  {
+    "bundle": "workspaces",
+    "files": 6329,
+    "uncompressed_bytes": 7672894677,
+    "compressed_bytes": 1589529216,
+    "assets": [
+      "workspaces.tar.zst"
+    ]
+  },
+  {
+    "bundle": "native-validation",
+    "files": 484,
+    "uncompressed_bytes": 16097728689,
+    "compressed_bytes": 2349686585,
+    "assets": [
+      "native-validation.tar.zst.part000",
+      "native-validation.tar.zst.part001"
+    ],
+    "identical_files_stored_as_hardlinks": 108
+  },
+  {
+    "bundle": "validation",
+    "files": 1013,
+    "uncompressed_bytes": 254188450,
+    "compressed_bytes": 159143362,
+    "assets": [
+      "validation.tar.zst"
+    ]
+  },
+  {
+    "bundle": "legacy-predictions",
+    "files": 590,
+    "uncompressed_bytes": 3747214588,
+    "compressed_bytes": 3651346343,
+    "assets": [
+      "legacy-predictions.tar.zst.part000",
+      "legacy-predictions.tar.zst.part001",
+      "legacy-predictions.tar.zst.part002"
+    ]
+  },
+  {
+    "bundle": "legacy-workspaces",
+    "files": 1833,
+    "uncompressed_bytes": 3787091167,
+    "compressed_bytes": 1307305878,
+    "assets": [
+      "legacy-workspaces.tar.zst"
+    ],
+    "identical_files_stored_as_hardlinks": 617
+  },
+  {
+    "bundle": "toolchain-results",
+    "files": 238,
+    "uncompressed_bytes": 41926141,
+    "compressed_bytes": 6495871,
+    "assets": [
+      "toolchain-results.tar.zst"
+    ]
+  },
+  {
+    "bundle": "toolchain-validation",
+    "files": 141,
+    "uncompressed_bytes": 5301636,
+    "compressed_bytes": 836178,
+    "assets": [
+      "toolchain-validation.tar.zst"
+    ]
+  }
+]

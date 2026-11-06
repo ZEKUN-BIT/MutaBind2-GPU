@@ -20,4 +20,6 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m pip install -e '.[test]'
       - run: python -m pytest -q
+      - run: python -m pytest -q native_build/scan_pipeline_20261030/test_pipeline.py native_build/pipeline_memory_20261030/test_memory_pipeline.py
+      - run: python -m unittest discover -s native_build/resource_admission_20261102 -p 'test_*.py' -v
       - run: python -m pip wheel . --no-deps --wheel-dir /tmp/wheels

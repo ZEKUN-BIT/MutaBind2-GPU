@@ -1,0 +1,1 @@
+{"dependencies": [{"name": "numpy", "version": "1.26.4", "vulns": []}, {"name": "pandas", "version": "3.0.6", "vulns": []}, {"name": "python-dateutil", "version": "2.9.0.post0", "vulns": []}, {"name": "six", "version": "1.17.0", "vulns": []}], "fixes": []}

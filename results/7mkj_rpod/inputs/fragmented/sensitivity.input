@@ -1,0 +1,3 @@
+PDBfile	Partner1	Partner2	MutChain	Mutation_PDB	Result_Id	isPI
+7MKJ2610_frag.pdb	I_1.J_1.A_1.B_1	L_1.C_1.D_1	L_1	E90A	1	0
+7MKJ2610_frag.pdb	I_1.J_1.A_1.B_1	L_1.C_1.D_1	D_1	S506A	6936	0
