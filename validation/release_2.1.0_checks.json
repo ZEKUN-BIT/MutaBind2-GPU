@@ -12,5 +12,6 @@
   "runtime_dependency_audit": "no known vulnerabilities",
   "original_files_preserved": 96146,
   "original_symlinks_preserved": 3226,
-  "historical_results_rewritten": false
+  "historical_results_rewritten": false,
+  "relative_result_links_verified": 579
 }

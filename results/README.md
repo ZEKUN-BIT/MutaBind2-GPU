@@ -27,8 +27,16 @@ cat projects.tar.zst.part* | zstd -d | tar -xpf - -C restored
 cat native-validation.tar.zst.part* | zstd -d | tar -xpf - -C restored
 ```
 
+解压所有八组结果后，再解压 `result-links.tar.zst`：
+
+```bash
+tar --zstd -xpf result-links.tar.zst -C restored
+```
+
+这个补充包将 579 个结果文件/目录别名恢复为归档内部的相对符号链接，避免依赖原机器绝对路径；映射见 `result_links.json`。
+
 其余附件中，单个 `.tar.zst` 可用 `tar --zstd -xpf 文件名 -C restored` 解压；有 `.part000` 等后缀的组按名称顺序拼接后解压。具体分卷列表见 `bundle_summary.json`。恢复目录内 `_manifest/` 记录每个文件的 SHA-256 与原始大小，同样的清单也作为独立附件提供。部分内容相同的验证文件在包内以硬链接存储，解压后各路径的文件内容与原始记录一致。
 
-结果包包括 `projects`、`workspaces`、`native-validation`、`validation`、`legacy-predictions`、`legacy-workspaces`、`toolchain-results` 和 `toolchain-validation` 八组。`excluded_non_results.json` 列出未公开的原生二进制、构建对象、完整 CHARMM 派生源码和原始符号链接；它们均保留在本机完整安装中。软件安装资源不属于预测结果。
+结果包包括 `projects`、`workspaces`、`native-validation`、`validation`、`legacy-predictions`、`legacy-workspaces`、`toolchain-results` 和 `toolchain-validation` 八组。`excluded_non_results.json` 列出未公开的原生二进制、构建对象、完整 CHARMM 派生源码和原始绝对符号链接；它们均保留在本机完整安装中。结果之间的链接由上述补充包恢复，外部软件资源链接仍需用户自己的安装。软件安装资源不属于预测结果。
 
 结果中的绝对路径、时间和协议哈希是历史计算证据，保留原字节。它们不是当前机器的路径配置。旧目录 `/home/zek/mutabind2-tool` 的文件已迁入 `/home/zek/MutaBind2-GPU`；早期外部结果在本机 `projects/7mkj_rpod` 与 `projects/legacy_workspaces` 下有完整副本。使用迁移后的软件创建新任务；不要把历史停止的过渡扫描直接重启，否则会重复计算已并入合并表的突变。
